@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /home/rogeliovc/AndroidStudioProjects/Codechallenge/app/src/main/AndroidManifest.xml:2:1-27:12
-INJECTED from /home/rogeliovc/AndroidStudioProjects/Codechallenge/app/src/main/AndroidManifest.xml:2:1-27:12
-INJECTED from /home/rogeliovc/AndroidStudioProjects/Codechallenge/app/src/main/AndroidManifest.xml:2:1-27:12
-INJECTED from /home/rogeliovc/AndroidStudioProjects/Codechallenge/app/src/main/AndroidManifest.xml:2:1-27:12
+ADDED from /home/rogeliovc/AndroidStudioProjects/Codechallenge/app/src/main/AndroidManifest.xml:2:1-28:12
+INJECTED from /home/rogeliovc/AndroidStudioProjects/Codechallenge/app/src/main/AndroidManifest.xml:2:1-28:12
+INJECTED from /home/rogeliovc/AndroidStudioProjects/Codechallenge/app/src/main/AndroidManifest.xml:2:1-28:12
+INJECTED from /home/rogeliovc/AndroidStudioProjects/Codechallenge/app/src/main/AndroidManifest.xml:2:1-28:12
 MERGED from [com.google.firebase:firebase-auth:22.3.0] /home/rogeliovc/.gradle/caches/8.11.1/transforms/a5b8718dccf29223ed52298182cbf19a/transformed/firebase-auth-22.3.0/AndroidManifest.xml:17:1-75:12
 MERGED from [com.google.firebase:firebase-firestore:24.11.0] /home/rogeliovc/.gradle/caches/8.11.1/transforms/3f1063cffe0b520f15f8e449a9103f21/transformed/firebase-firestore-24.11.0/AndroidManifest.xml:2:1-26:12
 MERGED from [com.google.android.material:material:1.12.0] /home/rogeliovc/.gradle/caches/8.11.1/transforms/575f17971f8a28cccb9fc1962998aba1/transformed/material-1.12.0/AndroidManifest.xml:17:1-24:12
@@ -74,8 +74,8 @@ MERGED from [com.google.firebase:protolite-well-known-types:18.0.0] /home/rogeli
 	xmlns:android
 		ADDED from /home/rogeliovc/AndroidStudioProjects/Codechallenge/app/src/main/AndroidManifest.xml:2:11-69
 application
-ADDED from /home/rogeliovc/AndroidStudioProjects/Codechallenge/app/src/main/AndroidManifest.xml:5:5-25:19
-INJECTED from /home/rogeliovc/AndroidStudioProjects/Codechallenge/app/src/main/AndroidManifest.xml:5:5-25:19
+ADDED from /home/rogeliovc/AndroidStudioProjects/Codechallenge/app/src/main/AndroidManifest.xml:5:5-26:19
+INJECTED from /home/rogeliovc/AndroidStudioProjects/Codechallenge/app/src/main/AndroidManifest.xml:5:5-26:19
 MERGED from [com.google.firebase:firebase-auth:22.3.0] /home/rogeliovc/.gradle/caches/8.11.1/transforms/a5b8718dccf29223ed52298182cbf19a/transformed/firebase-auth-22.3.0/AndroidManifest.xml:28:5-73:19
 MERGED from [com.google.firebase:firebase-auth:22.3.0] /home/rogeliovc/.gradle/caches/8.11.1/transforms/a5b8718dccf29223ed52298182cbf19a/transformed/firebase-auth-22.3.0/AndroidManifest.xml:28:5-73:19
 MERGED from [com.google.firebase:firebase-firestore:24.11.0] /home/rogeliovc/.gradle/caches/8.11.1/transforms/3f1063cffe0b520f15f8e449a9103f21/transformed/firebase-firestore-24.11.0/AndroidManifest.xml:13:5-24:19
@@ -134,18 +134,18 @@ MERGED from [androidx.startup:startup-runtime:1.1.1] /home/rogeliovc/.gradle/cac
 		ADDED from /home/rogeliovc/AndroidStudioProjects/Codechallenge/app/src/main/AndroidManifest.xml:13:9-51
 	android:dataExtractionRules
 		ADDED from /home/rogeliovc/AndroidStudioProjects/Codechallenge/app/src/main/AndroidManifest.xml:7:9-65
-activity#com.example.codechallenge.MainActivity
-ADDED from /home/rogeliovc/AndroidStudioProjects/Codechallenge/app/src/main/AndroidManifest.xml:15:9-23:20
+activity#com.example.codechallenge.LoginActivity
+ADDED from /home/rogeliovc/AndroidStudioProjects/Codechallenge/app/src/main/AndroidManifest.xml:16:9-23:20
 	android:exported
-		ADDED from /home/rogeliovc/AndroidStudioProjects/Codechallenge/app/src/main/AndroidManifest.xml:17:13-36
+		ADDED from /home/rogeliovc/AndroidStudioProjects/Codechallenge/app/src/main/AndroidManifest.xml:18:13-36
 	android:name
-		ADDED from /home/rogeliovc/AndroidStudioProjects/Codechallenge/app/src/main/AndroidManifest.xml:16:13-41
+		ADDED from /home/rogeliovc/AndroidStudioProjects/Codechallenge/app/src/main/AndroidManifest.xml:17:13-42
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /home/rogeliovc/AndroidStudioProjects/Codechallenge/app/src/main/AndroidManifest.xml:18:13-22:29
+ADDED from /home/rogeliovc/AndroidStudioProjects/Codechallenge/app/src/main/AndroidManifest.xml:19:13-22:29
 action#android.intent.action.MAIN
-ADDED from /home/rogeliovc/AndroidStudioProjects/Codechallenge/app/src/main/AndroidManifest.xml:19:17-69
+ADDED from /home/rogeliovc/AndroidStudioProjects/Codechallenge/app/src/main/AndroidManifest.xml:20:17-69
 	android:name
-		ADDED from /home/rogeliovc/AndroidStudioProjects/Codechallenge/app/src/main/AndroidManifest.xml:19:25-66
+		ADDED from /home/rogeliovc/AndroidStudioProjects/Codechallenge/app/src/main/AndroidManifest.xml:20:25-66
 category#android.intent.category.LAUNCHER
 ADDED from /home/rogeliovc/AndroidStudioProjects/Codechallenge/app/src/main/AndroidManifest.xml:21:17-77
 	android:name
@@ -154,6 +154,10 @@ activity#com.example.codechallenge.MenuPrincipalActivity
 ADDED from /home/rogeliovc/AndroidStudioProjects/Codechallenge/app/src/main/AndroidManifest.xml:24:9-59
 	android:name
 		ADDED from /home/rogeliovc/AndroidStudioProjects/Codechallenge/app/src/main/AndroidManifest.xml:24:19-56
+activity#com.example.codechallenge.RegisterActivity
+ADDED from /home/rogeliovc/AndroidStudioProjects/Codechallenge/app/src/main/AndroidManifest.xml:25:9-54
+	android:name
+		ADDED from /home/rogeliovc/AndroidStudioProjects/Codechallenge/app/src/main/AndroidManifest.xml:25:19-51
 uses-sdk
 INJECTED from /home/rogeliovc/AndroidStudioProjects/Codechallenge/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /home/rogeliovc/AndroidStudioProjects/Codechallenge/app/src/main/AndroidManifest.xml

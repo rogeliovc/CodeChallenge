@@ -12,6 +12,7 @@
 .externalNativeBuild
 .cxx
 local.properties
+app/google-services.json
 
 # Project exclude paths
 /gradle/

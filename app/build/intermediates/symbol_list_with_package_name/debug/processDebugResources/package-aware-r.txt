@@ -3022,6 +3022,8 @@ drawable abc_textfield_search_material
 drawable abc_vector_test
 drawable avd_hide_password
 drawable avd_show_password
+drawable bg_edittext
+drawable bg_gradient_orange
 drawable btn_checkbox_checked_mtrl
 drawable btn_checkbox_checked_to_unchecked_mtrl_animation
 drawable btn_checkbox_unchecked_mtrl
@@ -3261,7 +3263,7 @@ id browser_actions_menu_item_text
 id browser_actions_menu_items
 id browser_actions_menu_view
 id btnLogin
-id btnRegistrar
+id btnSignUp
 id buttonPanel
 id cache_measures
 id callMeasure
@@ -3336,6 +3338,7 @@ id easeInOut
 id easeOut
 id east
 id edge
+id editTextConfirmPassword
 id editTextEmail
 id editTextPassword
 id edit_query
@@ -3409,10 +3412,11 @@ id light
 id line1
 id line3
 id linear
+id linkToLogin
+id linkToRegister
 id listMode
 id list_item
 id m3_side_sheet
-id main
 id marquee
 id masked
 id match_constraint
@@ -3525,6 +3529,7 @@ id pin
 id position
 id postLayout
 id pressed
+id progressBar
 id progress_circular
 id progress_horizontal
 id radio
@@ -3621,6 +3626,10 @@ id textSpacerNoTitle
 id textStart
 id textTop
 id textViewBienvenida
+id textViewLoginSubtitle
+id textViewLoginTitle
+id textViewRegisterSubtitle
+id textViewRegisterTitle
 id text_input_end_icon
 id text_input_error_icon
 id text_input_start_icon
@@ -3790,8 +3799,9 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
-layout activity_main
+layout activity_login
 layout activity_menu_principal
+layout activity_register
 layout browser_actions_context_menu_page
 layout browser_actions_context_menu_row
 layout custom_dialog
