@@ -26,7 +26,7 @@ Aplicación Android para estudiantes de CUCEI, con autenticación y base de dato
 ---
 
 ## 👥 Colaboradores
-- Cada integrante debe tener su propio archivo `google-services.json` para ejecutar la app localmente.
+- Cada integrante debe solicitar el archivo`google-services.json` para ejecutar la app localmente.
 - Si tienes problemas con Firebase, asegúrate de tener el archivo correcto y permisos en el proyecto Firebase.
 
 ---
@@ -37,4 +37,4 @@ Aplicación Android para estudiantes de CUCEI, con autenticación y base de dato
 
 ---
 
-¡Bienvenido al equipo y feliz desarrollo! 🚀
+¡Bienvenido al equipo! 🚀
