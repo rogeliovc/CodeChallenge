@@ -4,26 +4,42 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bg_gradient_menu"
+    android:background="@color/colorBackground"
     tools:context=".MenuPrincipalActivity">
 
     <!-- Aquí puedes agregar botones o menús para navegar a otras secciones -->
+
+    <!-- Logo CUCEI -->
+
+    <ImageView
+        android:id="@+id/logoCucei"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginStart="24dp"
+        android:src="@drawable/logo_cucei"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <!-- Texto CUCEI -->
 
     <!-- Título -->
     <TextView
         android:id="@+id/textViewTitulo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Code challenge"
-        android:textStyle="bold"
-        android:textSize="32sp"
+        android:text="Code Challenge"
         android:textColor="#fff"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-light"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="40dp" />
+        app:layout_constraintStart_toEndOf="@id/logoCucei"
+        android:layout_marginTop="48dp"
+        android:layout_marginStart="16dp"/>
 
     <!-- Botón de búsqueda -->
+
     <ImageButton
         android:id="@+id/btnBuscar"
         android:layout_width="40dp"
@@ -67,7 +83,7 @@
         android:id="@+id/bottomNav"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:background="#fff"
+        android:background="@color/colorBackground"
         app:itemIconTint="@color/selector_nav_icon"
         app:itemTextColor="@color/selector_nav_icon"
         app:menu="@menu/menu_bottom_nav"

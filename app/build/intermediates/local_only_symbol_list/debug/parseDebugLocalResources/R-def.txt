@@ -1,6 +1,12 @@
 R_DEF: Internal format may change without notice
 local
 color black
+color colorBackground
+color colorBackgroundLight
+color colorBlue
+color colorGreen
+color colorRed
+color colorYellow
 color selector_nav_icon
 color white
 drawable bg_edittext
@@ -12,9 +18,12 @@ drawable ic_launcher_background
 drawable ic_launcher_foreground
 drawable ic_notifications
 drawable ic_person
+drawable logo_cucei
 id bottomNav
+id btnBack
 id btnBuscar
 id btnLogin
+id btnLogout
 id btnPerfil
 id btnSignUp
 id editTextConfirmPassword
@@ -22,19 +31,25 @@ id editTextEmail
 id editTextPassword
 id linkToLogin
 id linkToRegister
+id logoCucei
 id nav_favorites
 id nav_home
 id nav_notifications
 id nav_profile
 id progressBar
 id recyclerRetos
+id switchDarkMode
+id switchNotifications
 id textDescripcionReto
 id textTituloReto
+id textViewAccountTitle
 id textViewLoginSubtitle
 id textViewLoginTitle
+id textViewNotifications
 id textViewRegisterSubtitle
 id textViewRegisterTitle
 id textViewTitulo
+layout activity_account
 layout activity_login
 layout activity_menu_principal
 layout activity_register

@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="black">#FF000000</color>
+    <color name="colorBackground">#000000</color>
+    <color name="colorBackgroundLight">#F4F1DE</color>
+    <color name="colorBlue">#3D405B</color>
+    <color name="colorGreen">#81B29A</color>
+    <color name="colorRed">#E07A5F</color>
+    <color name="colorYellow">#F2CC8F</color>
     <color name="white">#FFFFFFFF</color>
     <string name="app_name">Code challenge</string>
     <string name="gcm_defaultSenderId" translatable="false">920429794833</string>
@@ -11,7 +17,8 @@
     <string name="project_id" translatable="false">code-challenge-36105</string>
     <style name="Base.Theme.CodeChallenge" parent="Theme.Material3.DayNight.NoActionBar">
         
-        
+        <item name="android:windowBackground">@color/colorBackground</item>
+        <item name="android:colorBackground">@color/colorBackground</item>
     </style>
     <style name="Theme.CodeChallenge" parent="Base.Theme.CodeChallenge"/>
 </resources>

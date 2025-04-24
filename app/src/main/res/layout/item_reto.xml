@@ -5,8 +5,7 @@
     android:layout_height="wrap_content"
     android:layout_marginTop="12dp"
     android:layout_marginBottom="12dp"
-    app:cardCornerRadius="18dp"
-    app:cardElevation="6dp">
+    app:cardCornerRadius="18dp">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -19,18 +18,18 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Título del reto"
-            android:textStyle="bold"
             android:textColor="#fff"
-            android:textSize="20sp"/>
+            android:textSize="20sp"
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/textDescripcionReto"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
             android:text="Descripción del reto"
             android:textColor="#fff"
-            android:textSize="15sp"
-            android:layout_marginTop="8dp"/>
+            android:textSize="15sp" />
     </LinearLayout>
 
 </androidx.cardview.widget.CardView>

@@ -1398,6 +1398,12 @@ color cardview_dark_background
 color cardview_light_background
 color cardview_shadow_end_color
 color cardview_shadow_start_color
+color colorBackground
+color colorBackgroundLight
+color colorBlue
+color colorGreen
+color colorRed
+color colorYellow
 color common_google_signin_btn_text_dark
 color common_google_signin_btn_text_dark_default
 color common_google_signin_btn_text_dark_disabled
@@ -3085,6 +3091,7 @@ drawable ic_notifications
 drawable ic_person
 drawable ic_search_black_24
 drawable indeterminate_static
+drawable logo_cucei
 drawable m3_avd_hide_password
 drawable m3_avd_show_password
 drawable m3_bottom_sheet_drag_handle
@@ -3269,8 +3276,10 @@ id browser_actions_menu_item_icon
 id browser_actions_menu_item_text
 id browser_actions_menu_items
 id browser_actions_menu_view
+id btnBack
 id btnBuscar
 id btnLogin
+id btnLogout
 id btnPerfil
 id btnSignUp
 id buttonPanel
@@ -3425,6 +3434,7 @@ id linkToLogin
 id linkToRegister
 id listMode
 id list_item
+id logoCucei
 id m3_side_sheet
 id marquee
 id masked
@@ -3618,6 +3628,8 @@ id stretch
 id submenuarrow
 id submit_area
 id supportScrollUp
+id switchDarkMode
+id switchNotifications
 id tabMode
 id tag_accessibility_actions
 id tag_accessibility_clickable_spans
@@ -3641,8 +3653,10 @@ id textSpacerNoTitle
 id textStart
 id textTituloReto
 id textTop
+id textViewAccountTitle
 id textViewLoginSubtitle
 id textViewLoginTitle
+id textViewNotifications
 id textViewRegisterSubtitle
 id textViewRegisterTitle
 id textViewTitulo
@@ -3815,6 +3829,7 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
+layout activity_account
 layout activity_login
 layout activity_menu_principal
 layout activity_register

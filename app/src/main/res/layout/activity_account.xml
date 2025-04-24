@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    tools:context=".AccountActivity">
+
+    <!-- Botón de retroceso -->
+    <ImageButton
+        android:id="@+id/btnBack"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@android:color/transparent"
+        android:src="@android:drawable/ic_media_previous"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"/>
+
+    <TextView
+        android:id="@+id/textViewAccountTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Configuración de Cuenta"
+        android:textStyle="bold"
+        android:textSize="28sp"
+        android:textColor="@color/colorBlue"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="40dp" />
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/switchDarkMode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Modo oscuro"
+        app:layout_constraintTop_toBottomOf="@id/textViewAccountTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="32dp" />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:background="@color/colorBlue"
+        app:layout_constraintTop_toBottomOf="@id/switchDarkMode"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="32dp" />
+
+    <TextView
+        android:id="@+id/textViewNotifications"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Notificaciones"
+        android:textSize="18sp"
+        android:textColor="@color/colorBlue"
+        app:layout_constraintTop_toBottomOf="@id/switchDarkMode"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="40dp" />
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/switchNotifications"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Activar notificaciones"
+        app:layout_constraintTop_toBottomOf="@id/textViewNotifications"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="8dp" />
+
+    <Button
+        android:id="@+id/btnLogout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Cerrar sesión"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/colorRed"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="32dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -23,6 +23,7 @@
         </activity>
         <activity android:name=".MenuPrincipalActivity" />
         <activity android:name=".RegisterActivity" />
+        <activity android:name=".AccountActivity" />
     </application>
 
 </manifest>

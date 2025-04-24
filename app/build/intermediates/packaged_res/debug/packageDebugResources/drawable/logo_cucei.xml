@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="200dp"
+    android:height="200dp"
+    android:viewportWidth="1024"
+    android:viewportHeight="1024">
+    <!-- Círculo exterior blanco -->
+    <path
+        android:pathData="M512,32a480,480 0 1,0 0,960a480,480 0 1,0 0,-960z"
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="32"
+        android:fillColor="#00000000" />
+    <!-- Círculo interior negro -->
+    <path
+        android:pathData="M512,112a400,400 0 1,0 0,800a400,400 0 1,0 0,-800z"
+        android:fillColor="#111111" />
+    <!-- Círculo azul -->
+    <path
+        android:pathData="M672,512a160,160 0 1,0 0,320a160,160 0 1,0 0,-320z"
+        android:fillColor="#61D6F7" />
+    <!-- Líneas blancas -->
+    <path
+        android:pathData="M256,384h512"
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="32"
+        android:fillColor="#00000000" />
+    <path
+        android:pathData="M256,512h320"
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="32"
+        android:fillColor="#00000000" />
+    <path
+        android:pathData="M256,640h512"
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="32"
+        android:fillColor="#00000000" />
+    <!-- Puntos blancos -->
+    <path
+        android:pathData="M336,512a24,24 0 1,0 0,48a24,24 0 1,0 0,-48z"
+        android:fillColor="#FFFFFF" />
+    <path
+        android:pathData="M688,512a24,24 0 1,0 0,48a24,24 0 1,0 0,-48z"
+        android:fillColor="#FFFFFF" />
+</vector>

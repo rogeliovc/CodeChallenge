@@ -41,6 +41,7 @@
         </activity>
         <activity android:name="com.example.codechallenge.MenuPrincipalActivity" />
         <activity android:name="com.example.codechallenge.RegisterActivity" />
+        <activity android:name="com.example.codechallenge.AccountActivity" />
         <activity
             android:name="com.google.firebase.auth.internal.GenericIdpActivity"
             android:excludeFromRecents="true"
