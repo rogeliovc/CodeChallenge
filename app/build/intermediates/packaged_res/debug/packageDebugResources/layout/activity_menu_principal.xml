@@ -9,7 +9,7 @@
 
     <!-- Aquí puedes agregar botones o menús para navegar a otras secciones -->
 
-    <!-- Logo CUCEI -->
+    <!-- Logo CUCEI (PNG) -->
 
     <ImageView
         android:id="@+id/logoCucei"

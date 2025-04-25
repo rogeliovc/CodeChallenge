@@ -34,6 +34,7 @@ drawable ic_launcher_foreground
 drawable ic_notifications
 drawable ic_person
 drawable logo_cucei
+drawable logo_launcher
 id bottomNav
 id btnBack
 id btnEditAvatar

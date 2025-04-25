@@ -3107,6 +3107,7 @@ drawable ic_person
 drawable ic_search_black_24
 drawable indeterminate_static
 drawable logo_cucei
+drawable logo_launcher
 drawable m3_avd_hide_password
 drawable m3_avd_show_password
 drawable m3_bottom_sheet_drag_handle
