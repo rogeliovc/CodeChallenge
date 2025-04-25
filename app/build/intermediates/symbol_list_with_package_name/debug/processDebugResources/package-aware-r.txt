@@ -1403,6 +1403,7 @@ color colorBackgroundLight
 color colorBlue
 color colorGreen
 color colorRed
+color colorText
 color colorYellow
 color common_google_signin_btn_text_dark
 color common_google_signin_btn_text_dark_default
@@ -3040,6 +3041,7 @@ drawable btn_radio_off_mtrl
 drawable btn_radio_off_to_on_mtrl_animation
 drawable btn_radio_on_mtrl
 drawable btn_radio_on_to_off_mtrl_animation
+drawable circle_bg
 drawable common_full_open_on_phone
 drawable common_google_signin_btn_icon_dark
 drawable common_google_signin_btn_icon_dark_focused
@@ -3067,6 +3069,7 @@ drawable design_snackbar_background
 drawable googleg_disabled_color_18
 drawable googleg_standard_color_18
 drawable ic_arrow_back_black_24
+drawable ic_avatar_placeholder
 drawable ic_call_answer
 drawable ic_call_answer_low
 drawable ic_call_answer_video
@@ -3075,6 +3078,7 @@ drawable ic_call_decline
 drawable ic_call_decline_low
 drawable ic_clear_black_24
 drawable ic_clock_black_24dp
+drawable ic_edit
 drawable ic_favorite
 drawable ic_home
 drawable ic_keyboard_black_24dp
@@ -3278,6 +3282,8 @@ id browser_actions_menu_items
 id browser_actions_menu_view
 id btnBack
 id btnBuscar
+id btnEditAvatar
+id btnGoogleSignIn
 id btnLogin
 id btnLogout
 id btnPerfil
@@ -3286,6 +3292,7 @@ id buttonPanel
 id cache_measures
 id callMeasure
 id cancel_button
+id cardUserInfo
 id carryVelocity
 id center
 id centerCrop
@@ -3411,6 +3418,7 @@ id ifRoom
 id ignore
 id ignoreRequest
 id image
+id imageAvatar
 id immediateStop
 id included
 id indeterminate
@@ -3423,6 +3431,7 @@ id jumpToEnd
 id jumpToStart
 id labeled
 id layout
+id layoutOptions
 id left
 id leftToRight
 id legacy
@@ -3656,7 +3665,7 @@ id textTop
 id textViewAccountTitle
 id textViewLoginSubtitle
 id textViewLoginTitle
-id textViewNotifications
+id textViewName
 id textViewRegisterSubtitle
 id textViewRegisterTitle
 id textViewTitulo
@@ -3986,6 +3995,7 @@ string common_open_on_phone
 string common_signin_button_text
 string common_signin_button_text_long
 string copy_toast_msg
+string default_web_client_id
 string error_a11y_label
 string error_icon_content_description
 string exposed_dropdown_menu_content_description

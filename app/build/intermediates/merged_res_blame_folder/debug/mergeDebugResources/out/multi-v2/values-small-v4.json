@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.codechallenge.app-mergeDebugResources-35:/values-small-v4/values-small-v4.xml",
+            "outputFile": "com.example.codechallenge.app-mergeDebugResources-36:/values-small-v4/values-small-v4.xml",
             "map": [
                 {
-                    "source": "/home/gabolectric/.gradle/caches/8.11.1/transforms/575f17971f8a28cccb9fc1962998aba1/transformed/material-1.12.0/res/values-small-v4/values-small-v4.xml",
+                    "source": "/home/rogeliovc/.gradle/caches/8.11.1/transforms/575f17971f8a28cccb9fc1962998aba1/transformed/material-1.12.0/res/values-small-v4/values-small-v4.xml",
                     "from": {
                         "startLines": "2,3,4,5",
                         "startColumns": "4,4,4,4",

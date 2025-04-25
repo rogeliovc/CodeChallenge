@@ -6,9 +6,11 @@
     <color name="colorBlue">#3D405B</color>
     <color name="colorGreen">#81B29A</color>
     <color name="colorRed">#E07A5F</color>
+    <color name="colorText">#222222</color>
     <color name="colorYellow">#F2CC8F</color>
     <color name="white">#FFFFFFFF</color>
     <string name="app_name">Code challenge</string>
+    <string name="default_web_client_id" translatable="false">920429794833-hkm5m1dkiro1j5hfa2jakk1rjf9ssic6.apps.googleusercontent.com</string>
     <string name="gcm_defaultSenderId" translatable="false">920429794833</string>
     <string name="google_api_key" translatable="false">AIzaSyBTaIFEFNUWRea-AKEV8xeLq-lMBmylH4I</string>
     <string name="google_app_id" translatable="false">1:920429794833:android:4cb4b1bb9a810eb9b2c3b0</string>
