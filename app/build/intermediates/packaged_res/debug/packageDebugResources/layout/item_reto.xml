@@ -13,14 +13,60 @@
         android:orientation="vertical"
         android:padding="20dp">
 
-        <TextView
-            android:id="@+id/textTituloReto"
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+            <ImageView
+                android:id="@+id/iconLenguajeReto"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_marginEnd="10dp"
+                android:src="@drawable/ic_lang_python"
+                android:contentDescription="Icono del lenguaje"/>
+            <TextView
+                android:id="@+id/textTituloReto"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Título del reto"
+                android:textColor="#fff"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Título del reto"
-            android:textColor="#fff"
-            android:textSize="20sp"
-            android:textStyle="bold" />
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp">
+            <TextView
+                android:id="@+id/textDificultadReto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fácil"
+                android:textColor="#fff"
+                android:textSize="13sp"
+                android:background="@drawable/bg_chip_dificultad"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:layout_marginRight="8dp"/>
+            <TextView
+                android:id="@+id/textLenguajeReto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Python"
+                android:textColor="#333"
+                android:textSize="13sp"
+                android:background="@drawable/bg_chip_lenguaje"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"/>
+        </LinearLayout>
 
         <TextView
             android:id="@+id/textDescripcionReto"
