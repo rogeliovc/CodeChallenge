@@ -3422,7 +3422,6 @@ id honorRequest
 id horizontal
 id horizontal_only
 id icon
-id iconLenguajeReto
 id icon_group
 id icon_only
 id ifRoom

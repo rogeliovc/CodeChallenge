@@ -46,7 +46,6 @@ id chipGroupFiltros
 id editTextConfirmPassword
 id editTextEmail
 id editTextPassword
-id iconLenguajeReto
 id imageAvatar
 id imgLenguajeIcono
 id includeFiltros

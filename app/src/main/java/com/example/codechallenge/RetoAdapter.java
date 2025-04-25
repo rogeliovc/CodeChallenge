@@ -31,22 +31,8 @@ public class RetoAdapter extends RecyclerView.Adapter<RetoAdapter.RetoViewHolder
         holder.textDescripcion.setText(reto.getDescription());
         holder.textDificultad.setText(reto.getDifficulty());
         holder.textLenguaje.setText(reto.getLanguage());
-        // Icono según lenguaje
-        String lang = reto.getLanguage();
-        if (lang == null) {
-            holder.iconLenguaje.setImageResource(R.drawable.ic_lang_python);
-        } else if (lang.equalsIgnoreCase("Python")) {
-            holder.iconLenguaje.setImageResource(R.drawable.ic_lang_python);
-        } else if (lang.equalsIgnoreCase("Java")) {
-            holder.iconLenguaje.setImageResource(R.drawable.ic_lang_java);
-        } else if (lang.equalsIgnoreCase("C")) {
-            holder.iconLenguaje.setImageResource(R.drawable.ic_lang_c);
-        } else if (lang.equalsIgnoreCase("C++")) {
-            holder.iconLenguaje.setImageResource(R.drawable.ic_lang_cpp);
-        } else {
-            holder.iconLenguaje.setImageResource(R.drawable.ic_lang_python);
-        }
         // Fondo del chip de lenguaje (color distinto por lenguaje)
+        String lang = reto.getLanguage();
         int colorLang;
         if (lang == null) {
             colorLang = android.graphics.Color.parseColor("#3572A5");
@@ -87,14 +73,14 @@ public class RetoAdapter extends RecyclerView.Adapter<RetoAdapter.RetoViewHolder
 
     static class RetoViewHolder extends RecyclerView.ViewHolder {
         TextView textTitulo, textDescripcion, textDificultad, textLenguaje;
-        ImageView iconLenguaje;
+
         public RetoViewHolder(@NonNull View itemView) {
             super(itemView);
             textTitulo = itemView.findViewById(R.id.textTituloReto);
             textDescripcion = itemView.findViewById(R.id.textDescripcionReto);
             textDificultad = itemView.findViewById(R.id.textDificultadReto);
             textLenguaje = itemView.findViewById(R.id.textLenguajeReto);
-            iconLenguaje = itemView.findViewById(R.id.iconLenguajeReto);
+
         }
     }
 }
