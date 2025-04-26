@@ -1,0 +1,12 @@
+<resources>
+    <color name="colorBackground">#000000</color>
+    <color name="colorBackgroundLight">#22242A</color>
+    <color name="colorRed">#E07A5F</color>
+    <color name="colorBlue">#3D405B</color>
+    <color name="colorGreen">#81B29A</color>
+    <color name="colorYellow">#F2CC8F</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="colorText">#FFFFFF</color>
+    <color name="colorCard">#181818</color>
+</resources>

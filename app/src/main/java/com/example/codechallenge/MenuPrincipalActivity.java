@@ -3,8 +3,10 @@ package com.example.codechallenge;
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
+import android.widget.ImageView;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
@@ -12,13 +14,22 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class MenuPrincipalActivity extends AppCompatActivity {
+    private RecyclerView recyclerRetos;
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu_principal);
 
-        RecyclerView recyclerRetos = findViewById(R.id.recyclerRetos);
+        recyclerRetos = findViewById(R.id.recyclerRetos);
         recyclerRetos.setLayoutManager(new LinearLayoutManager(this));
+
+        int nightModeFlags = getResources().getConfiguration().uiMode & android.content.res.Configuration.UI_MODE_NIGHT_MASK;
+        //if (nightModeFlags == android.content.res.Configuration.UI_MODE_NIGHT_NO) {
+        //    logoCucei.setImageResource(R.drawable.logo_claro);
+        //} else {
+        //    logoCucei.setImageResource(R.drawable.logo_cucei);
+        //}
 
         com.google.firebase.firestore.FirebaseFirestore db = com.google.firebase.firestore.FirebaseFirestore.getInstance();
         // Declarar adapter fuera para poder usarlo en ambos lugares
@@ -89,7 +100,15 @@ public class MenuPrincipalActivity extends AppCompatActivity {
         bottomNav.setOnNavigationItemSelectedListener(item -> {
             int itemId = item.getItemId();
             if (itemId == R.id.nav_home) {
-                // Ya estás en inicio
+                RecyclerView.Adapter currentAdapter = recyclerRetos.getAdapter();
+                Object tag = recyclerRetos.getTag();
+                // Si estamos mostrando retos (no lenguajes), volver a la lista de lenguajes
+                if (tag instanceof LenguajesAdapter && currentAdapter != tag) {
+                    recyclerRetos.setAdapter((RecyclerView.Adapter) tag);
+                } else {
+                    // Ya estás en home, no hagas nada
+                    return true;
+                }
                 return true;
             } else if (itemId == R.id.nav_profile) {
                 startActivity(new Intent(this, AccountActivity.class));
@@ -101,15 +120,27 @@ public class MenuPrincipalActivity extends AppCompatActivity {
     }
 
     @Override
+    protected void onResume() {
+        super.onResume();
+        // Si recyclerRetos es null, inicialízalo (previene crash al volver de otra actividad)
+        if (recyclerRetos == null) {
+            recyclerRetos = findViewById(R.id.recyclerRetos);
+        }
+    }
+
+    @Override
     public void onBackPressed() {
-        RecyclerView recyclerRetos = findViewById(R.id.recyclerRetos);
         RecyclerView.Adapter currentAdapter = recyclerRetos.getAdapter();
         Object tag = recyclerRetos.getTag();
         // Si estamos mostrando retos (no lenguajes), volver a la lista de lenguajes
         if (tag instanceof LenguajesAdapter && currentAdapter != tag) {
             recyclerRetos.setAdapter((RecyclerView.Adapter) tag);
         } else {
-            super.onBackPressed();
+            // Volver siempre al home (pantalla de lenguajes/principal)
+            Intent intent = new Intent(this, MenuPrincipalActivity.class);
+            intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_SINGLE_TOP);
+            startActivity(intent);
+            finish();
         }
     }
 }

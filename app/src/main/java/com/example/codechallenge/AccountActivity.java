@@ -100,9 +100,12 @@ public class AccountActivity extends AppCompatActivity {
                 .show();
         });
 
-        // Switch de modo oscuro funcional
-        switchDarkMode.setEnabled(true);
+        // Por default, modo oscuro
         int mode = AppCompatDelegate.getDefaultNightMode();
+        if (mode == AppCompatDelegate.MODE_NIGHT_FOLLOW_SYSTEM || mode == AppCompatDelegate.MODE_NIGHT_UNSPECIFIED) {
+            AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES);
+            mode = AppCompatDelegate.MODE_NIGHT_YES;
+        }
         switchDarkMode.setChecked(mode == AppCompatDelegate.MODE_NIGHT_YES || (mode == AppCompatDelegate.MODE_NIGHT_FOLLOW_SYSTEM && (getResources().getConfiguration().uiMode & android.content.res.Configuration.UI_MODE_NIGHT_MASK) == android.content.res.Configuration.UI_MODE_NIGHT_YES));
         switchDarkMode.setOnCheckedChangeListener((buttonView, isChecked) -> {
             if (isChecked) {
@@ -173,4 +176,3 @@ public class AccountActivity extends AppCompatActivity {
         @Override public void afterTextChanged(android.text.Editable s) {}
     }
 }
-

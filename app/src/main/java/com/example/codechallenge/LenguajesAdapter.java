@@ -4,6 +4,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.cardview.widget.CardView;
@@ -41,39 +42,40 @@ public class LenguajesAdapter extends RecyclerView.Adapter<LenguajesAdapter.Leng
         String numRetos;
         switch (lenguaje.toLowerCase()) {
             case "python":
-                iconRes = R.drawable.ic_lang_python;
+                iconRes = R.drawable.python_logo;
                 bgRes = R.drawable.bg_card_python;
                 tagline = "Versatilidad y simplicidad";
                 numRetos = "12 retos";
                 break;
             case "java":
-                iconRes = R.drawable.ic_lang_java;
+                iconRes = R.drawable.java_logo;
                 bgRes = R.drawable.bg_card_java;
-                tagline = "Robustez multiplataforma";
+                tagline = "Robustez y portabilidad";
                 numRetos = "10 retos";
                 break;
             case "c":
-                iconRes = R.drawable.ic_lang_c;
+                iconRes = R.drawable.c_logo_icon;
                 bgRes = R.drawable.bg_card_c;
-                tagline = "Alto rendimiento";
+                tagline = "Eficiencia y control";
                 numRetos = "8 retos";
                 break;
             case "c++":
-                iconRes = R.drawable.ic_lang_cpp;
+                iconRes = R.drawable.ic_code;
                 bgRes = R.drawable.bg_card_cpp;
-                tagline = "Potencia y control";
-                numRetos = "6 retos";
+                tagline = "Potencia y flexibilidad";
+                numRetos = "9 retos";
                 break;
             default:
                 iconRes = R.drawable.ic_code;
                 bgRes = R.drawable.bg_card_python;
                 tagline = "Lenguaje de programación";
                 numRetos = "? retos";
+                break;
         }
         holder.imgLenguajeIcono.setImageResource(iconRes);
-        holder.cardView.setBackgroundResource(bgRes);
         holder.textLenguajeTagline.setText(tagline);
         holder.textLenguajeNumRetos.setText(numRetos);
+        holder.layoutLenguaje.setBackgroundResource(bgRes);
         // Animación de elevación al presionar
         holder.cardView.setOnTouchListener((v, event) -> {
             switch (event.getAction()) {
@@ -101,6 +103,7 @@ public class LenguajesAdapter extends RecyclerView.Adapter<LenguajesAdapter.Leng
         TextView textLenguajeNombre, textLenguajeTagline, textLenguajeNumRetos;
         ImageView imgLenguajeIcono;
         CardView cardView;
+        LinearLayout layoutLenguaje;
         public LenguajeViewHolder(@NonNull View itemView) {
             super(itemView);
             textLenguajeNombre = itemView.findViewById(R.id.textLenguajeNombre);
@@ -108,6 +111,7 @@ public class LenguajesAdapter extends RecyclerView.Adapter<LenguajesAdapter.Leng
             textLenguajeTagline = itemView.findViewById(R.id.textLenguajeTagline);
             textLenguajeNumRetos = itemView.findViewById(R.id.textLenguajeNumRetos);
             cardView = (CardView) itemView;
+            layoutLenguaje = itemView.findViewById(R.id.layoutLenguajeBg);
         }
     }
 }

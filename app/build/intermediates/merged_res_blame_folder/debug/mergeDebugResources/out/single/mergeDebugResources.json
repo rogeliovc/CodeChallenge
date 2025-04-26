@@ -8,6 +8,14 @@
         "source": "/home/gabolectric/.gradle/daemon/8.11.1/com.example.codechallenge.app-main-40:/mipmap-xxhdpi/ic_launcher.png"
     },
     {
+        "merged": "/home/gabolectric/.gradle/daemon/8.11.1/com.example.codechallenge.app-debug-38:/drawable_java_logo.xml.flat",
+        "source": "/home/gabolectric/.gradle/daemon/8.11.1/com.example.codechallenge.app-main-40:/drawable/java_logo.xml"
+    },
+    {
+        "merged": "/home/gabolectric/.gradle/daemon/8.11.1/com.example.codechallenge.app-debug-38:/drawable_bg_card_header.xml.flat",
+        "source": "/home/gabolectric/.gradle/daemon/8.11.1/com.example.codechallenge.app-main-40:/drawable/bg_card_header.xml"
+    },
+    {
         "merged": "/home/gabolectric/.gradle/daemon/8.11.1/com.example.codechallenge.app-debug-38:/mipmap-hdpi_ic_launcher.png.flat",
         "source": "/home/gabolectric/.gradle/daemon/8.11.1/com.example.codechallenge.app-main-40:/mipmap-hdpi/ic_launcher.png"
     },
@@ -20,8 +28,8 @@
         "source": "/home/gabolectric/.gradle/daemon/8.11.1/com.example.codechallenge.app-main-40:/drawable/ic_code.xml"
     },
     {
-        "merged": "/home/gabolectric/.gradle/daemon/8.11.1/com.example.codechallenge.app-debug-38:/drawable_ic_lang_cpp.xml.flat",
-        "source": "/home/gabolectric/.gradle/daemon/8.11.1/com.example.codechallenge.app-main-40:/drawable/ic_lang_cpp.xml"
+        "merged": "/home/gabolectric/.gradle/daemon/8.11.1/com.example.codechallenge.app-debug-38:/drawable_logo_claro.png.flat",
+        "source": "/home/gabolectric/.gradle/daemon/8.11.1/com.example.codechallenge.app-main-40:/drawable/logo_claro.png"
     },
     {
         "merged": "/home/gabolectric/.gradle/daemon/8.11.1/com.example.codechallenge.app-debug-38:/drawable_bg_card_c.xml.flat",
@@ -32,20 +40,20 @@
         "source": "/home/gabolectric/.gradle/daemon/8.11.1/com.example.codechallenge.app-main-40:/layout/item_lenguaje.xml"
     },
     {
-        "merged": "/home/gabolectric/.gradle/daemon/8.11.1/com.example.codechallenge.app-debug-38:/mipmap-xhdpi_ic_launcher_round.webp.flat",
-        "source": "/home/gabolectric/.gradle/daemon/8.11.1/com.example.codechallenge.app-main-40:/mipmap-xhdpi/ic_launcher_round.webp"
-    },
-    {
         "merged": "/home/gabolectric/.gradle/daemon/8.11.1/com.example.codechallenge.app-debug-38:/drawable_bg_gradient_menu.xml.flat",
         "source": "/home/gabolectric/.gradle/daemon/8.11.1/com.example.codechallenge.app-main-40:/drawable/bg_gradient_menu.xml"
     },
     {
-        "merged": "/home/gabolectric/.gradle/daemon/8.11.1/com.example.codechallenge.app-debug-38:/mipmap-hdpi_ic_launcher_round.webp.flat",
-        "source": "/home/gabolectric/.gradle/daemon/8.11.1/com.example.codechallenge.app-main-40:/mipmap-hdpi/ic_launcher_round.webp"
+        "merged": "/home/gabolectric/.gradle/daemon/8.11.1/com.example.codechallenge.app-debug-38:/mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "/home/gabolectric/.gradle/daemon/8.11.1/com.example.codechallenge.app-main-40:/mipmap-xhdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "com.example.codechallenge.app-debug-38:/drawable_ic_launcher_foreground.xml.flat",
-        "source": "com.example.codechallenge.app-main-40:/drawable/ic_launcher_foreground.xml"
+        "merged": "/home/gabolectric/.gradle/daemon/8.11.1/com.example.codechallenge.app-debug-38:/font_montserrat_medium.ttf.flat",
+        "source": "/home/gabolectric/.gradle/daemon/8.11.1/com.example.codechallenge.app-main-40:/font/montserrat_medium.ttf"
+    },
+    {
+        "merged": "/home/gabolectric/.gradle/daemon/8.11.1/com.example.codechallenge.app-debug-38:/mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "/home/gabolectric/.gradle/daemon/8.11.1/com.example.codechallenge.app-main-40:/mipmap-hdpi/ic_launcher_round.webp"
     },
     {
         "merged": "/home/gabolectric/.gradle/daemon/8.11.1/com.example.codechallenge.app-debug-38:/drawable_ic_launcher_foreground.xml.flat",
@@ -64,12 +72,12 @@
         "source": "/home/gabolectric/.gradle/daemon/8.11.1/com.example.codechallenge.app-main-40:/layout/activity_account.xml"
     },
     {
-        "merged": "/home/gabolectric/.gradle/daemon/8.11.1/com.example.codechallenge.app-debug-38:/mipmap-mdpi_ic_launcher_round.webp.flat",
-        "source": "/home/gabolectric/.gradle/daemon/8.11.1/com.example.codechallenge.app-main-40:/mipmap-mdpi/ic_launcher_round.webp"
-    },
-    {
         "merged": "/home/gabolectric/.gradle/daemon/8.11.1/com.example.codechallenge.app-debug-38:/color_selector_nav_icon.xml.flat",
         "source": "/home/gabolectric/.gradle/daemon/8.11.1/com.example.codechallenge.app-main-40:/color/selector_nav_icon.xml"
+    },
+    {
+        "merged": "/home/gabolectric/.gradle/daemon/8.11.1/com.example.codechallenge.app-debug-38:/mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "/home/gabolectric/.gradle/daemon/8.11.1/com.example.codechallenge.app-main-40:/mipmap-mdpi/ic_launcher_round.webp"
     },
     {
         "merged": "/home/gabolectric/.gradle/daemon/8.11.1/com.example.codechallenge.app-debug-38:/mipmap-anydpi_ic_launcher.xml.flat",
@@ -84,12 +92,16 @@
         "source": "/home/gabolectric/.gradle/daemon/8.11.1/com.example.codechallenge.app-main-40:/menu/menu_bottom_nav.xml"
     },
     {
+        "merged": "/home/gabolectric/.gradle/daemon/8.11.1/com.example.codechallenge.app-debug-38:/drawable_ic_arrow_back_black_24dp.xml.flat",
+        "source": "/home/gabolectric/.gradle/daemon/8.11.1/com.example.codechallenge.app-main-40:/drawable/ic_arrow_back_black_24dp.xml"
+    },
+    {
         "merged": "/home/gabolectric/.gradle/daemon/8.11.1/com.example.codechallenge.app-debug-38:/mipmap-anydpi_ic_launcher_round.xml.flat",
         "source": "/home/gabolectric/.gradle/daemon/8.11.1/com.example.codechallenge.app-main-40:/mipmap-anydpi/ic_launcher_round.xml"
     },
     {
-        "merged": "com.example.codechallenge.app-debug-38:/drawable_logo_launcher.jpg.flat",
-        "source": "com.example.codechallenge.app-main-40:/drawable/logo_launcher.jpg"
+        "merged": "/home/gabolectric/.gradle/daemon/8.11.1/com.example.codechallenge.app-debug-38:/drawable_python_logo.xml.flat",
+        "source": "/home/gabolectric/.gradle/daemon/8.11.1/com.example.codechallenge.app-main-40:/drawable/python_logo.xml"
     },
     {
         "merged": "/home/gabolectric/.gradle/daemon/8.11.1/com.example.codechallenge.app-debug-38:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
@@ -100,8 +112,8 @@
         "source": "/home/gabolectric/.gradle/daemon/8.11.1/com.example.codechallenge.app-main-40:/drawable/bg_edittext.xml"
     },
     {
-        "merged": "/home/gabolectric/.gradle/daemon/8.11.1/com.example.codechallenge.app-debug-38:/drawable_ic_lang_python.xml.flat",
-        "source": "/home/gabolectric/.gradle/daemon/8.11.1/com.example.codechallenge.app-main-40:/drawable/ic_lang_python.xml"
+        "merged": "/home/gabolectric/.gradle/daemon/8.11.1/com.example.codechallenge.app-debug-38:/color_bottom_nav_item_color.xml.flat",
+        "source": "/home/gabolectric/.gradle/daemon/8.11.1/com.example.codechallenge.app-main-40:/color/bottom_nav_item_color.xml"
     },
     {
         "merged": "/home/gabolectric/.gradle/daemon/8.11.1/com.example.codechallenge.app-debug-38:/drawable_bg_card_cpp.xml.flat",
@@ -114,6 +126,10 @@
     {
         "merged": "/home/gabolectric/.gradle/daemon/8.11.1/com.example.codechallenge.app-debug-38:/layout_layout_chips_filtros.xml.flat",
         "source": "/home/gabolectric/.gradle/daemon/8.11.1/com.example.codechallenge.app-main-40:/layout/layout_chips_filtros.xml"
+    },
+    {
+        "merged": "com.example.codechallenge.app-debug-38:/layout_activity_menu_principal.xml.flat",
+        "source": "com.example.codechallenge.app-main-40:/layout/activity_menu_principal.xml"
     },
     {
         "merged": "/home/gabolectric/.gradle/daemon/8.11.1/com.example.codechallenge.app-debug-38:/drawable_ic_notifications.xml.flat",
@@ -136,6 +152,10 @@
         "source": "/home/gabolectric/.gradle/daemon/8.11.1/com.example.codechallenge.app-main-40:/drawable/bg_card_java.xml"
     },
     {
+        "merged": "/home/gabolectric/.gradle/daemon/8.11.1/com.example.codechallenge.app-debug-38:/drawable_c_logo_icon.xml.flat",
+        "source": "/home/gabolectric/.gradle/daemon/8.11.1/com.example.codechallenge.app-main-40:/drawable/c_logo_icon.xml"
+    },
+    {
         "merged": "/home/gabolectric/.gradle/daemon/8.11.1/com.example.codechallenge.app-debug-38:/drawable_bg_chip_lenguaje.xml.flat",
         "source": "/home/gabolectric/.gradle/daemon/8.11.1/com.example.codechallenge.app-main-40:/drawable/bg_chip_lenguaje.xml"
     },
@@ -152,10 +172,6 @@
         "source": "/home/gabolectric/.gradle/daemon/8.11.1/com.example.codechallenge.app-main-40:/drawable/ic_launcher_background.xml"
     },
     {
-        "merged": "/home/gabolectric/.gradle/daemon/8.11.1/com.example.codechallenge.app-debug-38:/drawable_ic_lang_java.xml.flat",
-        "source": "/home/gabolectric/.gradle/daemon/8.11.1/com.example.codechallenge.app-main-40:/drawable/ic_lang_java.xml"
-    },
-    {
         "merged": "/home/gabolectric/.gradle/daemon/8.11.1/com.example.codechallenge.app-debug-38:/drawable_ic_favorite.xml.flat",
         "source": "/home/gabolectric/.gradle/daemon/8.11.1/com.example.codechallenge.app-main-40:/drawable/ic_favorite.xml"
     },
@@ -164,16 +180,16 @@
         "source": "/home/gabolectric/.gradle/daemon/8.11.1/com.example.codechallenge.app-main-40:/drawable/ic_person.xml"
     },
     {
-        "merged": "/home/gabolectric/.gradle/daemon/8.11.1/com.example.codechallenge.app-debug-38:/drawable_ic_lang_c.xml.flat",
-        "source": "/home/gabolectric/.gradle/daemon/8.11.1/com.example.codechallenge.app-main-40:/drawable/ic_lang_c.xml"
-    },
-    {
         "merged": "/home/gabolectric/.gradle/daemon/8.11.1/com.example.codechallenge.app-debug-38:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
         "source": "/home/gabolectric/.gradle/daemon/8.11.1/com.example.codechallenge.app-main-40:/mipmap-xxhdpi/ic_launcher_round.webp"
     },
     {
         "merged": "/home/gabolectric/.gradle/daemon/8.11.1/com.example.codechallenge.app-debug-38:/drawable_bg_chip_dificultad.xml.flat",
         "source": "/home/gabolectric/.gradle/daemon/8.11.1/com.example.codechallenge.app-main-40:/drawable/bg_chip_dificultad.xml"
+    },
+    {
+        "merged": "/home/gabolectric/.gradle/daemon/8.11.1/com.example.codechallenge.app-debug-38:/drawable_cplusplus_icon.xml.flat",
+        "source": "/home/gabolectric/.gradle/daemon/8.11.1/com.example.codechallenge.app-main-40:/drawable/cplusplus_icon.xml"
     },
     {
         "merged": "/home/gabolectric/.gradle/daemon/8.11.1/com.example.codechallenge.app-debug-38:/mipmap-xxxhdpi_ic_launcher.png.flat",
@@ -202,5 +218,9 @@
     {
         "merged": "/home/gabolectric/.gradle/daemon/8.11.1/com.example.codechallenge.app-debug-38:/xml_data_extraction_rules.xml.flat",
         "source": "/home/gabolectric/.gradle/daemon/8.11.1/com.example.codechallenge.app-main-40:/xml/data_extraction_rules.xml"
+    },
+    {
+        "merged": "/home/gabolectric/.gradle/daemon/8.11.1/com.example.codechallenge.app-debug-38:/color_bottom_nav_selector.xml.flat",
+        "source": "/home/gabolectric/.gradle/daemon/8.11.1/com.example.codechallenge.app-main-40:/color/bottom_nav_selector.xml"
     }
 ]
