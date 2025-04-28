@@ -1,0 +1,10 @@
+<resources>
+    <style name="Widget.BottomNavigationView" parent="Widget.MaterialComponents.BottomNavigationView">
+        <item name="itemIconTint">@color/bottom_nav_selector</item>
+        <item name="itemTextColor">@color/bottom_nav_selector</item>
+        <item name="backgroundTint">@color/colorCard</item>
+        <item name="elevation">8dp</item>
+    </style>
+    <style name="ThemeOverlay.CodeChallenge.Dark" parent="ThemeOverlay.MaterialComponents.Dark"/>
+    <style name="ThemeOverlay.CodeChallenge.Light" parent="ThemeOverlay.MaterialComponents.Light"/>
+</resources>

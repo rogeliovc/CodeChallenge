@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.codechallenge.app-mergeDebugResources-35:/values-h550dp-port-v13/values-h550dp-port-v13.xml",
+            "outputFile": "com.example.codechallenge.app-mergeDebugResources-36:/values-h550dp-port-v13/values-h550dp-port-v13.xml",
             "map": [
                 {
                     "source": "C:\\Users\\PC\\.gradle\\caches\\8.11.1\\transforms\\575f17971f8a28cccb9fc1962998aba1\\transformed\\material-1.12.0\\res\\values-h550dp-port-v13\\values-h550dp-port-v13.xml",

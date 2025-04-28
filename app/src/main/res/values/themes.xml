@@ -6,5 +6,17 @@
         <item name="android:colorBackground">@color/colorBackground</item>
     </style>
 
-    <style name="Theme.CodeChallenge" parent="Base.Theme.CodeChallenge" />
+    <style name="Theme.CodeChallenge" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/colorBlue</item>
+        <item name="colorPrimaryVariant">@color/colorBlue</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorSecondary">@color/colorYellow</item>
+        <item name="colorSecondaryVariant">@color/colorYellow</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <item name="android:windowBackground">@color/colorBackground</item>
+        <item name="android:textColor">@color/colorText</item>
+        <item name="android:navigationBarColor">@color/colorCard</item>
+        <item name="android:statusBarColor">@color/colorBlue</item>
+        <item name="bottomNavigationStyle">@style/Widget.BottomNavigationView</item>
+    </style>
 </resources>

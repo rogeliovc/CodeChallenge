@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_selected="true">
+        <shape android:shape="rectangle">
+            <solid android:color="#E07A5F"/><!-- Rojo para Difícil -->
+            <corners android:radius="20dp"/>
+        </shape>
+    </item>
+    <item android:state_enabled="true">
+        <shape android:shape="rectangle">
+            <solid android:color="#81B29A"/><!-- Verde para Fácil -->
+            <corners android:radius="20dp"/>
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="#F2CC8F"/><!-- Naranja para Medio -->
+            <corners android:radius="20dp"/>
+        </shape>
+    </item>
+</selector>

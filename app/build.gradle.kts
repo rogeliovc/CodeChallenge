@@ -36,8 +36,12 @@ android {
 dependencies {
     // Firebase Authentication
     implementation("com.google.firebase:firebase-auth:22.3.0")
+    // Google Sign-In
+    implementation("com.google.android.gms:play-services-auth:20.7.0")
     // Firebase Firestore
     implementation("com.google.firebase:firebase-firestore:24.11.0")
+    // Picasso para cargar imágenes
+    implementation("com.squareup.picasso:picasso:2.8")
 
     implementation(libs.appcompat)
     implementation(libs.material)
