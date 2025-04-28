@@ -10,4 +10,7 @@
     <color name="white">#FFFFFFFF</color>
     <color name="colorText">#222222</color>
     <color name="colorCard">#FFFFFF</color>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryHeader">#FFFFFF</color>
+    <color name="headerTextColor">#222222</color>
 </resources>

@@ -42,7 +42,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.example.codechallenge.MenuPrincipalActivity" />
+        <activity
+            android:name="com.example.codechallenge.MenuPrincipalActivity"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
         <activity android:name="com.example.codechallenge.RegisterActivity" />
         <activity android:name="com.example.codechallenge.AccountActivity" />
         <activity

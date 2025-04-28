@@ -26,7 +26,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MenuPrincipalActivity" />
+        <activity android:name=".MenuPrincipalActivity"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
         <activity android:name=".RegisterActivity" />
         <activity android:name=".AccountActivity" />
     </application>

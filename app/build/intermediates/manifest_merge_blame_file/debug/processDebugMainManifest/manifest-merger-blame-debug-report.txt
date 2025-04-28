@@ -35,7 +35,7 @@
 22-->[androidx.core:core:1.13.0] /home/gabolectric/.gradle/caches/8.11.1/transforms/8652fb463960c26a249b3269ce96b8fc/transformed/core-1.13.0/AndroidManifest.xml:26:22-94
 23
 24    <application
-24-->/home/gabolectric/Documentos/CodeChallenge/app/src/main/AndroidManifest.xml:10:5-32:19
+24-->/home/gabolectric/Documentos/CodeChallenge/app/src/main/AndroidManifest.xml:10:5-33:19
 25        android:allowBackup="true"
 25-->/home/gabolectric/Documentos/CodeChallenge/app/src/main/AndroidManifest.xml:11:9-35
 26        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
@@ -73,253 +73,256 @@
 42-->/home/gabolectric/Documentos/CodeChallenge/app/src/main/AndroidManifest.xml:26:27-74
 43            </intent-filter>
 44        </activity>
-45        <activity android:name="com.example.codechallenge.MenuPrincipalActivity" />
-45-->/home/gabolectric/Documentos/CodeChallenge/app/src/main/AndroidManifest.xml:29:9-59
-45-->/home/gabolectric/Documentos/CodeChallenge/app/src/main/AndroidManifest.xml:29:19-56
-46        <activity android:name="com.example.codechallenge.RegisterActivity" />
-46-->/home/gabolectric/Documentos/CodeChallenge/app/src/main/AndroidManifest.xml:30:9-54
-46-->/home/gabolectric/Documentos/CodeChallenge/app/src/main/AndroidManifest.xml:30:19-51
-47        <activity android:name="com.example.codechallenge.AccountActivity" />
-47-->/home/gabolectric/Documentos/CodeChallenge/app/src/main/AndroidManifest.xml:31:9-53
-47-->/home/gabolectric/Documentos/CodeChallenge/app/src/main/AndroidManifest.xml:31:19-50
-48        <activity
-48-->[com.google.firebase:firebase-auth:22.3.0] /home/gabolectric/.gradle/caches/8.11.1/transforms/a5b8718dccf29223ed52298182cbf19a/transformed/firebase-auth-22.3.0/AndroidManifest.xml:29:9-46:20
-49            android:name="com.google.firebase.auth.internal.GenericIdpActivity"
-49-->[com.google.firebase:firebase-auth:22.3.0] /home/gabolectric/.gradle/caches/8.11.1/transforms/a5b8718dccf29223ed52298182cbf19a/transformed/firebase-auth-22.3.0/AndroidManifest.xml:30:13-80
-50            android:excludeFromRecents="true"
-50-->[com.google.firebase:firebase-auth:22.3.0] /home/gabolectric/.gradle/caches/8.11.1/transforms/a5b8718dccf29223ed52298182cbf19a/transformed/firebase-auth-22.3.0/AndroidManifest.xml:31:13-46
-51            android:exported="true"
-51-->[com.google.firebase:firebase-auth:22.3.0] /home/gabolectric/.gradle/caches/8.11.1/transforms/a5b8718dccf29223ed52298182cbf19a/transformed/firebase-auth-22.3.0/AndroidManifest.xml:32:13-36
-52            android:launchMode="singleTask"
-52-->[com.google.firebase:firebase-auth:22.3.0] /home/gabolectric/.gradle/caches/8.11.1/transforms/a5b8718dccf29223ed52298182cbf19a/transformed/firebase-auth-22.3.0/AndroidManifest.xml:33:13-44
-53            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
-53-->[com.google.firebase:firebase-auth:22.3.0] /home/gabolectric/.gradle/caches/8.11.1/transforms/a5b8718dccf29223ed52298182cbf19a/transformed/firebase-auth-22.3.0/AndroidManifest.xml:34:13-72
-54            <intent-filter>
-54-->[com.google.firebase:firebase-auth:22.3.0] /home/gabolectric/.gradle/caches/8.11.1/transforms/a5b8718dccf29223ed52298182cbf19a/transformed/firebase-auth-22.3.0/AndroidManifest.xml:35:13-45:29
-55                <action android:name="android.intent.action.VIEW" />
-55-->[com.google.firebase:firebase-auth:22.3.0] /home/gabolectric/.gradle/caches/8.11.1/transforms/a5b8718dccf29223ed52298182cbf19a/transformed/firebase-auth-22.3.0/AndroidManifest.xml:36:17-69
-55-->[com.google.firebase:firebase-auth:22.3.0] /home/gabolectric/.gradle/caches/8.11.1/transforms/a5b8718dccf29223ed52298182cbf19a/transformed/firebase-auth-22.3.0/AndroidManifest.xml:36:25-66
-56
-57                <category android:name="android.intent.category.DEFAULT" />
-57-->[com.google.firebase:firebase-auth:22.3.0] /home/gabolectric/.gradle/caches/8.11.1/transforms/a5b8718dccf29223ed52298182cbf19a/transformed/firebase-auth-22.3.0/AndroidManifest.xml:38:17-76
-57-->[com.google.firebase:firebase-auth:22.3.0] /home/gabolectric/.gradle/caches/8.11.1/transforms/a5b8718dccf29223ed52298182cbf19a/transformed/firebase-auth-22.3.0/AndroidManifest.xml:38:27-73
-58                <category android:name="android.intent.category.BROWSABLE" />
-58-->[com.google.firebase:firebase-auth:22.3.0] /home/gabolectric/.gradle/caches/8.11.1/transforms/a5b8718dccf29223ed52298182cbf19a/transformed/firebase-auth-22.3.0/AndroidManifest.xml:39:17-78
-58-->[com.google.firebase:firebase-auth:22.3.0] /home/gabolectric/.gradle/caches/8.11.1/transforms/a5b8718dccf29223ed52298182cbf19a/transformed/firebase-auth-22.3.0/AndroidManifest.xml:39:27-75
-59
-60                <data
-60-->[com.google.firebase:firebase-auth:22.3.0] /home/gabolectric/.gradle/caches/8.11.1/transforms/a5b8718dccf29223ed52298182cbf19a/transformed/firebase-auth-22.3.0/AndroidManifest.xml:41:17-44:51
-61                    android:host="firebase.auth"
-61-->[com.google.firebase:firebase-auth:22.3.0] /home/gabolectric/.gradle/caches/8.11.1/transforms/a5b8718dccf29223ed52298182cbf19a/transformed/firebase-auth-22.3.0/AndroidManifest.xml:42:21-49
-62                    android:path="/"
-62-->[com.google.firebase:firebase-auth:22.3.0] /home/gabolectric/.gradle/caches/8.11.1/transforms/a5b8718dccf29223ed52298182cbf19a/transformed/firebase-auth-22.3.0/AndroidManifest.xml:43:21-37
-63                    android:scheme="genericidp" />
-63-->[com.google.firebase:firebase-auth:22.3.0] /home/gabolectric/.gradle/caches/8.11.1/transforms/a5b8718dccf29223ed52298182cbf19a/transformed/firebase-auth-22.3.0/AndroidManifest.xml:44:21-48
-64            </intent-filter>
-65        </activity>
-66        <activity
-66-->[com.google.firebase:firebase-auth:22.3.0] /home/gabolectric/.gradle/caches/8.11.1/transforms/a5b8718dccf29223ed52298182cbf19a/transformed/firebase-auth-22.3.0/AndroidManifest.xml:47:9-64:20
-67            android:name="com.google.firebase.auth.internal.RecaptchaActivity"
-67-->[com.google.firebase:firebase-auth:22.3.0] /home/gabolectric/.gradle/caches/8.11.1/transforms/a5b8718dccf29223ed52298182cbf19a/transformed/firebase-auth-22.3.0/AndroidManifest.xml:48:13-79
-68            android:excludeFromRecents="true"
-68-->[com.google.firebase:firebase-auth:22.3.0] /home/gabolectric/.gradle/caches/8.11.1/transforms/a5b8718dccf29223ed52298182cbf19a/transformed/firebase-auth-22.3.0/AndroidManifest.xml:49:13-46
-69            android:exported="true"
-69-->[com.google.firebase:firebase-auth:22.3.0] /home/gabolectric/.gradle/caches/8.11.1/transforms/a5b8718dccf29223ed52298182cbf19a/transformed/firebase-auth-22.3.0/AndroidManifest.xml:50:13-36
-70            android:launchMode="singleTask"
-70-->[com.google.firebase:firebase-auth:22.3.0] /home/gabolectric/.gradle/caches/8.11.1/transforms/a5b8718dccf29223ed52298182cbf19a/transformed/firebase-auth-22.3.0/AndroidManifest.xml:51:13-44
-71            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
-71-->[com.google.firebase:firebase-auth:22.3.0] /home/gabolectric/.gradle/caches/8.11.1/transforms/a5b8718dccf29223ed52298182cbf19a/transformed/firebase-auth-22.3.0/AndroidManifest.xml:52:13-72
-72            <intent-filter>
-72-->[com.google.firebase:firebase-auth:22.3.0] /home/gabolectric/.gradle/caches/8.11.1/transforms/a5b8718dccf29223ed52298182cbf19a/transformed/firebase-auth-22.3.0/AndroidManifest.xml:53:13-63:29
-73                <action android:name="android.intent.action.VIEW" />
-73-->[com.google.firebase:firebase-auth:22.3.0] /home/gabolectric/.gradle/caches/8.11.1/transforms/a5b8718dccf29223ed52298182cbf19a/transformed/firebase-auth-22.3.0/AndroidManifest.xml:36:17-69
-73-->[com.google.firebase:firebase-auth:22.3.0] /home/gabolectric/.gradle/caches/8.11.1/transforms/a5b8718dccf29223ed52298182cbf19a/transformed/firebase-auth-22.3.0/AndroidManifest.xml:36:25-66
-74
-75                <category android:name="android.intent.category.DEFAULT" />
-75-->[com.google.firebase:firebase-auth:22.3.0] /home/gabolectric/.gradle/caches/8.11.1/transforms/a5b8718dccf29223ed52298182cbf19a/transformed/firebase-auth-22.3.0/AndroidManifest.xml:38:17-76
-75-->[com.google.firebase:firebase-auth:22.3.0] /home/gabolectric/.gradle/caches/8.11.1/transforms/a5b8718dccf29223ed52298182cbf19a/transformed/firebase-auth-22.3.0/AndroidManifest.xml:38:27-73
-76                <category android:name="android.intent.category.BROWSABLE" />
-76-->[com.google.firebase:firebase-auth:22.3.0] /home/gabolectric/.gradle/caches/8.11.1/transforms/a5b8718dccf29223ed52298182cbf19a/transformed/firebase-auth-22.3.0/AndroidManifest.xml:39:17-78
-76-->[com.google.firebase:firebase-auth:22.3.0] /home/gabolectric/.gradle/caches/8.11.1/transforms/a5b8718dccf29223ed52298182cbf19a/transformed/firebase-auth-22.3.0/AndroidManifest.xml:39:27-75
-77
-78                <data
-78-->[com.google.firebase:firebase-auth:22.3.0] /home/gabolectric/.gradle/caches/8.11.1/transforms/a5b8718dccf29223ed52298182cbf19a/transformed/firebase-auth-22.3.0/AndroidManifest.xml:41:17-44:51
-79                    android:host="firebase.auth"
-79-->[com.google.firebase:firebase-auth:22.3.0] /home/gabolectric/.gradle/caches/8.11.1/transforms/a5b8718dccf29223ed52298182cbf19a/transformed/firebase-auth-22.3.0/AndroidManifest.xml:42:21-49
-80                    android:path="/"
-80-->[com.google.firebase:firebase-auth:22.3.0] /home/gabolectric/.gradle/caches/8.11.1/transforms/a5b8718dccf29223ed52298182cbf19a/transformed/firebase-auth-22.3.0/AndroidManifest.xml:43:21-37
-81                    android:scheme="recaptcha" />
-81-->[com.google.firebase:firebase-auth:22.3.0] /home/gabolectric/.gradle/caches/8.11.1/transforms/a5b8718dccf29223ed52298182cbf19a/transformed/firebase-auth-22.3.0/AndroidManifest.xml:44:21-48
-82            </intent-filter>
-83        </activity>
-84
-85        <service
-85-->[com.google.firebase:firebase-auth:22.3.0] /home/gabolectric/.gradle/caches/8.11.1/transforms/a5b8718dccf29223ed52298182cbf19a/transformed/firebase-auth-22.3.0/AndroidManifest.xml:66:9-72:19
-86            android:name="com.google.firebase.components.ComponentDiscoveryService"
-86-->[com.google.firebase:firebase-auth:22.3.0] /home/gabolectric/.gradle/caches/8.11.1/transforms/a5b8718dccf29223ed52298182cbf19a/transformed/firebase-auth-22.3.0/AndroidManifest.xml:67:13-84
-87            android:directBootAware="true"
-87-->[com.google.firebase:firebase-common:20.4.2] /home/gabolectric/.gradle/caches/8.11.1/transforms/ec5931726cabff19a57f97d255899694/transformed/firebase-common-20.4.2/AndroidManifest.xml:32:13-43
-88            android:exported="false" >
-88-->[com.google.firebase:firebase-auth:22.3.0] /home/gabolectric/.gradle/caches/8.11.1/transforms/a5b8718dccf29223ed52298182cbf19a/transformed/firebase-auth-22.3.0/AndroidManifest.xml:68:13-37
-89            <meta-data
-89-->[com.google.firebase:firebase-auth:22.3.0] /home/gabolectric/.gradle/caches/8.11.1/transforms/a5b8718dccf29223ed52298182cbf19a/transformed/firebase-auth-22.3.0/AndroidManifest.xml:69:13-71:85
-90                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
-90-->[com.google.firebase:firebase-auth:22.3.0] /home/gabolectric/.gradle/caches/8.11.1/transforms/a5b8718dccf29223ed52298182cbf19a/transformed/firebase-auth-22.3.0/AndroidManifest.xml:70:17-109
-91                android:value="com.google.firebase.components.ComponentRegistrar" />
-91-->[com.google.firebase:firebase-auth:22.3.0] /home/gabolectric/.gradle/caches/8.11.1/transforms/a5b8718dccf29223ed52298182cbf19a/transformed/firebase-auth-22.3.0/AndroidManifest.xml:71:17-82
-92            <meta-data
-92-->[com.google.firebase:firebase-firestore:24.11.0] /home/gabolectric/.gradle/caches/8.11.1/transforms/3f1063cffe0b520f15f8e449a9103f21/transformed/firebase-firestore-24.11.0/AndroidManifest.xml:17:13-19:85
-93                android:name="com.google.firebase.components:com.google.firebase.firestore.FirebaseFirestoreKtxRegistrar"
-93-->[com.google.firebase:firebase-firestore:24.11.0] /home/gabolectric/.gradle/caches/8.11.1/transforms/3f1063cffe0b520f15f8e449a9103f21/transformed/firebase-firestore-24.11.0/AndroidManifest.xml:18:17-122
-94                android:value="com.google.firebase.components.ComponentRegistrar" />
-94-->[com.google.firebase:firebase-firestore:24.11.0] /home/gabolectric/.gradle/caches/8.11.1/transforms/3f1063cffe0b520f15f8e449a9103f21/transformed/firebase-firestore-24.11.0/AndroidManifest.xml:19:17-82
-95            <meta-data
-95-->[com.google.firebase:firebase-firestore:24.11.0] /home/gabolectric/.gradle/caches/8.11.1/transforms/3f1063cffe0b520f15f8e449a9103f21/transformed/firebase-firestore-24.11.0/AndroidManifest.xml:20:13-22:85
-96                android:name="com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar"
-96-->[com.google.firebase:firebase-firestore:24.11.0] /home/gabolectric/.gradle/caches/8.11.1/transforms/3f1063cffe0b520f15f8e449a9103f21/transformed/firebase-firestore-24.11.0/AndroidManifest.xml:21:17-111
-97                android:value="com.google.firebase.components.ComponentRegistrar" />
-97-->[com.google.firebase:firebase-firestore:24.11.0] /home/gabolectric/.gradle/caches/8.11.1/transforms/3f1063cffe0b520f15f8e449a9103f21/transformed/firebase-firestore-24.11.0/AndroidManifest.xml:22:17-82
-98            <meta-data
-98-->[com.google.firebase:firebase-common-ktx:20.4.2] /home/gabolectric/.gradle/caches/8.11.1/transforms/eb8b1052ae6d17ac8f731a9dffb2b00d/transformed/firebase-common-ktx-20.4.2/AndroidManifest.xml:12:13-14:85
-99                android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonLegacyRegistrar"
-99-->[com.google.firebase:firebase-common-ktx:20.4.2] /home/gabolectric/.gradle/caches/8.11.1/transforms/eb8b1052ae6d17ac8f731a9dffb2b00d/transformed/firebase-common-ktx-20.4.2/AndroidManifest.xml:13:17-116
-100                android:value="com.google.firebase.components.ComponentRegistrar" />
-100-->[com.google.firebase:firebase-common-ktx:20.4.2] /home/gabolectric/.gradle/caches/8.11.1/transforms/eb8b1052ae6d17ac8f731a9dffb2b00d/transformed/firebase-common-ktx-20.4.2/AndroidManifest.xml:14:17-82
-101            <meta-data
-101-->[com.google.firebase:firebase-common:20.4.2] /home/gabolectric/.gradle/caches/8.11.1/transforms/ec5931726cabff19a57f97d255899694/transformed/firebase-common-20.4.2/AndroidManifest.xml:35:13-37:85
-102                android:name="com.google.firebase.components:com.google.firebase.FirebaseCommonKtxRegistrar"
-102-->[com.google.firebase:firebase-common:20.4.2] /home/gabolectric/.gradle/caches/8.11.1/transforms/ec5931726cabff19a57f97d255899694/transformed/firebase-common-20.4.2/AndroidManifest.xml:36:17-109
-103                android:value="com.google.firebase.components.ComponentRegistrar" />
-103-->[com.google.firebase:firebase-common:20.4.2] /home/gabolectric/.gradle/caches/8.11.1/transforms/ec5931726cabff19a57f97d255899694/transformed/firebase-common-20.4.2/AndroidManifest.xml:37:17-82
-104        </service>
-105
-106        <activity
-106-->[com.google.android.gms:play-services-auth:20.7.0] /home/gabolectric/.gradle/caches/8.11.1/transforms/ebbcaae9856856af9f2b9265e24de6ee/transformed/play-services-auth-20.7.0/AndroidManifest.xml:23:9-27:75
-107            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
-107-->[com.google.android.gms:play-services-auth:20.7.0] /home/gabolectric/.gradle/caches/8.11.1/transforms/ebbcaae9856856af9f2b9265e24de6ee/transformed/play-services-auth-20.7.0/AndroidManifest.xml:24:13-93
-108            android:excludeFromRecents="true"
-108-->[com.google.android.gms:play-services-auth:20.7.0] /home/gabolectric/.gradle/caches/8.11.1/transforms/ebbcaae9856856af9f2b9265e24de6ee/transformed/play-services-auth-20.7.0/AndroidManifest.xml:25:13-46
-109            android:exported="false"
-109-->[com.google.android.gms:play-services-auth:20.7.0] /home/gabolectric/.gradle/caches/8.11.1/transforms/ebbcaae9856856af9f2b9265e24de6ee/transformed/play-services-auth-20.7.0/AndroidManifest.xml:26:13-37
-110            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-110-->[com.google.android.gms:play-services-auth:20.7.0] /home/gabolectric/.gradle/caches/8.11.1/transforms/ebbcaae9856856af9f2b9265e24de6ee/transformed/play-services-auth-20.7.0/AndroidManifest.xml:27:13-72
-111        <!--
-112            Service handling Google Sign-In user revocation. For apps that do not integrate with
-113            Google Sign-In, this service will never be started.
-114        -->
-115        <service
-115-->[com.google.android.gms:play-services-auth:20.7.0] /home/gabolectric/.gradle/caches/8.11.1/transforms/ebbcaae9856856af9f2b9265e24de6ee/transformed/play-services-auth-20.7.0/AndroidManifest.xml:33:9-37:51
-116            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
-116-->[com.google.android.gms:play-services-auth:20.7.0] /home/gabolectric/.gradle/caches/8.11.1/transforms/ebbcaae9856856af9f2b9265e24de6ee/transformed/play-services-auth-20.7.0/AndroidManifest.xml:34:13-89
-117            android:exported="true"
-117-->[com.google.android.gms:play-services-auth:20.7.0] /home/gabolectric/.gradle/caches/8.11.1/transforms/ebbcaae9856856af9f2b9265e24de6ee/transformed/play-services-auth-20.7.0/AndroidManifest.xml:35:13-36
-118            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION"
-118-->[com.google.android.gms:play-services-auth:20.7.0] /home/gabolectric/.gradle/caches/8.11.1/transforms/ebbcaae9856856af9f2b9265e24de6ee/transformed/play-services-auth-20.7.0/AndroidManifest.xml:36:13-107
-119            android:visibleToInstantApps="true" />
-119-->[com.google.android.gms:play-services-auth:20.7.0] /home/gabolectric/.gradle/caches/8.11.1/transforms/ebbcaae9856856af9f2b9265e24de6ee/transformed/play-services-auth-20.7.0/AndroidManifest.xml:37:13-48
-120
-121        <provider
-121-->[com.squareup.picasso:picasso:2.8] /home/gabolectric/.gradle/caches/8.11.1/transforms/c9a7c47ba836fb6b870b4ee4deed30eb/transformed/picasso-2.8/AndroidManifest.xml:8:9-11:40
-122            android:name="com.squareup.picasso.PicassoProvider"
-122-->[com.squareup.picasso:picasso:2.8] /home/gabolectric/.gradle/caches/8.11.1/transforms/c9a7c47ba836fb6b870b4ee4deed30eb/transformed/picasso-2.8/AndroidManifest.xml:9:13-64
-123            android:authorities="com.example.codechallenge.com.squareup.picasso"
-123-->[com.squareup.picasso:picasso:2.8] /home/gabolectric/.gradle/caches/8.11.1/transforms/c9a7c47ba836fb6b870b4ee4deed30eb/transformed/picasso-2.8/AndroidManifest.xml:10:13-72
-124            android:exported="false" />
-124-->[com.squareup.picasso:picasso:2.8] /home/gabolectric/.gradle/caches/8.11.1/transforms/c9a7c47ba836fb6b870b4ee4deed30eb/transformed/picasso-2.8/AndroidManifest.xml:11:13-37
-125        <provider
-125-->[com.google.firebase:firebase-common:20.4.2] /home/gabolectric/.gradle/caches/8.11.1/transforms/ec5931726cabff19a57f97d255899694/transformed/firebase-common-20.4.2/AndroidManifest.xml:23:9-28:39
-126            android:name="com.google.firebase.provider.FirebaseInitProvider"
-126-->[com.google.firebase:firebase-common:20.4.2] /home/gabolectric/.gradle/caches/8.11.1/transforms/ec5931726cabff19a57f97d255899694/transformed/firebase-common-20.4.2/AndroidManifest.xml:24:13-77
-127            android:authorities="com.example.codechallenge.firebaseinitprovider"
-127-->[com.google.firebase:firebase-common:20.4.2] /home/gabolectric/.gradle/caches/8.11.1/transforms/ec5931726cabff19a57f97d255899694/transformed/firebase-common-20.4.2/AndroidManifest.xml:25:13-72
-128            android:directBootAware="true"
-128-->[com.google.firebase:firebase-common:20.4.2] /home/gabolectric/.gradle/caches/8.11.1/transforms/ec5931726cabff19a57f97d255899694/transformed/firebase-common-20.4.2/AndroidManifest.xml:26:13-43
-129            android:exported="false"
-129-->[com.google.firebase:firebase-common:20.4.2] /home/gabolectric/.gradle/caches/8.11.1/transforms/ec5931726cabff19a57f97d255899694/transformed/firebase-common-20.4.2/AndroidManifest.xml:27:13-37
-130            android:initOrder="100" />
-130-->[com.google.firebase:firebase-common:20.4.2] /home/gabolectric/.gradle/caches/8.11.1/transforms/ec5931726cabff19a57f97d255899694/transformed/firebase-common-20.4.2/AndroidManifest.xml:28:13-36
-131
-132        <activity
-132-->[com.google.android.gms:play-services-base:18.0.1] /home/gabolectric/.gradle/caches/8.11.1/transforms/6580e5ed6f23b638a898e307e17ffb42/transformed/play-services-base-18.0.1/AndroidManifest.xml:20:9-22:45
-133            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-133-->[com.google.android.gms:play-services-base:18.0.1] /home/gabolectric/.gradle/caches/8.11.1/transforms/6580e5ed6f23b638a898e307e17ffb42/transformed/play-services-base-18.0.1/AndroidManifest.xml:20:19-85
-134            android:exported="false"
-134-->[com.google.android.gms:play-services-base:18.0.1] /home/gabolectric/.gradle/caches/8.11.1/transforms/6580e5ed6f23b638a898e307e17ffb42/transformed/play-services-base-18.0.1/AndroidManifest.xml:22:19-43
-135            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-135-->[com.google.android.gms:play-services-base:18.0.1] /home/gabolectric/.gradle/caches/8.11.1/transforms/6580e5ed6f23b638a898e307e17ffb42/transformed/play-services-base-18.0.1/AndroidManifest.xml:21:19-78
-136
-137        <provider
-137-->[androidx.emoji2:emoji2:1.3.0] /home/gabolectric/.gradle/caches/8.11.1/transforms/74eb7ee1744ad0f1ee4fb16132be3fb0/transformed/emoji2-1.3.0/AndroidManifest.xml:24:9-32:20
-138            android:name="androidx.startup.InitializationProvider"
-138-->[androidx.emoji2:emoji2:1.3.0] /home/gabolectric/.gradle/caches/8.11.1/transforms/74eb7ee1744ad0f1ee4fb16132be3fb0/transformed/emoji2-1.3.0/AndroidManifest.xml:25:13-67
-139            android:authorities="com.example.codechallenge.androidx-startup"
-139-->[androidx.emoji2:emoji2:1.3.0] /home/gabolectric/.gradle/caches/8.11.1/transforms/74eb7ee1744ad0f1ee4fb16132be3fb0/transformed/emoji2-1.3.0/AndroidManifest.xml:26:13-68
-140            android:exported="false" >
-140-->[androidx.emoji2:emoji2:1.3.0] /home/gabolectric/.gradle/caches/8.11.1/transforms/74eb7ee1744ad0f1ee4fb16132be3fb0/transformed/emoji2-1.3.0/AndroidManifest.xml:27:13-37
-141            <meta-data
-141-->[androidx.emoji2:emoji2:1.3.0] /home/gabolectric/.gradle/caches/8.11.1/transforms/74eb7ee1744ad0f1ee4fb16132be3fb0/transformed/emoji2-1.3.0/AndroidManifest.xml:29:13-31:52
-142                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-142-->[androidx.emoji2:emoji2:1.3.0] /home/gabolectric/.gradle/caches/8.11.1/transforms/74eb7ee1744ad0f1ee4fb16132be3fb0/transformed/emoji2-1.3.0/AndroidManifest.xml:30:17-75
-143                android:value="androidx.startup" />
-143-->[androidx.emoji2:emoji2:1.3.0] /home/gabolectric/.gradle/caches/8.11.1/transforms/74eb7ee1744ad0f1ee4fb16132be3fb0/transformed/emoji2-1.3.0/AndroidManifest.xml:31:17-49
-144            <meta-data
-144-->[androidx.lifecycle:lifecycle-process:2.6.2] /home/gabolectric/.gradle/caches/8.11.1/transforms/62ff25ef7713d9a6889c551434deb4b3/transformed/lifecycle-process-2.6.2/AndroidManifest.xml:29:13-31:52
-145                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-145-->[androidx.lifecycle:lifecycle-process:2.6.2] /home/gabolectric/.gradle/caches/8.11.1/transforms/62ff25ef7713d9a6889c551434deb4b3/transformed/lifecycle-process-2.6.2/AndroidManifest.xml:30:17-78
-146                android:value="androidx.startup" />
-146-->[androidx.lifecycle:lifecycle-process:2.6.2] /home/gabolectric/.gradle/caches/8.11.1/transforms/62ff25ef7713d9a6889c551434deb4b3/transformed/lifecycle-process-2.6.2/AndroidManifest.xml:31:17-49
-147            <meta-data
-147-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/gabolectric/.gradle/caches/8.11.1/transforms/3c4008e3058a3372d8db4ce3f914d676/transformed/profileinstaller-1.4.0/AndroidManifest.xml:29:13-31:52
-148                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
-148-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/gabolectric/.gradle/caches/8.11.1/transforms/3c4008e3058a3372d8db4ce3f914d676/transformed/profileinstaller-1.4.0/AndroidManifest.xml:30:17-85
-149                android:value="androidx.startup" />
-149-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/gabolectric/.gradle/caches/8.11.1/transforms/3c4008e3058a3372d8db4ce3f914d676/transformed/profileinstaller-1.4.0/AndroidManifest.xml:31:17-49
-150        </provider>
-151
-152        <meta-data
-152-->[com.google.android.gms:play-services-basement:18.2.0] /home/gabolectric/.gradle/caches/8.11.1/transforms/8f18347163818fe2bcec38b75a5314a8/transformed/play-services-basement-18.2.0/AndroidManifest.xml:21:9-23:69
-153            android:name="com.google.android.gms.version"
-153-->[com.google.android.gms:play-services-basement:18.2.0] /home/gabolectric/.gradle/caches/8.11.1/transforms/8f18347163818fe2bcec38b75a5314a8/transformed/play-services-basement-18.2.0/AndroidManifest.xml:22:13-58
-154            android:value="@integer/google_play_services_version" />
-154-->[com.google.android.gms:play-services-basement:18.2.0] /home/gabolectric/.gradle/caches/8.11.1/transforms/8f18347163818fe2bcec38b75a5314a8/transformed/play-services-basement-18.2.0/AndroidManifest.xml:23:13-66
-155
-156        <receiver
-156-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/gabolectric/.gradle/caches/8.11.1/transforms/3c4008e3058a3372d8db4ce3f914d676/transformed/profileinstaller-1.4.0/AndroidManifest.xml:34:9-52:20
-157            android:name="androidx.profileinstaller.ProfileInstallReceiver"
-157-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/gabolectric/.gradle/caches/8.11.1/transforms/3c4008e3058a3372d8db4ce3f914d676/transformed/profileinstaller-1.4.0/AndroidManifest.xml:35:13-76
-158            android:directBootAware="false"
-158-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/gabolectric/.gradle/caches/8.11.1/transforms/3c4008e3058a3372d8db4ce3f914d676/transformed/profileinstaller-1.4.0/AndroidManifest.xml:36:13-44
-159            android:enabled="true"
-159-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/gabolectric/.gradle/caches/8.11.1/transforms/3c4008e3058a3372d8db4ce3f914d676/transformed/profileinstaller-1.4.0/AndroidManifest.xml:37:13-35
-160            android:exported="true"
-160-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/gabolectric/.gradle/caches/8.11.1/transforms/3c4008e3058a3372d8db4ce3f914d676/transformed/profileinstaller-1.4.0/AndroidManifest.xml:38:13-36
-161            android:permission="android.permission.DUMP" >
-161-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/gabolectric/.gradle/caches/8.11.1/transforms/3c4008e3058a3372d8db4ce3f914d676/transformed/profileinstaller-1.4.0/AndroidManifest.xml:39:13-57
-162            <intent-filter>
-162-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/gabolectric/.gradle/caches/8.11.1/transforms/3c4008e3058a3372d8db4ce3f914d676/transformed/profileinstaller-1.4.0/AndroidManifest.xml:40:13-42:29
-163                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
-163-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/gabolectric/.gradle/caches/8.11.1/transforms/3c4008e3058a3372d8db4ce3f914d676/transformed/profileinstaller-1.4.0/AndroidManifest.xml:41:17-91
-163-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/gabolectric/.gradle/caches/8.11.1/transforms/3c4008e3058a3372d8db4ce3f914d676/transformed/profileinstaller-1.4.0/AndroidManifest.xml:41:25-88
-164            </intent-filter>
-165            <intent-filter>
-165-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/gabolectric/.gradle/caches/8.11.1/transforms/3c4008e3058a3372d8db4ce3f914d676/transformed/profileinstaller-1.4.0/AndroidManifest.xml:43:13-45:29
-166                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
-166-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/gabolectric/.gradle/caches/8.11.1/transforms/3c4008e3058a3372d8db4ce3f914d676/transformed/profileinstaller-1.4.0/AndroidManifest.xml:44:17-85
-166-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/gabolectric/.gradle/caches/8.11.1/transforms/3c4008e3058a3372d8db4ce3f914d676/transformed/profileinstaller-1.4.0/AndroidManifest.xml:44:25-82
-167            </intent-filter>
-168            <intent-filter>
-168-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/gabolectric/.gradle/caches/8.11.1/transforms/3c4008e3058a3372d8db4ce3f914d676/transformed/profileinstaller-1.4.0/AndroidManifest.xml:46:13-48:29
-169                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
-169-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/gabolectric/.gradle/caches/8.11.1/transforms/3c4008e3058a3372d8db4ce3f914d676/transformed/profileinstaller-1.4.0/AndroidManifest.xml:47:17-88
-169-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/gabolectric/.gradle/caches/8.11.1/transforms/3c4008e3058a3372d8db4ce3f914d676/transformed/profileinstaller-1.4.0/AndroidManifest.xml:47:25-85
-170            </intent-filter>
-171            <intent-filter>
-171-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/gabolectric/.gradle/caches/8.11.1/transforms/3c4008e3058a3372d8db4ce3f914d676/transformed/profileinstaller-1.4.0/AndroidManifest.xml:49:13-51:29
-172                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
-172-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/gabolectric/.gradle/caches/8.11.1/transforms/3c4008e3058a3372d8db4ce3f914d676/transformed/profileinstaller-1.4.0/AndroidManifest.xml:50:17-95
-172-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/gabolectric/.gradle/caches/8.11.1/transforms/3c4008e3058a3372d8db4ce3f914d676/transformed/profileinstaller-1.4.0/AndroidManifest.xml:50:25-92
-173            </intent-filter>
-174        </receiver>
-175    </application>
-176
-177</manifest>
+45        <activity
+45-->/home/gabolectric/Documentos/CodeChallenge/app/src/main/AndroidManifest.xml:29:9-30:70
+46            android:name="com.example.codechallenge.MenuPrincipalActivity"
+46-->/home/gabolectric/Documentos/CodeChallenge/app/src/main/AndroidManifest.xml:29:19-56
+47            android:windowSoftInputMode="adjustResize|stateHidden" />
+47-->/home/gabolectric/Documentos/CodeChallenge/app/src/main/AndroidManifest.xml:30:13-67
+48        <activity android:name="com.example.codechallenge.RegisterActivity" />
+48-->/home/gabolectric/Documentos/CodeChallenge/app/src/main/AndroidManifest.xml:31:9-54
+48-->/home/gabolectric/Documentos/CodeChallenge/app/src/main/AndroidManifest.xml:31:19-51
+49        <activity android:name="com.example.codechallenge.AccountActivity" />
+49-->/home/gabolectric/Documentos/CodeChallenge/app/src/main/AndroidManifest.xml:32:9-53
+49-->/home/gabolectric/Documentos/CodeChallenge/app/src/main/AndroidManifest.xml:32:19-50
+50        <activity
+50-->[com.google.firebase:firebase-auth:22.3.0] /home/gabolectric/.gradle/caches/8.11.1/transforms/a5b8718dccf29223ed52298182cbf19a/transformed/firebase-auth-22.3.0/AndroidManifest.xml:29:9-46:20
+51            android:name="com.google.firebase.auth.internal.GenericIdpActivity"
+51-->[com.google.firebase:firebase-auth:22.3.0] /home/gabolectric/.gradle/caches/8.11.1/transforms/a5b8718dccf29223ed52298182cbf19a/transformed/firebase-auth-22.3.0/AndroidManifest.xml:30:13-80
+52            android:excludeFromRecents="true"
+52-->[com.google.firebase:firebase-auth:22.3.0] /home/gabolectric/.gradle/caches/8.11.1/transforms/a5b8718dccf29223ed52298182cbf19a/transformed/firebase-auth-22.3.0/AndroidManifest.xml:31:13-46
+53            android:exported="true"
+53-->[com.google.firebase:firebase-auth:22.3.0] /home/gabolectric/.gradle/caches/8.11.1/transforms/a5b8718dccf29223ed52298182cbf19a/transformed/firebase-auth-22.3.0/AndroidManifest.xml:32:13-36
+54            android:launchMode="singleTask"
+54-->[com.google.firebase:firebase-auth:22.3.0] /home/gabolectric/.gradle/caches/8.11.1/transforms/a5b8718dccf29223ed52298182cbf19a/transformed/firebase-auth-22.3.0/AndroidManifest.xml:33:13-44
+55            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+55-->[com.google.firebase:firebase-auth:22.3.0] /home/gabolectric/.gradle/caches/8.11.1/transforms/a5b8718dccf29223ed52298182cbf19a/transformed/firebase-auth-22.3.0/AndroidManifest.xml:34:13-72
+56            <intent-filter>
+56-->[com.google.firebase:firebase-auth:22.3.0] /home/gabolectric/.gradle/caches/8.11.1/transforms/a5b8718dccf29223ed52298182cbf19a/transformed/firebase-auth-22.3.0/AndroidManifest.xml:35:13-45:29
+57                <action android:name="android.intent.action.VIEW" />
+57-->[com.google.firebase:firebase-auth:22.3.0] /home/gabolectric/.gradle/caches/8.11.1/transforms/a5b8718dccf29223ed52298182cbf19a/transformed/firebase-auth-22.3.0/AndroidManifest.xml:36:17-69
+57-->[com.google.firebase:firebase-auth:22.3.0] /home/gabolectric/.gradle/caches/8.11.1/transforms/a5b8718dccf29223ed52298182cbf19a/transformed/firebase-auth-22.3.0/AndroidManifest.xml:36:25-66
+58
+59                <category android:name="android.intent.category.DEFAULT" />
+59-->[com.google.firebase:firebase-auth:22.3.0] /home/gabolectric/.gradle/caches/8.11.1/transforms/a5b8718dccf29223ed52298182cbf19a/transformed/firebase-auth-22.3.0/AndroidManifest.xml:38:17-76
+59-->[com.google.firebase:firebase-auth:22.3.0] /home/gabolectric/.gradle/caches/8.11.1/transforms/a5b8718dccf29223ed52298182cbf19a/transformed/firebase-auth-22.3.0/AndroidManifest.xml:38:27-73
+60                <category android:name="android.intent.category.BROWSABLE" />
+60-->[com.google.firebase:firebase-auth:22.3.0] /home/gabolectric/.gradle/caches/8.11.1/transforms/a5b8718dccf29223ed52298182cbf19a/transformed/firebase-auth-22.3.0/AndroidManifest.xml:39:17-78
+60-->[com.google.firebase:firebase-auth:22.3.0] /home/gabolectric/.gradle/caches/8.11.1/transforms/a5b8718dccf29223ed52298182cbf19a/transformed/firebase-auth-22.3.0/AndroidManifest.xml:39:27-75
+61
+62                <data
+62-->[com.google.firebase:firebase-auth:22.3.0] /home/gabolectric/.gradle/caches/8.11.1/transforms/a5b8718dccf29223ed52298182cbf19a/transformed/firebase-auth-22.3.0/AndroidManifest.xml:41:17-44:51
+63                    android:host="firebase.auth"
+63-->[com.google.firebase:firebase-auth:22.3.0] /home/gabolectric/.gradle/caches/8.11.1/transforms/a5b8718dccf29223ed52298182cbf19a/transformed/firebase-auth-22.3.0/AndroidManifest.xml:42:21-49
+64                    android:path="/"
+64-->[com.google.firebase:firebase-auth:22.3.0] /home/gabolectric/.gradle/caches/8.11.1/transforms/a5b8718dccf29223ed52298182cbf19a/transformed/firebase-auth-22.3.0/AndroidManifest.xml:43:21-37
+65                    android:scheme="genericidp" />
+65-->[com.google.firebase:firebase-auth:22.3.0] /home/gabolectric/.gradle/caches/8.11.1/transforms/a5b8718dccf29223ed52298182cbf19a/transformed/firebase-auth-22.3.0/AndroidManifest.xml:44:21-48
+66            </intent-filter>
+67        </activity>
+68        <activity
+68-->[com.google.firebase:firebase-auth:22.3.0] /home/gabolectric/.gradle/caches/8.11.1/transforms/a5b8718dccf29223ed52298182cbf19a/transformed/firebase-auth-22.3.0/AndroidManifest.xml:47:9-64:20
+69            android:name="com.google.firebase.auth.internal.RecaptchaActivity"
+69-->[com.google.firebase:firebase-auth:22.3.0] /home/gabolectric/.gradle/caches/8.11.1/transforms/a5b8718dccf29223ed52298182cbf19a/transformed/firebase-auth-22.3.0/AndroidManifest.xml:48:13-79
+70            android:excludeFromRecents="true"
+70-->[com.google.firebase:firebase-auth:22.3.0] /home/gabolectric/.gradle/caches/8.11.1/transforms/a5b8718dccf29223ed52298182cbf19a/transformed/firebase-auth-22.3.0/AndroidManifest.xml:49:13-46
+71            android:exported="true"
+71-->[com.google.firebase:firebase-auth:22.3.0] /home/gabolectric/.gradle/caches/8.11.1/transforms/a5b8718dccf29223ed52298182cbf19a/transformed/firebase-auth-22.3.0/AndroidManifest.xml:50:13-36
+72            android:launchMode="singleTask"
+72-->[com.google.firebase:firebase-auth:22.3.0] /home/gabolectric/.gradle/caches/8.11.1/transforms/a5b8718dccf29223ed52298182cbf19a/transformed/firebase-auth-22.3.0/AndroidManifest.xml:51:13-44
+73            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+73-->[com.google.firebase:firebase-auth:22.3.0] /home/gabolectric/.gradle/caches/8.11.1/transforms/a5b8718dccf29223ed52298182cbf19a/transformed/firebase-auth-22.3.0/AndroidManifest.xml:52:13-72
+74            <intent-filter>
+74-->[com.google.firebase:firebase-auth:22.3.0] /home/gabolectric/.gradle/caches/8.11.1/transforms/a5b8718dccf29223ed52298182cbf19a/transformed/firebase-auth-22.3.0/AndroidManifest.xml:53:13-63:29
+75                <action android:name="android.intent.action.VIEW" />
+75-->[com.google.firebase:firebase-auth:22.3.0] /home/gabolectric/.gradle/caches/8.11.1/transforms/a5b8718dccf29223ed52298182cbf19a/transformed/firebase-auth-22.3.0/AndroidManifest.xml:36:17-69
+75-->[com.google.firebase:firebase-auth:22.3.0] /home/gabolectric/.gradle/caches/8.11.1/transforms/a5b8718dccf29223ed52298182cbf19a/transformed/firebase-auth-22.3.0/AndroidManifest.xml:36:25-66
+76
+77                <category android:name="android.intent.category.DEFAULT" />
+77-->[com.google.firebase:firebase-auth:22.3.0] /home/gabolectric/.gradle/caches/8.11.1/transforms/a5b8718dccf29223ed52298182cbf19a/transformed/firebase-auth-22.3.0/AndroidManifest.xml:38:17-76
+77-->[com.google.firebase:firebase-auth:22.3.0] /home/gabolectric/.gradle/caches/8.11.1/transforms/a5b8718dccf29223ed52298182cbf19a/transformed/firebase-auth-22.3.0/AndroidManifest.xml:38:27-73
+78                <category android:name="android.intent.category.BROWSABLE" />
+78-->[com.google.firebase:firebase-auth:22.3.0] /home/gabolectric/.gradle/caches/8.11.1/transforms/a5b8718dccf29223ed52298182cbf19a/transformed/firebase-auth-22.3.0/AndroidManifest.xml:39:17-78
+78-->[com.google.firebase:firebase-auth:22.3.0] /home/gabolectric/.gradle/caches/8.11.1/transforms/a5b8718dccf29223ed52298182cbf19a/transformed/firebase-auth-22.3.0/AndroidManifest.xml:39:27-75
+79
+80                <data
+80-->[com.google.firebase:firebase-auth:22.3.0] /home/gabolectric/.gradle/caches/8.11.1/transforms/a5b8718dccf29223ed52298182cbf19a/transformed/firebase-auth-22.3.0/AndroidManifest.xml:41:17-44:51
+81                    android:host="firebase.auth"
+81-->[com.google.firebase:firebase-auth:22.3.0] /home/gabolectric/.gradle/caches/8.11.1/transforms/a5b8718dccf29223ed52298182cbf19a/transformed/firebase-auth-22.3.0/AndroidManifest.xml:42:21-49
+82                    android:path="/"
+82-->[com.google.firebase:firebase-auth:22.3.0] /home/gabolectric/.gradle/caches/8.11.1/transforms/a5b8718dccf29223ed52298182cbf19a/transformed/firebase-auth-22.3.0/AndroidManifest.xml:43:21-37
+83                    android:scheme="recaptcha" />
+83-->[com.google.firebase:firebase-auth:22.3.0] /home/gabolectric/.gradle/caches/8.11.1/transforms/a5b8718dccf29223ed52298182cbf19a/transformed/firebase-auth-22.3.0/AndroidManifest.xml:44:21-48
+84            </intent-filter>
+85        </activity>
+86
+87        <service
+87-->[com.google.firebase:firebase-auth:22.3.0] /home/gabolectric/.gradle/caches/8.11.1/transforms/a5b8718dccf29223ed52298182cbf19a/transformed/firebase-auth-22.3.0/AndroidManifest.xml:66:9-72:19
+88            android:name="com.google.firebase.components.ComponentDiscoveryService"
+88-->[com.google.firebase:firebase-auth:22.3.0] /home/gabolectric/.gradle/caches/8.11.1/transforms/a5b8718dccf29223ed52298182cbf19a/transformed/firebase-auth-22.3.0/AndroidManifest.xml:67:13-84
+89            android:directBootAware="true"
+89-->[com.google.firebase:firebase-common:20.4.2] /home/gabolectric/.gradle/caches/8.11.1/transforms/ec5931726cabff19a57f97d255899694/transformed/firebase-common-20.4.2/AndroidManifest.xml:32:13-43
+90            android:exported="false" >
+90-->[com.google.firebase:firebase-auth:22.3.0] /home/gabolectric/.gradle/caches/8.11.1/transforms/a5b8718dccf29223ed52298182cbf19a/transformed/firebase-auth-22.3.0/AndroidManifest.xml:68:13-37
+91            <meta-data
+91-->[com.google.firebase:firebase-auth:22.3.0] /home/gabolectric/.gradle/caches/8.11.1/transforms/a5b8718dccf29223ed52298182cbf19a/transformed/firebase-auth-22.3.0/AndroidManifest.xml:69:13-71:85
+92                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+92-->[com.google.firebase:firebase-auth:22.3.0] /home/gabolectric/.gradle/caches/8.11.1/transforms/a5b8718dccf29223ed52298182cbf19a/transformed/firebase-auth-22.3.0/AndroidManifest.xml:70:17-109
+93                android:value="com.google.firebase.components.ComponentRegistrar" />
+93-->[com.google.firebase:firebase-auth:22.3.0] /home/gabolectric/.gradle/caches/8.11.1/transforms/a5b8718dccf29223ed52298182cbf19a/transformed/firebase-auth-22.3.0/AndroidManifest.xml:71:17-82
+94            <meta-data
+94-->[com.google.firebase:firebase-firestore:24.11.0] /home/gabolectric/.gradle/caches/8.11.1/transforms/3f1063cffe0b520f15f8e449a9103f21/transformed/firebase-firestore-24.11.0/AndroidManifest.xml:17:13-19:85
+95                android:name="com.google.firebase.components:com.google.firebase.firestore.FirebaseFirestoreKtxRegistrar"
+95-->[com.google.firebase:firebase-firestore:24.11.0] /home/gabolectric/.gradle/caches/8.11.1/transforms/3f1063cffe0b520f15f8e449a9103f21/transformed/firebase-firestore-24.11.0/AndroidManifest.xml:18:17-122
+96                android:value="com.google.firebase.components.ComponentRegistrar" />
+96-->[com.google.firebase:firebase-firestore:24.11.0] /home/gabolectric/.gradle/caches/8.11.1/transforms/3f1063cffe0b520f15f8e449a9103f21/transformed/firebase-firestore-24.11.0/AndroidManifest.xml:19:17-82
+97            <meta-data
+97-->[com.google.firebase:firebase-firestore:24.11.0] /home/gabolectric/.gradle/caches/8.11.1/transforms/3f1063cffe0b520f15f8e449a9103f21/transformed/firebase-firestore-24.11.0/AndroidManifest.xml:20:13-22:85
+98                android:name="com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar"
+98-->[com.google.firebase:firebase-firestore:24.11.0] /home/gabolectric/.gradle/caches/8.11.1/transforms/3f1063cffe0b520f15f8e449a9103f21/transformed/firebase-firestore-24.11.0/AndroidManifest.xml:21:17-111
+99                android:value="com.google.firebase.components.ComponentRegistrar" />
+99-->[com.google.firebase:firebase-firestore:24.11.0] /home/gabolectric/.gradle/caches/8.11.1/transforms/3f1063cffe0b520f15f8e449a9103f21/transformed/firebase-firestore-24.11.0/AndroidManifest.xml:22:17-82
+100            <meta-data
+100-->[com.google.firebase:firebase-common-ktx:20.4.2] /home/gabolectric/.gradle/caches/8.11.1/transforms/eb8b1052ae6d17ac8f731a9dffb2b00d/transformed/firebase-common-ktx-20.4.2/AndroidManifest.xml:12:13-14:85
+101                android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonLegacyRegistrar"
+101-->[com.google.firebase:firebase-common-ktx:20.4.2] /home/gabolectric/.gradle/caches/8.11.1/transforms/eb8b1052ae6d17ac8f731a9dffb2b00d/transformed/firebase-common-ktx-20.4.2/AndroidManifest.xml:13:17-116
+102                android:value="com.google.firebase.components.ComponentRegistrar" />
+102-->[com.google.firebase:firebase-common-ktx:20.4.2] /home/gabolectric/.gradle/caches/8.11.1/transforms/eb8b1052ae6d17ac8f731a9dffb2b00d/transformed/firebase-common-ktx-20.4.2/AndroidManifest.xml:14:17-82
+103            <meta-data
+103-->[com.google.firebase:firebase-common:20.4.2] /home/gabolectric/.gradle/caches/8.11.1/transforms/ec5931726cabff19a57f97d255899694/transformed/firebase-common-20.4.2/AndroidManifest.xml:35:13-37:85
+104                android:name="com.google.firebase.components:com.google.firebase.FirebaseCommonKtxRegistrar"
+104-->[com.google.firebase:firebase-common:20.4.2] /home/gabolectric/.gradle/caches/8.11.1/transforms/ec5931726cabff19a57f97d255899694/transformed/firebase-common-20.4.2/AndroidManifest.xml:36:17-109
+105                android:value="com.google.firebase.components.ComponentRegistrar" />
+105-->[com.google.firebase:firebase-common:20.4.2] /home/gabolectric/.gradle/caches/8.11.1/transforms/ec5931726cabff19a57f97d255899694/transformed/firebase-common-20.4.2/AndroidManifest.xml:37:17-82
+106        </service>
+107
+108        <activity
+108-->[com.google.android.gms:play-services-auth:20.7.0] /home/gabolectric/.gradle/caches/8.11.1/transforms/ebbcaae9856856af9f2b9265e24de6ee/transformed/play-services-auth-20.7.0/AndroidManifest.xml:23:9-27:75
+109            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+109-->[com.google.android.gms:play-services-auth:20.7.0] /home/gabolectric/.gradle/caches/8.11.1/transforms/ebbcaae9856856af9f2b9265e24de6ee/transformed/play-services-auth-20.7.0/AndroidManifest.xml:24:13-93
+110            android:excludeFromRecents="true"
+110-->[com.google.android.gms:play-services-auth:20.7.0] /home/gabolectric/.gradle/caches/8.11.1/transforms/ebbcaae9856856af9f2b9265e24de6ee/transformed/play-services-auth-20.7.0/AndroidManifest.xml:25:13-46
+111            android:exported="false"
+111-->[com.google.android.gms:play-services-auth:20.7.0] /home/gabolectric/.gradle/caches/8.11.1/transforms/ebbcaae9856856af9f2b9265e24de6ee/transformed/play-services-auth-20.7.0/AndroidManifest.xml:26:13-37
+112            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+112-->[com.google.android.gms:play-services-auth:20.7.0] /home/gabolectric/.gradle/caches/8.11.1/transforms/ebbcaae9856856af9f2b9265e24de6ee/transformed/play-services-auth-20.7.0/AndroidManifest.xml:27:13-72
+113        <!--
+114            Service handling Google Sign-In user revocation. For apps that do not integrate with
+115            Google Sign-In, this service will never be started.
+116        -->
+117        <service
+117-->[com.google.android.gms:play-services-auth:20.7.0] /home/gabolectric/.gradle/caches/8.11.1/transforms/ebbcaae9856856af9f2b9265e24de6ee/transformed/play-services-auth-20.7.0/AndroidManifest.xml:33:9-37:51
+118            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+118-->[com.google.android.gms:play-services-auth:20.7.0] /home/gabolectric/.gradle/caches/8.11.1/transforms/ebbcaae9856856af9f2b9265e24de6ee/transformed/play-services-auth-20.7.0/AndroidManifest.xml:34:13-89
+119            android:exported="true"
+119-->[com.google.android.gms:play-services-auth:20.7.0] /home/gabolectric/.gradle/caches/8.11.1/transforms/ebbcaae9856856af9f2b9265e24de6ee/transformed/play-services-auth-20.7.0/AndroidManifest.xml:35:13-36
+120            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION"
+120-->[com.google.android.gms:play-services-auth:20.7.0] /home/gabolectric/.gradle/caches/8.11.1/transforms/ebbcaae9856856af9f2b9265e24de6ee/transformed/play-services-auth-20.7.0/AndroidManifest.xml:36:13-107
+121            android:visibleToInstantApps="true" />
+121-->[com.google.android.gms:play-services-auth:20.7.0] /home/gabolectric/.gradle/caches/8.11.1/transforms/ebbcaae9856856af9f2b9265e24de6ee/transformed/play-services-auth-20.7.0/AndroidManifest.xml:37:13-48
+122
+123        <provider
+123-->[com.squareup.picasso:picasso:2.8] /home/gabolectric/.gradle/caches/8.11.1/transforms/c9a7c47ba836fb6b870b4ee4deed30eb/transformed/picasso-2.8/AndroidManifest.xml:8:9-11:40
+124            android:name="com.squareup.picasso.PicassoProvider"
+124-->[com.squareup.picasso:picasso:2.8] /home/gabolectric/.gradle/caches/8.11.1/transforms/c9a7c47ba836fb6b870b4ee4deed30eb/transformed/picasso-2.8/AndroidManifest.xml:9:13-64
+125            android:authorities="com.example.codechallenge.com.squareup.picasso"
+125-->[com.squareup.picasso:picasso:2.8] /home/gabolectric/.gradle/caches/8.11.1/transforms/c9a7c47ba836fb6b870b4ee4deed30eb/transformed/picasso-2.8/AndroidManifest.xml:10:13-72
+126            android:exported="false" />
+126-->[com.squareup.picasso:picasso:2.8] /home/gabolectric/.gradle/caches/8.11.1/transforms/c9a7c47ba836fb6b870b4ee4deed30eb/transformed/picasso-2.8/AndroidManifest.xml:11:13-37
+127        <provider
+127-->[com.google.firebase:firebase-common:20.4.2] /home/gabolectric/.gradle/caches/8.11.1/transforms/ec5931726cabff19a57f97d255899694/transformed/firebase-common-20.4.2/AndroidManifest.xml:23:9-28:39
+128            android:name="com.google.firebase.provider.FirebaseInitProvider"
+128-->[com.google.firebase:firebase-common:20.4.2] /home/gabolectric/.gradle/caches/8.11.1/transforms/ec5931726cabff19a57f97d255899694/transformed/firebase-common-20.4.2/AndroidManifest.xml:24:13-77
+129            android:authorities="com.example.codechallenge.firebaseinitprovider"
+129-->[com.google.firebase:firebase-common:20.4.2] /home/gabolectric/.gradle/caches/8.11.1/transforms/ec5931726cabff19a57f97d255899694/transformed/firebase-common-20.4.2/AndroidManifest.xml:25:13-72
+130            android:directBootAware="true"
+130-->[com.google.firebase:firebase-common:20.4.2] /home/gabolectric/.gradle/caches/8.11.1/transforms/ec5931726cabff19a57f97d255899694/transformed/firebase-common-20.4.2/AndroidManifest.xml:26:13-43
+131            android:exported="false"
+131-->[com.google.firebase:firebase-common:20.4.2] /home/gabolectric/.gradle/caches/8.11.1/transforms/ec5931726cabff19a57f97d255899694/transformed/firebase-common-20.4.2/AndroidManifest.xml:27:13-37
+132            android:initOrder="100" />
+132-->[com.google.firebase:firebase-common:20.4.2] /home/gabolectric/.gradle/caches/8.11.1/transforms/ec5931726cabff19a57f97d255899694/transformed/firebase-common-20.4.2/AndroidManifest.xml:28:13-36
+133
+134        <activity
+134-->[com.google.android.gms:play-services-base:18.0.1] /home/gabolectric/.gradle/caches/8.11.1/transforms/6580e5ed6f23b638a898e307e17ffb42/transformed/play-services-base-18.0.1/AndroidManifest.xml:20:9-22:45
+135            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+135-->[com.google.android.gms:play-services-base:18.0.1] /home/gabolectric/.gradle/caches/8.11.1/transforms/6580e5ed6f23b638a898e307e17ffb42/transformed/play-services-base-18.0.1/AndroidManifest.xml:20:19-85
+136            android:exported="false"
+136-->[com.google.android.gms:play-services-base:18.0.1] /home/gabolectric/.gradle/caches/8.11.1/transforms/6580e5ed6f23b638a898e307e17ffb42/transformed/play-services-base-18.0.1/AndroidManifest.xml:22:19-43
+137            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+137-->[com.google.android.gms:play-services-base:18.0.1] /home/gabolectric/.gradle/caches/8.11.1/transforms/6580e5ed6f23b638a898e307e17ffb42/transformed/play-services-base-18.0.1/AndroidManifest.xml:21:19-78
+138
+139        <provider
+139-->[androidx.emoji2:emoji2:1.3.0] /home/gabolectric/.gradle/caches/8.11.1/transforms/74eb7ee1744ad0f1ee4fb16132be3fb0/transformed/emoji2-1.3.0/AndroidManifest.xml:24:9-32:20
+140            android:name="androidx.startup.InitializationProvider"
+140-->[androidx.emoji2:emoji2:1.3.0] /home/gabolectric/.gradle/caches/8.11.1/transforms/74eb7ee1744ad0f1ee4fb16132be3fb0/transformed/emoji2-1.3.0/AndroidManifest.xml:25:13-67
+141            android:authorities="com.example.codechallenge.androidx-startup"
+141-->[androidx.emoji2:emoji2:1.3.0] /home/gabolectric/.gradle/caches/8.11.1/transforms/74eb7ee1744ad0f1ee4fb16132be3fb0/transformed/emoji2-1.3.0/AndroidManifest.xml:26:13-68
+142            android:exported="false" >
+142-->[androidx.emoji2:emoji2:1.3.0] /home/gabolectric/.gradle/caches/8.11.1/transforms/74eb7ee1744ad0f1ee4fb16132be3fb0/transformed/emoji2-1.3.0/AndroidManifest.xml:27:13-37
+143            <meta-data
+143-->[androidx.emoji2:emoji2:1.3.0] /home/gabolectric/.gradle/caches/8.11.1/transforms/74eb7ee1744ad0f1ee4fb16132be3fb0/transformed/emoji2-1.3.0/AndroidManifest.xml:29:13-31:52
+144                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+144-->[androidx.emoji2:emoji2:1.3.0] /home/gabolectric/.gradle/caches/8.11.1/transforms/74eb7ee1744ad0f1ee4fb16132be3fb0/transformed/emoji2-1.3.0/AndroidManifest.xml:30:17-75
+145                android:value="androidx.startup" />
+145-->[androidx.emoji2:emoji2:1.3.0] /home/gabolectric/.gradle/caches/8.11.1/transforms/74eb7ee1744ad0f1ee4fb16132be3fb0/transformed/emoji2-1.3.0/AndroidManifest.xml:31:17-49
+146            <meta-data
+146-->[androidx.lifecycle:lifecycle-process:2.6.2] /home/gabolectric/.gradle/caches/8.11.1/transforms/62ff25ef7713d9a6889c551434deb4b3/transformed/lifecycle-process-2.6.2/AndroidManifest.xml:29:13-31:52
+147                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+147-->[androidx.lifecycle:lifecycle-process:2.6.2] /home/gabolectric/.gradle/caches/8.11.1/transforms/62ff25ef7713d9a6889c551434deb4b3/transformed/lifecycle-process-2.6.2/AndroidManifest.xml:30:17-78
+148                android:value="androidx.startup" />
+148-->[androidx.lifecycle:lifecycle-process:2.6.2] /home/gabolectric/.gradle/caches/8.11.1/transforms/62ff25ef7713d9a6889c551434deb4b3/transformed/lifecycle-process-2.6.2/AndroidManifest.xml:31:17-49
+149            <meta-data
+149-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/gabolectric/.gradle/caches/8.11.1/transforms/3c4008e3058a3372d8db4ce3f914d676/transformed/profileinstaller-1.4.0/AndroidManifest.xml:29:13-31:52
+150                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+150-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/gabolectric/.gradle/caches/8.11.1/transforms/3c4008e3058a3372d8db4ce3f914d676/transformed/profileinstaller-1.4.0/AndroidManifest.xml:30:17-85
+151                android:value="androidx.startup" />
+151-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/gabolectric/.gradle/caches/8.11.1/transforms/3c4008e3058a3372d8db4ce3f914d676/transformed/profileinstaller-1.4.0/AndroidManifest.xml:31:17-49
+152        </provider>
+153
+154        <meta-data
+154-->[com.google.android.gms:play-services-basement:18.2.0] /home/gabolectric/.gradle/caches/8.11.1/transforms/8f18347163818fe2bcec38b75a5314a8/transformed/play-services-basement-18.2.0/AndroidManifest.xml:21:9-23:69
+155            android:name="com.google.android.gms.version"
+155-->[com.google.android.gms:play-services-basement:18.2.0] /home/gabolectric/.gradle/caches/8.11.1/transforms/8f18347163818fe2bcec38b75a5314a8/transformed/play-services-basement-18.2.0/AndroidManifest.xml:22:13-58
+156            android:value="@integer/google_play_services_version" />
+156-->[com.google.android.gms:play-services-basement:18.2.0] /home/gabolectric/.gradle/caches/8.11.1/transforms/8f18347163818fe2bcec38b75a5314a8/transformed/play-services-basement-18.2.0/AndroidManifest.xml:23:13-66
+157
+158        <receiver
+158-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/gabolectric/.gradle/caches/8.11.1/transforms/3c4008e3058a3372d8db4ce3f914d676/transformed/profileinstaller-1.4.0/AndroidManifest.xml:34:9-52:20
+159            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+159-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/gabolectric/.gradle/caches/8.11.1/transforms/3c4008e3058a3372d8db4ce3f914d676/transformed/profileinstaller-1.4.0/AndroidManifest.xml:35:13-76
+160            android:directBootAware="false"
+160-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/gabolectric/.gradle/caches/8.11.1/transforms/3c4008e3058a3372d8db4ce3f914d676/transformed/profileinstaller-1.4.0/AndroidManifest.xml:36:13-44
+161            android:enabled="true"
+161-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/gabolectric/.gradle/caches/8.11.1/transforms/3c4008e3058a3372d8db4ce3f914d676/transformed/profileinstaller-1.4.0/AndroidManifest.xml:37:13-35
+162            android:exported="true"
+162-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/gabolectric/.gradle/caches/8.11.1/transforms/3c4008e3058a3372d8db4ce3f914d676/transformed/profileinstaller-1.4.0/AndroidManifest.xml:38:13-36
+163            android:permission="android.permission.DUMP" >
+163-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/gabolectric/.gradle/caches/8.11.1/transforms/3c4008e3058a3372d8db4ce3f914d676/transformed/profileinstaller-1.4.0/AndroidManifest.xml:39:13-57
+164            <intent-filter>
+164-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/gabolectric/.gradle/caches/8.11.1/transforms/3c4008e3058a3372d8db4ce3f914d676/transformed/profileinstaller-1.4.0/AndroidManifest.xml:40:13-42:29
+165                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+165-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/gabolectric/.gradle/caches/8.11.1/transforms/3c4008e3058a3372d8db4ce3f914d676/transformed/profileinstaller-1.4.0/AndroidManifest.xml:41:17-91
+165-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/gabolectric/.gradle/caches/8.11.1/transforms/3c4008e3058a3372d8db4ce3f914d676/transformed/profileinstaller-1.4.0/AndroidManifest.xml:41:25-88
+166            </intent-filter>
+167            <intent-filter>
+167-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/gabolectric/.gradle/caches/8.11.1/transforms/3c4008e3058a3372d8db4ce3f914d676/transformed/profileinstaller-1.4.0/AndroidManifest.xml:43:13-45:29
+168                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+168-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/gabolectric/.gradle/caches/8.11.1/transforms/3c4008e3058a3372d8db4ce3f914d676/transformed/profileinstaller-1.4.0/AndroidManifest.xml:44:17-85
+168-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/gabolectric/.gradle/caches/8.11.1/transforms/3c4008e3058a3372d8db4ce3f914d676/transformed/profileinstaller-1.4.0/AndroidManifest.xml:44:25-82
+169            </intent-filter>
+170            <intent-filter>
+170-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/gabolectric/.gradle/caches/8.11.1/transforms/3c4008e3058a3372d8db4ce3f914d676/transformed/profileinstaller-1.4.0/AndroidManifest.xml:46:13-48:29
+171                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+171-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/gabolectric/.gradle/caches/8.11.1/transforms/3c4008e3058a3372d8db4ce3f914d676/transformed/profileinstaller-1.4.0/AndroidManifest.xml:47:17-88
+171-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/gabolectric/.gradle/caches/8.11.1/transforms/3c4008e3058a3372d8db4ce3f914d676/transformed/profileinstaller-1.4.0/AndroidManifest.xml:47:25-85
+172            </intent-filter>
+173            <intent-filter>
+173-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/gabolectric/.gradle/caches/8.11.1/transforms/3c4008e3058a3372d8db4ce3f914d676/transformed/profileinstaller-1.4.0/AndroidManifest.xml:49:13-51:29
+174                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+174-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/gabolectric/.gradle/caches/8.11.1/transforms/3c4008e3058a3372d8db4ce3f914d676/transformed/profileinstaller-1.4.0/AndroidManifest.xml:50:17-95
+174-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/gabolectric/.gradle/caches/8.11.1/transforms/3c4008e3058a3372d8db4ce3f914d676/transformed/profileinstaller-1.4.0/AndroidManifest.xml:50:25-92
+175            </intent-filter>
+176        </receiver>
+177    </application>
+178
+179</manifest>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- Botón salir -->
+        <Button
+            android:id="@+id/btnSalirDetalle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Salir"
+            android:backgroundTint="@color/colorRed"
+            android:textColor="@android:color/white"
+            android:layout_gravity="end"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Header del reto -->
+        <TextView
+            android:id="@+id/textTituloProblema"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Maximum Distance"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@color/headerTextColor"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Descripción -->
+        <TextView
+            android:id="@+id/textDescripcionProblema"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Please, proceed to IntArrayUtil class and implement its static method:\n\nint maximumDistance(int[] array);\n\nIn a given array of integers nums calculate integer result value, that is equal to the distance between the first and the last entry of the maximum value in the array.\n\nNote that input array may be empty."
+            android:textSize="16sp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Ejemplos -->
+        <TextView
+            android:id="@+id/textEjemplos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Examples\n\nInput:\n[4, 100, 3, 4]\n[5, 50, 30, 4, 5]\n[5, 500, 350, 4, 500]\n[10, 10, 10, 10, 10]\n\nOutput:\nresult = 0\nresult = 4\nresult = 3\nresult = 4"
+            android:textSize="15sp"
+            android:typeface="monospace"
+            android:layout_marginBottom="20dp" />
+
+        <!-- Área para código con scroll independiente -->
+        <ScrollView
+            android:id="@+id/scrollEditCodigo"
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:fillViewport="true"
+            android:background="@drawable/bg_card_header"
+            android:layout_marginBottom="16dp">
+            <EditText
+                android:id="@+id/editCodigo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="300dp"
+                android:hint="Escribe tu código aquí..."
+                android:gravity="top|start"
+                android:background="@android:color/transparent"
+                android:textSize="15sp"
+                android:inputType="textMultiLine|textNoSuggestions"
+                android:maxLines="30"
+                android:padding="12dp"
+                android:fontFamily="@font/monocraft"
+                android:textColor="@color/colorText"
+                android:scrollbars="vertical"
+                android:overScrollMode="always"
+                android:imeOptions="flagNoExtractUi|actionNone"
+                />
+        </ScrollView>
+
+        <!-- Botón enviar -->
+        <Button
+            android:id="@+id/btnSendCode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Send"
+            android:backgroundTint="@color/colorGreen"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:layout_marginTop="8dp" />
+
+    </LinearLayout>
+</ScrollView>

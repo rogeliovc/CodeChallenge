@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorBackground"
-    tools:context=".MenuPrincipalActivity">
+    tools:context=".MenuPrincipalActivity"
+    android:fitsSystemWindows="true">
 
     <!-- Aquí puedes agregar botones o menús para navegar a otras secciones -->
 
@@ -13,63 +14,79 @@
     <LinearLayout
         android:id="@+id/headerLayout"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
+        android:layout_height="80dp"
+        android:background="@color/colorPrimaryHeader"
+        android:elevation="4dp"
         android:gravity="center_vertical"
-        android:paddingTop="32dp"
-        android:paddingBottom="16dp"
+        android:orientation="horizontal"
         android:paddingStart="20dp"
+        android:paddingTop="16dp"
         android:paddingEnd="20dp"
-        app:layout_constraintTop_toTopOf="parent"
+        android:paddingBottom="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent">
+        app:layout_constraintTop_toTopOf="parent">
 
         <ImageView
             android:id="@+id/logoCucei"
             android:layout_width="48dp"
             android:layout_height="48dp"
-            android:src="@drawable/logo_cucei"
-            android:contentDescription="Logo CUCEI"/>
+            android:contentDescription="Logo CUCEI"
+            android:src="@drawable/logo_header" />
 
         <TextView
             android:id="@+id/textTituloApp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Code Challenge"
-            android:textColor="@android:color/white"
-            android:textSize="24sp"
-            android:textStyle="bold"
+            android:layout_marginStart="16dp"
             android:fontFamily="sans-serif-medium"
-            android:layout_marginStart="16dp"/>
+            android:text="Code Challenge"
+            android:textColor="@color/headerTextColor"
+            android:textSize="24sp"
+            android:textStyle="bold" />
     </LinearLayout>
 
     <!-- ChipGroup de filtros -->
     <include
-        layout="@layout/layout_chips_filtros"
         android:id="@+id/includeFiltros"
-        app:layout_constraintTop_toBottomOf="@id/headerLayout"
-        app:layout_constraintStart_toStartOf="parent"
+        layout="@layout/layout_chips_filtros"
+        android:layout_marginTop="24dp"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="24dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/headerLayout" />
 
     <!-- Botón de búsqueda -->
 
     <!-- Botón de perfil -->
+
+    <!-- FrameLayout para contener fragments, debe estar encima del RecyclerView y otros elementos -->
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="0dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:elevation="10dp" />
 
     <!-- RecyclerView para retos -->
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerRetos"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        app:layout_constraintTop_toBottomOf="@id/includeFiltros"
-        app:layout_constraintBottom_toTopOf="@id/bottomNav"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="64dp"
         android:layout_marginBottom="16dp"
         android:clipToPadding="false"
         android:paddingStart="16dp"
-        android:paddingEnd="16dp"/>
+        android:paddingEnd="16dp"
+        app:layout_constraintBottom_toTopOf="@id/bottomNav"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/includeFiltros" />
 
     <!-- Bottom Navigation -->
     <com.google.android.material.bottomnavigation.BottomNavigationView
@@ -79,9 +96,9 @@
         android:background="@color/colorCard"
         app:itemIconTint="@color/bottom_nav_item_color"
         app:itemTextColor="@color/bottom_nav_item_color"
-        app:menu="@menu/menu_bottom_nav"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"/>
+        app:menu="@menu/menu_bottom_nav" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

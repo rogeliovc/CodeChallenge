@@ -1405,6 +1405,8 @@ color colorBackgroundLight
 color colorBlue
 color colorCard
 color colorGreen
+color colorPrimary
+color colorPrimaryHeader
 color colorRed
 color colorText
 color colorYellow
@@ -1465,6 +1467,7 @@ color error_color_material_dark
 color error_color_material_light
 color foreground_material_dark
 color foreground_material_light
+color headerTextColor
 color highlighted_text_material_dark
 color highlighted_text_material_light
 color m3_appbar_overlay_color
@@ -3110,8 +3113,8 @@ drawable ic_person
 drawable ic_search_black_24
 drawable indeterminate_static
 drawable java_logo
-drawable logo_claro
 drawable logo_cucei
+drawable logo_header
 drawable logo_launcher
 drawable m3_avd_hide_password
 drawable m3_avd_show_password
@@ -3189,6 +3192,7 @@ drawable python_logo
 drawable test_level_drawable
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
+font monocraft
 font montserrat_medium
 id ALT
 id BOTTOM_END
@@ -3304,6 +3308,8 @@ id btnEditAvatar
 id btnGoogleSignIn
 id btnLogin
 id btnLogout
+id btnSalirDetalle
+id btnSendCode
 id btnSignUp
 id buttonPanel
 id cache_measures
@@ -3382,6 +3388,7 @@ id easeInOut
 id easeOut
 id east
 id edge
+id editCodigo
 id editTextConfirmPassword
 id editTextEmail
 id editTextPassword
@@ -3411,6 +3418,7 @@ id fixed
 id flip
 id floating
 id forever
+id fragment_container
 id fragment_container_view_tag
 id frost
 id fullscreen_header
@@ -3603,6 +3611,7 @@ id sawtooth
 id scale
 id screen
 id scroll
+id scrollEditCodigo
 id scrollIndicatorDown
 id scrollIndicatorUp
 id scrollView
@@ -3676,8 +3685,10 @@ id tag_unhandled_key_listeners
 id tag_window_insets_animation_callback
 id text
 id text2
+id textDescripcionProblema
 id textDescripcionReto
 id textDificultadReto
+id textEjemplos
 id textEnd
 id textHeaderDificultad
 id textLenguajeNombre
@@ -3688,6 +3699,7 @@ id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
 id textTituloApp
+id textTituloProblema
 id textTituloReto
 id textTop
 id textViewAccountTitle
@@ -3887,6 +3899,7 @@ layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
+layout fragment_problem_detail
 layout ime_base_split_test_activity
 layout ime_secondary_split_test_activity
 layout item_header_dificultad

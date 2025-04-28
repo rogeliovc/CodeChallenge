@@ -100,13 +100,17 @@ public class AccountActivity extends AppCompatActivity {
                 .show();
         });
 
-        // Por default, modo oscuro
+        // Sincroniza el switch con el modo real de la app y sistema
         int mode = AppCompatDelegate.getDefaultNightMode();
-        if (mode == AppCompatDelegate.MODE_NIGHT_FOLLOW_SYSTEM || mode == AppCompatDelegate.MODE_NIGHT_UNSPECIFIED) {
-            AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES);
-            mode = AppCompatDelegate.MODE_NIGHT_YES;
+        int nightModeFlags = getResources().getConfiguration().uiMode & android.content.res.Configuration.UI_MODE_NIGHT_MASK;
+        boolean isNight = false;
+        if (mode == AppCompatDelegate.MODE_NIGHT_YES) {
+            isNight = true;
+        } else if (mode == AppCompatDelegate.MODE_NIGHT_FOLLOW_SYSTEM || mode == AppCompatDelegate.MODE_NIGHT_UNSPECIFIED) {
+            isNight = (nightModeFlags == android.content.res.Configuration.UI_MODE_NIGHT_YES);
         }
-        switchDarkMode.setChecked(mode == AppCompatDelegate.MODE_NIGHT_YES || (mode == AppCompatDelegate.MODE_NIGHT_FOLLOW_SYSTEM && (getResources().getConfiguration().uiMode & android.content.res.Configuration.UI_MODE_NIGHT_MASK) == android.content.res.Configuration.UI_MODE_NIGHT_YES));
+        switchDarkMode.setChecked(isNight);
+
         switchDarkMode.setOnCheckedChangeListener((buttonView, isChecked) -> {
             if (isChecked) {
                 AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES);

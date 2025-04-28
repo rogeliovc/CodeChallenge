@@ -8,12 +8,15 @@ import android.widget.ImageView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 import java.util.List;
+import android.content.Context;
 
 public class RetoAdapter extends RecyclerView.Adapter<RetoAdapter.RetoViewHolder> {
     private List<Challenge> challenges;
+    private Context context;
 
-    public RetoAdapter(List<Challenge> challenges) {
+    public RetoAdapter(List<Challenge> challenges, Context context) {
         this.challenges = challenges;
+        this.context = context;
     }
 
     @NonNull
@@ -63,6 +66,14 @@ public class RetoAdapter extends RecyclerView.Adapter<RetoAdapter.RetoViewHolder
             color = android.graphics.Color.GRAY;
         }
         holder.textDificultad.setBackgroundTintList(android.content.res.ColorStateList.valueOf(color));
+
+        holder.itemView.setOnClickListener(v -> {
+            if (holder.getAdapterPosition() != RecyclerView.NO_POSITION) {
+                if (context instanceof MenuPrincipalActivity) {
+                    ((MenuPrincipalActivity) context).abrirDetalleProblema();
+                }
+            }
+        });
     }
 
 

@@ -76,6 +76,13 @@ public class RetoSeccionAdapter extends RecyclerView.Adapter<RecyclerView.ViewHo
                 color = android.graphics.Color.GRAY;
             }
             vh.textDificultad.setBackgroundTintList(android.content.res.ColorStateList.valueOf(color));
+
+            // Hacer clic en el reto abre el detalle
+            vh.itemView.setOnClickListener(v -> {
+                if (v.getContext() instanceof MenuPrincipalActivity) {
+                    ((MenuPrincipalActivity) v.getContext()).abrirDetalleProblema();
+                }
+            });
         }
     }
 

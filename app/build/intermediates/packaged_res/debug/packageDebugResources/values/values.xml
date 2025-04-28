@@ -6,9 +6,12 @@
     <color name="colorBlue">#3D405B</color>
     <color name="colorCard">#FFFFFF</color>
     <color name="colorGreen">#81B29A</color>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryHeader">#FFFFFF</color>
     <color name="colorRed">#E07A5F</color>
     <color name="colorText">#222222</color>
     <color name="colorYellow">#F2CC8F</color>
+    <color name="headerTextColor">#222222</color>
     <color name="white">#FFFFFFFF</color>
     <string name="app_name">Code challenge</string>
     <string name="default_web_client_id" translatable="false">920429794833-hkm5m1dkiro1j5hfa2jakk1rjf9ssic6.apps.googleusercontent.com</string>
