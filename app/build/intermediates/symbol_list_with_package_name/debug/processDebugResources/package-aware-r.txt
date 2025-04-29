@@ -3448,6 +3448,7 @@ id ignoreRequest
 id image
 id imageAvatar
 id imgLenguajeIcono
+id imgStatus
 id immediateStop
 id includeFiltros
 id included
@@ -3596,6 +3597,7 @@ id progress_horizontal
 id radio
 id ratio
 id rectangles
+id recyclerResults
 id recyclerRetos
 id report_drawn
 id reverseSawtooth
@@ -3736,6 +3738,12 @@ id transition_position
 id transition_scene_layoutid_cache
 id transition_transform
 id triangle
+id txtError
+id txtExpected
+id txtInput
+id txtOutput
+id txtResultsTitle
+id txtTestTitle
 id unchecked
 id uniform
 id unlabeled
@@ -3881,6 +3889,7 @@ layout activity_account
 layout activity_login
 layout activity_menu_principal
 layout activity_register
+layout bottomsheet_test_results
 layout browser_actions_context_menu_page
 layout browser_actions_context_menu_row
 layout custom_dialog
@@ -3905,6 +3914,7 @@ layout ime_secondary_split_test_activity
 layout item_header_dificultad
 layout item_lenguaje
 layout item_reto
+layout item_test_result
 layout layout_chips_filtros
 layout m3_alert_dialog
 layout m3_alert_dialog_actions

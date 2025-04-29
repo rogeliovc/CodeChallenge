@@ -24,6 +24,9 @@ import org.json.JSONException;
 import java.io.IOException;
 import okhttp3.MediaType;
 import android.app.AlertDialog;
+import com.google.android.material.bottomsheet.BottomSheetDialog;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 public class ProblemDetailFragment extends Fragment {
     private ListenerRegistration challengeListener;
@@ -280,13 +283,27 @@ public class ProblemDetailFragment extends Fragment {
     }
 
     private void mostrarResultados(List<String> resultados) {
-        StringBuilder sb = new StringBuilder();
-        for (String r : resultados) sb.append(r).append("\n\n");
-        new AlertDialog.Builder(getContext())
-                .setTitle("Resultados de los tests")
-                .setMessage(sb.toString())
-                .setPositiveButton("OK", null)
-                .show();
+        // Adaptar a TestResult list
+        List<TestResult> testResultList = new ArrayList<>();
+        for (String r : resultados) {
+            // Parsear el string (mejorable si se pasa objeto directamente)
+            // Espera: "Test 1: ✔️ PASA\nEntrada: ...\nEsperado: ...\nSalida: ...\n[Error: ...]"
+            String[] lines = r.split("\n");
+            String title = lines[0];
+            String input = lines.length > 1 ? lines[1].replace("Entrada: ", "") : "";
+            String expected = lines.length > 2 ? lines[2].replace("Esperado: ", "") : "";
+            String output = lines.length > 3 ? lines[3].replace("Salida: ", "") : "";
+            String error = (lines.length > 4 && lines[4].startsWith("Error:")) ? lines[4].replace("Error: ", "") : "";
+            boolean passed = title.contains("✔️");
+            testResultList.add(new TestResult(title, input, expected, output, error, passed));
+        }
+        BottomSheetDialog dialog = new BottomSheetDialog(requireContext());
+        View view = getLayoutInflater().inflate(R.layout.bottomsheet_test_results, null);
+        RecyclerView recycler = view.findViewById(R.id.recyclerResults);
+        recycler.setLayoutManager(new LinearLayoutManager(getContext()));
+        recycler.setAdapter(new TestResultAdapter(getContext(), testResultList));
+        dialog.setContentView(view);
+        dialog.show();
     }
 
     @Override
