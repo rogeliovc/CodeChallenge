@@ -18,11 +18,21 @@ import com.google.firebase.firestore.ListenerRegistration;
 import com.google.firebase.firestore.QueryDocumentSnapshot;
 import java.util.ArrayList;
 import java.util.List;
+import okhttp3.*;
+import org.json.JSONObject;
+import org.json.JSONException;
+import java.io.IOException;
+import okhttp3.MediaType;
+import android.app.AlertDialog;
 
 public class ProblemDetailFragment extends Fragment {
     private ListenerRegistration challengeListener;
     private List<Challenge.TestCase> testCases = new ArrayList<>();
     private String challengeId;
+    private final OkHttpClient client = new OkHttpClient();
+    private static final String RAPIDAPI_KEY = "3fb615a497msh37ec6351aad9227p1137a1jsnbbc131296c1e";
+    private static final String RAPIDAPI_HOST = "judge0-ce.p.rapidapi.com";
+    private static final String JUDGE0_URL = "https://judge0-ce.p.rapidapi.com/submissions?base64_encoded=false&wait=false";
 
     @Nullable
     @Override
@@ -119,7 +129,57 @@ public class ProblemDetailFragment extends Fragment {
         });
         btnSend.setOnClickListener(view -> {
             String codigo = editCodigo.getText().toString();
-            // Aquí puedes usar testCases para validar la solución
+            if (testCases == null || testCases.isEmpty()) {
+                return;
+            }
+            // Evaluar todos los test cases
+            List<String> resultados = new ArrayList<>();
+            final int[] completados = {0};
+            for (int i = 0; i < testCases.size(); i++) {
+                Challenge.TestCase tc = testCases.get(i);
+                String inputTest = tc.getInput();
+                String expected = tc.getExpectedOutput();
+                String languageId = "50"; // Por ahora C (puedes mejorar esto luego)
+                int idx = i;
+                evaluarCodigoConJudge0(codigo, languageId, inputTest, new okhttp3.Callback() {
+                    @Override
+                    public void onFailure(Call call, IOException e) {
+                        requireActivity().runOnUiThread(() -> {
+                            resultados.add("Test " + (idx+1) + ": Error en Judge0: " + e.getMessage());
+                            completados[0]++;
+                            if (completados[0] == testCases.size()) mostrarResultados(resultados);
+                        });
+                    }
+                    @Override
+                    public void onResponse(Call call, Response response) throws IOException {
+                        try {
+                            JSONObject resp = new JSONObject(response.body().string());
+                            String output = resp.optString("stdout", "");
+                            String error = resp.optString("stderr", "");
+                            // Normaliza output y expected
+                            String normOutput = output.trim().replaceAll("\\r\\n", "\\n").replaceAll("\\r", "\\n");
+                            String normExpected = expected.trim().replaceAll("\\r\\n", "\\n").replaceAll("\\r", "\\n");
+                            boolean ok = normOutput.equals(normExpected);
+                            String res = "Test " + (idx+1) + ": " + (ok ? "✔️ PASA" : "❌ FALLA") +
+                                    "\nEntrada: " + inputTest +
+                                    "\nEsperado: " + normExpected +
+                                    "\nSalida: " + normOutput +
+                                    (error.isEmpty() ? "" : ("\nError: " + error));
+                            requireActivity().runOnUiThread(() -> {
+                                resultados.add(res);
+                                completados[0]++;
+                                if (completados[0] == testCases.size()) mostrarResultados(resultados);
+                            });
+                        } catch (JSONException e) {
+                            requireActivity().runOnUiThread(() -> {
+                                resultados.add("Test " + (idx+1) + ": Error JSON Judge0: " + e.getMessage());
+                                completados[0]++;
+                                if (completados[0] == testCases.size()) mostrarResultados(resultados);
+                            });
+                        }
+                    }
+                });
+            }
         });
 
         Button btnSalir = v.findViewById(R.id.btnSalirDetalle);
@@ -128,6 +188,105 @@ public class ProblemDetailFragment extends Fragment {
         });
 
         return v;
+    }
+
+    private void evaluarCodigoConJudge0(String sourceCode, String languageId, String stdin, okhttp3.Callback callback) {
+        JSONObject json = new JSONObject();
+        try {
+            json.put("source_code", sourceCode);
+            json.put("language_id", Integer.parseInt(languageId)); // 50 para C
+            json.put("stdin", stdin);
+        } catch (JSONException e) {
+            e.printStackTrace();
+            return;
+        }
+        RequestBody body = RequestBody.create(MediaType.parse("application/json"), json.toString());
+        Request request = new Request.Builder()
+                .url(JUDGE0_URL)
+                .post(body)
+                .addHeader("x-rapidapi-key", RAPIDAPI_KEY)
+                .addHeader("x-rapidapi-host", RAPIDAPI_HOST)
+                .build();
+        client.newCall(request).enqueue(new okhttp3.Callback() {
+            @Override
+            public void onFailure(Call call, IOException e) {
+                callback.onFailure(call, e);
+            }
+            @Override
+            public void onResponse(Call call, Response response) throws IOException {
+                if (!response.isSuccessful()) {
+                    callback.onFailure(call, new IOException("Unexpected code " + response));
+                    return;
+                }
+                try {
+                    JSONObject resp = new JSONObject(response.body().string());
+                    String token = resp.getString("token");
+                    obtenerResultadoJudge0(token, callback);
+                } catch (JSONException e) {
+                    callback.onFailure(call, new IOException("JSON error: " + e.getMessage()));
+                }
+            }
+        });
+    }
+
+    private void obtenerResultadoJudge0(String token, okhttp3.Callback callback) {
+        String url = "https://judge0-ce.p.rapidapi.com/submissions/" + token + "?base64_encoded=false";
+        Request request = new Request.Builder()
+                .url(url)
+                .get()
+                .addHeader("x-rapidapi-key", RAPIDAPI_KEY)
+                .addHeader("x-rapidapi-host", RAPIDAPI_HOST)
+                .build();
+        client.newCall(request).enqueue(new okhttp3.Callback() {
+            @Override
+            public void onFailure(Call call, IOException e) {
+                callback.onFailure(call, e);
+            }
+            @Override
+            public void onResponse(Call call, Response response) throws IOException {
+                if (!response.isSuccessful()) {
+                    callback.onFailure(call, new IOException("Unexpected code " + response));
+                    return;
+                }
+                String respStr = response.body().string();
+                try {
+                    JSONObject resp = new JSONObject(respStr);
+                    int statusId = resp.getJSONObject("status").getInt("id");
+                    if (statusId < 3) {
+                        // Si hay error, detén el polling
+                        if (statusId == 13 || statusId == 11) { // Compilation error o runtime error
+                            // Crea un nuevo response con el mismo body para pasar al callback
+                            Response newResponse = response.newBuilder()
+                                .body(ResponseBody.create(response.body().contentType(), respStr))
+                                .build();
+                            callback.onResponse(call, newResponse);
+                            return;
+                        }
+                        // Todavía procesando, espera y vuelve a consultar
+                        try { Thread.sleep(1000); } catch (InterruptedException ignored) {}
+                        obtenerResultadoJudge0(token, callback);
+                    } else {
+                        // Listo, crea un nuevo response con el mismo body para pasar al callback
+                        Response newResponse = response.newBuilder()
+                            .body(ResponseBody.create(response.body().contentType(), respStr))
+                            .build();
+                        callback.onResponse(call, newResponse);
+                    }
+                } catch (JSONException e) {
+                    callback.onFailure(call, new IOException("JSON error: " + e.getMessage()));
+                }
+            }
+        });
+    }
+
+    private void mostrarResultados(List<String> resultados) {
+        StringBuilder sb = new StringBuilder();
+        for (String r : resultados) sb.append(r).append("\n\n");
+        new AlertDialog.Builder(getContext())
+                .setTitle("Resultados de los tests")
+                .setMessage(sb.toString())
+                .setPositiveButton("OK", null)
+                .show();
     }
 
     @Override
