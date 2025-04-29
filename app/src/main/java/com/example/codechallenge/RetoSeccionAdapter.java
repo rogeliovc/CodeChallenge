@@ -80,7 +80,7 @@ public class RetoSeccionAdapter extends RecyclerView.Adapter<RecyclerView.ViewHo
             // Hacer clic en el reto abre el detalle
             vh.itemView.setOnClickListener(v -> {
                 if (v.getContext() instanceof MenuPrincipalActivity) {
-                    ((MenuPrincipalActivity) v.getContext()).abrirDetalleProblema();
+                    ((MenuPrincipalActivity) v.getContext()).abrirDetalleProblema(reto.getId());
                 }
             });
         }

@@ -70,7 +70,7 @@ public class RetoAdapter extends RecyclerView.Adapter<RetoAdapter.RetoViewHolder
         holder.itemView.setOnClickListener(v -> {
             if (holder.getAdapterPosition() != RecyclerView.NO_POSITION) {
                 if (context instanceof MenuPrincipalActivity) {
-                    ((MenuPrincipalActivity) context).abrirDetalleProblema();
+                    ((MenuPrincipalActivity) context).abrirDetalleProblema(reto.getId());
                 }
             }
         });

@@ -29,7 +29,7 @@
             android:id="@+id/textTituloProblema"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Maximum Distance"
+            android:text=""
             android:textSize="24sp"
             android:textStyle="bold"
             android:textColor="@color/headerTextColor"
@@ -40,7 +40,7 @@
             android:id="@+id/textDescripcionProblema"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Please, proceed to IntArrayUtil class and implement its static method:\n\nint maximumDistance(int[] array);\n\nIn a given array of integers nums calculate integer result value, that is equal to the distance between the first and the last entry of the maximum value in the array.\n\nNote that input array may be empty."
+            android:text=""
             android:textSize="16sp"
             android:layout_marginBottom="16dp" />
 
@@ -49,7 +49,7 @@
             android:id="@+id/textEjemplos"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Examples\n\nInput:\n[4, 100, 3, 4]\n[5, 50, 30, 4, 5]\n[5, 500, 350, 4, 500]\n[10, 10, 10, 10, 10]\n\nOutput:\nresult = 0\nresult = 4\nresult = 3\nresult = 4"
+            android:text=""
             android:textSize="15sp"
             android:typeface="monospace"
             android:layout_marginBottom="20dp" />

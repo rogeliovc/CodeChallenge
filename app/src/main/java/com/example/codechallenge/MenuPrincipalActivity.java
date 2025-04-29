@@ -147,8 +147,11 @@ public class MenuPrincipalActivity extends AppCompatActivity {
     }
 
     // Método para navegar al detalle del problema
-    public void abrirDetalleProblema() {
+    public void abrirDetalleProblema(String challengeId) {
         Fragment fragment = new ProblemDetailFragment();
+        Bundle args = new Bundle();
+        args.putString("challengeId", challengeId);
+        fragment.setArguments(args);
         FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
         transaction.replace(R.id.fragment_container, fragment);
         transaction.addToBackStack(null);
