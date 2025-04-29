@@ -36,6 +36,7 @@ public class ProblemDetailFragment extends Fragment {
     private static final String RAPIDAPI_KEY = "3fb615a497msh37ec6351aad9227p1137a1jsnbbc131296c1e";
     private static final String RAPIDAPI_HOST = "judge0-ce.p.rapidapi.com";
     private static final String JUDGE0_URL = "https://judge0-ce.p.rapidapi.com/submissions?base64_encoded=false&wait=false";
+    private String languageId = "62"; // Variable global para languageId
 
     @Nullable
     @Override
@@ -47,7 +48,7 @@ public class ProblemDetailFragment extends Fragment {
         if (args != null) {
             challengeId = args.getString("challengeId", null);
             Log.d("DBG_PROBLEM", "challengeId: " + challengeId);
-            Toast.makeText(getContext(), "challengeId: " + challengeId, Toast.LENGTH_SHORT).show();
+            //Toast.makeText(getContext(), "challengeId: " + challengeId, Toast.LENGTH_SHORT).show();
         }
 
         TextView tituloView = v.findViewById(R.id.textTituloProblema);
@@ -72,13 +73,13 @@ public class ProblemDetailFragment extends Fragment {
                     String titulo = snapshot.getString("title");
                     String descripcion = snapshot.getString("description");
                     Log.d("DBG_PROBLEM", "title: " + titulo + ", desc: " + descripcion);
-                    Toast.makeText(getContext(), "title: " + titulo, Toast.LENGTH_SHORT).show();
+                    //Toast.makeText(getContext(), "title: " + titulo, Toast.LENGTH_SHORT).show();
                     if (titulo != null) tituloView.setText(titulo);
                     if (descripcion != null) descripcionView.setText(descripcion);
                     // Obtener test cases (soportar dos formatos: List<Map<String, Object>> y List<String>)
                     Object tcObj = snapshot.get("testCases");
                     Log.d("DBG_PROBLEM", "testCases: " + (tcObj != null ? tcObj.toString() : "null"));
-                    Toast.makeText(getContext(), "testCases: " + (tcObj != null ? tcObj.toString() : "null"), Toast.LENGTH_SHORT).show();
+                    //Toast.makeText(getContext(), "testCases: " + (tcObj != null ? tcObj.toString() : "null"), Toast.LENGTH_SHORT).show();
                     if (tcObj instanceof List) {
                         List<?> firestoreTestCases = (List<?>) tcObj;
                         testCases.clear();
@@ -106,6 +107,20 @@ public class ProblemDetailFragment extends Fragment {
                             }
                         }
                         ejemplosView.setText(ejemplosBuilder.toString());
+                    }
+                    // Determina el languageId según el atributo 'language' de Firestore
+                    languageId = "62"; // Java por defecto
+                    String language = null;
+                    if (snapshot != null) language = snapshot.getString("language");
+                    if (language != null) {
+                        switch (language.toLowerCase()) {
+                            case "c": languageId = "50"; break;
+                            case "c++": languageId = "54"; break;
+                            case "java": languageId = "62"; break;
+                            case "python": languageId = "71"; break;
+                            // Agrega más lenguajes si es necesario
+                            default: languageId = "62"; // fallback Java
+                        }
                     }
                 });
         }
@@ -142,7 +157,6 @@ public class ProblemDetailFragment extends Fragment {
                 Challenge.TestCase tc = testCases.get(i);
                 String inputTest = tc.getInput();
                 String expected = tc.getExpectedOutput();
-                String languageId = "50"; // Por ahora C (puedes mejorar esto luego)
                 int idx = i;
                 evaluarCodigoConJudge0(codigo, languageId, inputTest, new okhttp3.Callback() {
                     @Override
@@ -159,15 +173,17 @@ public class ProblemDetailFragment extends Fragment {
                             JSONObject resp = new JSONObject(response.body().string());
                             String output = resp.optString("stdout", "");
                             String error = resp.optString("stderr", "");
-                            // Normaliza output y expected
-                            String normOutput = output.trim().replaceAll("\\r\\n", "\\n").replaceAll("\\r", "\\n");
-                            String normExpected = expected.trim().replaceAll("\\r\\n", "\\n").replaceAll("\\r", "\\n");
+                            // Normaliza output y expected para comparar ignorando saltos de línea y espacios al final
+                            String normOutput = output.trim().replaceAll("\\r\\n", "\\n").replaceAll("\\r", "\\n").replaceAll("\\s+$", "");
+                            String normExpected = expected.trim().replaceAll("\\r\\n", "\\n").replaceAll("\\r", "\\n").replaceAll("\\s+$", "");
                             boolean ok = normOutput.equals(normExpected);
                             String res = "Test " + (idx+1) + ": " + (ok ? "✔️ PASA" : "❌ FALLA") +
                                     "\nEntrada: " + inputTest +
                                     "\nEsperado: " + normExpected +
                                     "\nSalida: " + normOutput +
-                                    (error.isEmpty() ? "" : ("\nError: " + error));
+                                    (error.isEmpty() ? "" : ("\nError: " + error)) +
+                                    (resp.has("compile_output") && !resp.isNull("compile_output") ? ("\nCompilación: " + resp.optString("compile_output", "")) : "") +
+                                    (resp.has("message") && !resp.isNull("message") ? ("\nMensaje: " + resp.optString("message", "")) : "");
                             requireActivity().runOnUiThread(() -> {
                                 resultados.add(res);
                                 completados[0]++;
@@ -294,8 +310,10 @@ public class ProblemDetailFragment extends Fragment {
             String expected = lines.length > 2 ? lines[2].replace("Esperado: ", "") : "";
             String output = lines.length > 3 ? lines[3].replace("Salida: ", "") : "";
             String error = (lines.length > 4 && lines[4].startsWith("Error:")) ? lines[4].replace("Error: ", "") : "";
+            String compileOutput = (lines.length > 5 && lines[5].startsWith("Compilación:")) ? lines[5].replace("Compilación: ", "") : "";
+            String message = (lines.length > 6 && lines[6].startsWith("Mensaje:")) ? lines[6].replace("Mensaje: ", "") : "";
             boolean passed = title.contains("✔️");
-            testResultList.add(new TestResult(title, input, expected, output, error, passed));
+            testResultList.add(new TestResult(title, input, expected, output, error, compileOutput, message, passed));
         }
         BottomSheetDialog dialog = new BottomSheetDialog(requireContext());
         View view = getLayoutInflater().inflate(R.layout.bottomsheet_test_results, null);
