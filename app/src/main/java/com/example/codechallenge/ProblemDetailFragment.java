@@ -27,6 +27,11 @@ import android.app.AlertDialog;
 import com.google.android.material.bottomsheet.BottomSheetDialog;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
+import android.os.Vibrator;
+import android.os.VibrationEffect;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
+import android.content.Context;
 
 public class ProblemDetailFragment extends Fragment {
     private ListenerRegistration challengeListener;
@@ -42,6 +47,12 @@ public class ProblemDetailFragment extends Fragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View v = inflater.inflate(R.layout.fragment_problem_detail, container, false);
+
+        // Animación de entrada para todo el fragment
+        Animation fadeIn = AnimationUtils.loadAnimation(requireContext(), R.anim.fade_in);
+        Animation scaleIn = AnimationUtils.loadAnimation(requireContext(), R.anim.scale_in);
+        v.startAnimation(fadeIn);
+        v.startAnimation(scaleIn);
 
         // Obtener el ID del reto desde los argumentos
         Bundle args = getArguments();
@@ -109,7 +120,7 @@ public class ProblemDetailFragment extends Fragment {
                         ejemplosView.setText(ejemplosBuilder.toString());
                     }
                     // Determina el languageId según el atributo 'language' de Firestore
-                    languageId = "62"; // Java por defecto
+                    
                     String language = null;
                     if (snapshot != null) language = snapshot.getString("language");
                     if (language != null) {
@@ -119,7 +130,7 @@ public class ProblemDetailFragment extends Fragment {
                             case "java": languageId = "62"; break;
                             case "python": languageId = "71"; break;
                             // Agrega más lenguajes si es necesario
-                            default: languageId = "62"; // fallback Java
+                            default: languageId = "71"; // Python por defecto
                         }
                     }
                 });
@@ -301,6 +312,7 @@ public class ProblemDetailFragment extends Fragment {
     private void mostrarResultados(List<String> resultados) {
         // Adaptar a TestResult list
         List<TestResult> testResultList = new ArrayList<>();
+        boolean allPassed = true;
         for (String r : resultados) {
             // Parsear el string (mejorable si se pasa objeto directamente)
             // Espera: "Test 1: ✔️ PASA\nEntrada: ...\nEsperado: ...\nSalida: ...\n[Error: ...]"
@@ -309,10 +321,16 @@ public class ProblemDetailFragment extends Fragment {
             String input = lines.length > 1 ? lines[1].replace("Entrada: ", "") : "";
             String expected = lines.length > 2 ? lines[2].replace("Esperado: ", "") : "";
             String output = lines.length > 3 ? lines[3].replace("Salida: ", "") : "";
-            String error = (lines.length > 4 && lines[4].startsWith("Error:")) ? lines[4].replace("Error: ", "") : "";
-            String compileOutput = (lines.length > 5 && lines[5].startsWith("Compilación:")) ? lines[5].replace("Compilación: ", "") : "";
-            String message = (lines.length > 6 && lines[6].startsWith("Mensaje:")) ? lines[6].replace("Mensaje: ", "") : "";
+            String error = "";
+            String compileOutput = "";
+            String message = "";
+            for (String l : lines) {
+                if (l.startsWith("Error:")) error = l.replace("Error: ", "");
+                if (l.startsWith("Compilación:")) compileOutput = l.replace("Compilación: ", "");
+                if (l.startsWith("Mensaje:")) message = l.replace("Mensaje: ", "");
+            }
             boolean passed = title.contains("✔️");
+            allPassed = allPassed && passed;
             testResultList.add(new TestResult(title, input, expected, output, error, compileOutput, message, passed));
         }
         BottomSheetDialog dialog = new BottomSheetDialog(requireContext());
@@ -321,7 +339,21 @@ public class ProblemDetailFragment extends Fragment {
         recycler.setLayoutManager(new LinearLayoutManager(getContext()));
         recycler.setAdapter(new TestResultAdapter(getContext(), testResultList));
         dialog.setContentView(view);
+        // Animación de fade in para el bottomsheet
+        Animation fadeIn = AnimationUtils.loadAnimation(getContext(), R.anim.fade_in);
+        view.startAnimation(fadeIn);
         dialog.show();
+        // Vibración y feedback según resultado
+        Vibrator vibrator = (Vibrator) requireContext().getSystemService(Context.VIBRATOR_SERVICE);
+        if (vibrator != null) {
+            if (allPassed) {
+                // Vibración corta y animación positiva
+                vibrator.vibrate(VibrationEffect.createOneShot(120, VibrationEffect.EFFECT_CLICK));
+            } else {
+                // Vibración más larga y animación negativa
+                vibrator.vibrate(VibrationEffect.createOneShot(350, VibrationEffect.EFFECT_DOUBLE_CLICK));
+            }
+        }
     }
 
     @Override

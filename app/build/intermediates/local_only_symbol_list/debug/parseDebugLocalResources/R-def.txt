@@ -1,5 +1,9 @@
 R_DEF: Internal format may change without notice
 local
+anim fade_in
+anim fade_in_fast
+anim fade_out
+anim scale_in
 color black
 color bottom_nav_item_color
 color bottom_nav_selector
@@ -16,6 +20,7 @@ color colorYellow
 color headerTextColor
 color selector_nav_icon
 color white
+drawable bg_card
 drawable bg_card_c
 drawable bg_card_cpp
 drawable bg_card_header
@@ -31,13 +36,17 @@ drawable circle_bg
 drawable cplusplus_icon
 drawable ic_arrow_back_black_24dp
 drawable ic_avatar_placeholder
+drawable ic_check_circle
 drawable ic_code
 drawable ic_edit
+drawable ic_exercise_done
 drawable ic_favorite
 drawable ic_home
 drawable ic_launcher_background
 drawable ic_launcher_foreground
+drawable ic_medal
 drawable ic_notifications
+drawable ic_percent
 drawable ic_person
 drawable java_logo
 drawable logo_cucei
@@ -75,6 +84,7 @@ id logoCucei
 id nav_home
 id nav_notifications
 id nav_profile
+id nav_stats
 id progressBar
 id recyclerResults
 id recyclerRetos
@@ -99,18 +109,24 @@ id textViewLoginTitle
 id textViewName
 id textViewRegisterSubtitle
 id textViewRegisterTitle
+id txtAccuracy
 id txtError
+id txtExercisesCorrect
+id txtExercisesSolved
 id txtExpected
 id txtInput
 id txtOutput
 id txtResultsTitle
+id txtStatsTitle
 id txtTestTitle
 layout activity_account
 layout activity_login
 layout activity_menu_principal
 layout activity_register
 layout bottomsheet_test_results
+layout fragment_main_list
 layout fragment_problem_detail
+layout fragment_stats
 layout item_header_dificultad
 layout item_lenguaje
 layout item_reto

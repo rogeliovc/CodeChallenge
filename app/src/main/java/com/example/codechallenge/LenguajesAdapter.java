@@ -3,6 +3,8 @@ package com.example.codechallenge;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
@@ -76,6 +78,11 @@ public class LenguajesAdapter extends RecyclerView.Adapter<LenguajesAdapter.Leng
         holder.textLenguajeTagline.setText(tagline);
         holder.textLenguajeNumRetos.setText(numRetos);
         holder.layoutLenguaje.setBackgroundResource(bgRes);
+        // Animación de fade+scale al aparecer
+        Animation scaleIn = AnimationUtils.loadAnimation(holder.itemView.getContext(), R.anim.scale_in);
+        Animation fadeIn = AnimationUtils.loadAnimation(holder.itemView.getContext(), R.anim.fade_in_fast);
+        holder.itemView.startAnimation(scaleIn);
+        holder.itemView.startAnimation(fadeIn);
         // Animación de elevación al presionar
         holder.cardView.setOnTouchListener((v, event) -> {
             switch (event.getAction()) {

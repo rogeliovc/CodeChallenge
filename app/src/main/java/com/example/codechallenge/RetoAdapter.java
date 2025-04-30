@@ -9,6 +9,8 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 import java.util.List;
 import android.content.Context;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 
 public class RetoAdapter extends RecyclerView.Adapter<RetoAdapter.RetoViewHolder> {
     private List<Challenge> challenges;
@@ -66,6 +68,12 @@ public class RetoAdapter extends RecyclerView.Adapter<RetoAdapter.RetoViewHolder
             color = android.graphics.Color.GRAY;
         }
         holder.textDificultad.setBackgroundTintList(android.content.res.ColorStateList.valueOf(color));
+
+        // Animación de entrada para cada card de reto
+        Animation scaleIn = AnimationUtils.loadAnimation(holder.itemView.getContext(), R.anim.scale_in);
+        Animation fadeIn = AnimationUtils.loadAnimation(holder.itemView.getContext(), R.anim.fade_in_fast);
+        holder.itemView.startAnimation(scaleIn);
+        holder.itemView.startAnimation(fadeIn);
 
         holder.itemView.setOnClickListener(v -> {
             if (holder.getAdapterPosition() != RecyclerView.NO_POSITION) {

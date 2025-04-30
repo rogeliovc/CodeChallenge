@@ -9,6 +9,10 @@
         android:icon="@drawable/ic_notifications"
         android:title="Notificaciones" />
     <item
+        android:id="@+id/nav_stats"
+        android:icon="@drawable/ic_medal"
+        android:title="Logros" />
+    <item
         android:id="@+id/nav_profile"
         android:icon="@drawable/ic_person"
         android:title="Perfil" />
