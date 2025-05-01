@@ -3,6 +3,8 @@ package com.example.codechallenge;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
@@ -54,6 +56,9 @@ public class RetoSeccionAdapter extends RecyclerView.Adapter<RecyclerView.ViewHo
     public void onBindViewHolder(@NonNull RecyclerView.ViewHolder holder, int position) {
         if (getItemViewType(position) == TYPE_HEADER) {
             ((HeaderViewHolder) holder).textHeader.setText((String) items.get(position));
+            // Animación de fade para el header
+            Animation fadeIn = AnimationUtils.loadAnimation(holder.itemView.getContext(), R.anim.fade_in_fast);
+            holder.itemView.startAnimation(fadeIn);
         } else {
             Challenge reto = (Challenge) items.get(position);
             RetoViewHolder vh = (RetoViewHolder) holder;
@@ -76,11 +81,15 @@ public class RetoSeccionAdapter extends RecyclerView.Adapter<RecyclerView.ViewHo
                 color = android.graphics.Color.GRAY;
             }
             vh.textDificultad.setBackgroundTintList(android.content.res.ColorStateList.valueOf(color));
-
+            // Animación de entrada para cada card de reto
+            Animation scaleIn = AnimationUtils.loadAnimation(holder.itemView.getContext(), R.anim.scale_in);
+            Animation fadeIn = AnimationUtils.loadAnimation(holder.itemView.getContext(), R.anim.fade_in_fast);
+            holder.itemView.startAnimation(scaleIn);
+            holder.itemView.startAnimation(fadeIn);
             // Hacer clic en el reto abre el detalle
             vh.itemView.setOnClickListener(v -> {
                 if (v.getContext() instanceof MenuPrincipalActivity) {
-                    ((MenuPrincipalActivity) v.getContext()).abrirDetalleProblema();
+                    ((MenuPrincipalActivity) v.getContext()).abrirDetalleProblema(reto.getId());
                 }
             });
         }

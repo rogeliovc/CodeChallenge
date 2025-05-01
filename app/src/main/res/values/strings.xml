@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Code challenge</string>
+    <string name="default_web_client_id">920429794833-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx.apps.googleusercontent.com</string>
 </resources>
