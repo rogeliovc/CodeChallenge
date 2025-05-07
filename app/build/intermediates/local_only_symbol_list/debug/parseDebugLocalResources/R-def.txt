@@ -20,6 +20,7 @@ color colorYellow
 color headerTextColor
 color selector_nav_icon
 color white
+drawable bg_badge
 drawable bg_card
 drawable bg_card_c
 drawable bg_card_cpp
@@ -28,6 +29,7 @@ drawable bg_card_java
 drawable bg_card_python
 drawable bg_chip_dificultad
 drawable bg_chip_lenguaje
+drawable bg_code_block
 drawable bg_edittext
 drawable bg_gradient_menu
 drawable bg_gradient_orange
@@ -64,6 +66,7 @@ id btnLogout
 id btnSalirDetalle
 id btnSendCode
 id btnSignUp
+id btnTestCode
 id cardOptions
 id cardUserInfo
 id chipGroupFiltros
@@ -119,6 +122,7 @@ id txtOutput
 id txtResultsTitle
 id txtStatsTitle
 id txtTestTitle
+id txtTotalPoints
 layout activity_account
 layout activity_login
 layout activity_menu_principal

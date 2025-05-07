@@ -29,6 +29,22 @@ public class Challenge {
     public List<TestCase> getTestCases() { return testCases; }
     public void setTestCases(List<TestCase> testCases) { this.testCases = testCases; }
 
+    // Método para obtener puntos según la dificultad
+    public int getPoints() {
+        if (difficulty == null) return 0;
+        
+        switch (difficulty.toLowerCase()) {
+            case "facil":
+                return 50;
+            case "medio":
+                return 100;
+            case "dificil":
+                return 200;
+            default:
+                return 0;
+        }
+    }
+
     public static class TestCase {
         private String input;
         private String expectedOutput;

@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorBackground"
@@ -12,86 +13,140 @@
         android:orientation="vertical"
         android:padding="20dp">
 
-        <!-- Botón salir -->
-        <Button
-            android:id="@+id/btnSalirDetalle"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Salir"
-            android:backgroundTint="@color/colorRed"
-            android:textColor="@android:color/white"
-            android:layout_gravity="end"
-            android:layout_marginTop="8dp"
-            android:layout_marginBottom="8dp" />
-
         <!-- Header del reto -->
-        <TextView
-            android:id="@+id/textTituloProblema"
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text=""
-            android:textSize="24sp"
-            android:textStyle="bold"
-            android:textColor="@color/headerTextColor"
-            android:layout_marginBottom="12dp" />
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+            
+            <TextView
+                android:id="@+id/textTituloProblema"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text=""
+                android:textSize="28sp"
+                android:textStyle="bold"
+                android:textColor="@color/headerTextColor"
+                android:layout_marginBottom="8dp" />
+
+            <Button
+                android:id="@+id/btnSalirDetalle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="X"
+                android:backgroundTint="@color/colorRed"
+                android:textColor="@android:color/white"
+                android:layout_marginLeft="16dp"
+                android:padding="8dp"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <!-- Información del reto -->
 
         <!-- Descripción -->
         <TextView
             android:id="@+id/textDescripcionProblema"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text=""
             android:textSize="16sp"
-            android:layout_marginBottom="16dp" />
+            android:lineSpacingMultiplier="1.2"
+            android:layout_marginBottom="24dp" />
 
         <!-- Ejemplos -->
         <TextView
             android:id="@+id/textEjemplos"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text=""
             android:textSize="15sp"
             android:typeface="monospace"
-            android:layout_marginBottom="20dp" />
+            android:background="@drawable/bg_code_block"
+            android:padding="16dp"
+            android:layout_marginBottom="24dp" />
 
-        <!-- Área para código con scroll independiente -->
-        <ScrollView
-            android:id="@+id/scrollEditCodigo"
-            android:layout_width="match_parent"
-            android:layout_height="350dp"
-            android:fillViewport="true"
-            android:background="@drawable/bg_card_header"
-            android:layout_marginBottom="16dp">
-            <EditText
-                android:id="@+id/editCodigo"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:minHeight="300dp"
-                android:hint="Escribe tu código aquí..."
-                android:gravity="top|start"
-                android:background="@android:color/transparent"
-                android:textSize="15sp"
-                android:inputType="textMultiLine|textNoSuggestions"
-                android:maxLines="30"
-                android:padding="12dp"
-                android:fontFamily="@font/monocraft"
-                android:textColor="@color/colorText"
-                android:scrollbars="vertical"
-                android:overScrollMode="always"
-                android:imeOptions="flagNoExtractUi|actionNone"
-                />
-        </ScrollView>
-
-        <!-- Botón enviar -->
-        <Button
-            android:id="@+id/btnSendCode"
+        <!-- Área para código -->
+        <com.google.android.material.card.MaterialCardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Send"
-            android:backgroundTint="@color/colorGreen"
-            android:textColor="@android:color/white"
-            android:textStyle="bold"
-            android:layout_marginTop="8dp" />
+            app:cardCornerRadius="8dp"
+            app:cardElevation="4dp"
+            android:layout_marginBottom="16dp">
+            
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Tu código"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:padding="16dp"
+                    android:background="@color/colorBlue"
+                    android:textColor="@android:color/white" />
+
+                <ScrollView
+                    android:id="@+id/scrollEditCodigo"
+                    android:layout_width="match_parent"
+                    android:layout_height="350dp"
+                    android:fillViewport="true"
+                    android:background="@color/colorBackground">
+                    
+                    <EditText
+                        android:id="@+id/editCodigo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:minHeight="300dp"
+                        android:hint="Escribe tu código aquí..."
+                        android:gravity="top|start"
+                        android:background="@android:color/transparent"
+                        android:textSize="15sp"
+                        android:inputType="textMultiLine|textNoSuggestions"
+                        android:maxLines="30"
+                        android:padding="16dp"
+                        android:fontFamily="@font/monocraft"
+                        android:textColor="@color/colorText"
+                        android:scrollbars="vertical"
+                        android:overScrollMode="always"
+                        android:imeOptions="flagNoExtractUi|actionNone" />
+                </ScrollView>
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Botones de acción -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="end"
+            android:layout_marginTop="8dp">
+
+            <Button
+                android:id="@+id/btnTestCode"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Probar"
+                android:backgroundTint="@color/colorYellow"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                android:layout_marginEnd="8dp" />
+
+            <Button
+                android:id="@+id/btnSendCode"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Enviar"
+                android:backgroundTint="@color/colorGreen"
+                android:textColor="@android:color/white"
+                android:textStyle="bold" />
+        </LinearLayout>
 
     </LinearLayout>
 </ScrollView>

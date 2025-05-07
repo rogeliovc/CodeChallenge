@@ -12,6 +12,8 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
 import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.ListenerRegistration;
@@ -309,6 +311,11 @@ public class ProblemDetailFragment extends Fragment {
         });
     }
 
+    private StatsFragment getStatsFragment() {
+        FragmentManager fragmentManager = requireActivity().getSupportFragmentManager();
+        return (StatsFragment) fragmentManager.findFragmentByTag("stats_fragment");
+    }
+
     private void mostrarResultados(List<String> resultados) {
         // Adaptar a TestResult list
         List<TestResult> testResultList = new ArrayList<>();
@@ -349,6 +356,29 @@ public class ProblemDetailFragment extends Fragment {
             if (allPassed) {
                 // Vibración corta y animación positiva
                 vibrator.vibrate(VibrationEffect.createOneShot(120, VibrationEffect.EFFECT_CLICK));
+                
+                // Obtener el reto actual y otorgar puntos
+                if (challengeId != null) {
+                    FirebaseFirestore db = FirebaseFirestore.getInstance();
+                    db.collection("challenges").document(challengeId)
+                        .get()
+                        .addOnSuccessListener(snapshot -> {
+                            if (snapshot.exists()) {
+                                Challenge challenge = new Challenge();
+                                challenge.setDifficulty(snapshot.getString("difficulty"));
+                                int puntos = challenge.getPoints();
+                                
+                                // Obtener y actualizar el StatsFragment
+                                StatsFragment statsFragment = getStatsFragment();
+                                if (statsFragment != null) {
+                                    statsFragment.addPoints(puntos);
+                                    Toast.makeText(getContext(), 
+                                        "¡Felicidades! Has ganado " + puntos + " puntos", 
+                                        Toast.LENGTH_LONG).show();
+                                }
+                            }
+                        });
+                }
             } else {
                 // Vibración más larga y animación negativa
                 vibrator.vibrate(VibrationEffect.createOneShot(350, VibrationEffect.EFFECT_DOUBLE_CLICK));

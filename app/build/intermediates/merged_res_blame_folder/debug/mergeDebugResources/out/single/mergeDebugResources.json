@@ -1,126 +1,298 @@
 [
     {
-        "merged": "com.example.codechallenge.app-debug-37:/layout_activity_menu_principal.xml.flat",
-        "source": "com.example.codechallenge.app-main-39:/layout/activity_menu_principal.xml"
+        "merged": "/home/rogeliovc/.gradle/daemon/8.11.1/com.example.codechallenge.app-debug-38:/drawable_bg_code_block.xml.flat",
+        "source": "/home/rogeliovc/.gradle/daemon/8.11.1/com.example.codechallenge.app-main-40:/drawable/bg_code_block.xml"
     },
     {
-        "merged": "com.example.codechallenge.app-debug-37:/drawable_ic_home.xml.flat",
-        "source": "com.example.codechallenge.app-main-39:/drawable/ic_home.xml"
+        "merged": "/home/rogeliovc/.gradle/daemon/8.11.1/com.example.codechallenge.app-debug-38:/xml_data_extraction_rules.xml.flat",
+        "source": "/home/rogeliovc/.gradle/daemon/8.11.1/com.example.codechallenge.app-main-40:/xml/data_extraction_rules.xml"
     },
     {
-        "merged": "com.example.codechallenge.app-debug-37:/mipmap-mdpi_ic_launcher_round.webp.flat",
-        "source": "com.example.codechallenge.app-main-39:/mipmap-mdpi/ic_launcher_round.webp"
+        "merged": "/home/rogeliovc/.gradle/daemon/8.11.1/com.example.codechallenge.app-debug-38:/layout_bottomsheet_test_results.xml.flat",
+        "source": "/home/rogeliovc/.gradle/daemon/8.11.1/com.example.codechallenge.app-main-40:/layout/bottomsheet_test_results.xml"
     },
     {
-        "merged": "com.example.codechallenge.app-debug-37:/layout_activity_register.xml.flat",
-        "source": "com.example.codechallenge.app-main-39:/layout/activity_register.xml"
+        "merged": "/home/rogeliovc/.gradle/daemon/8.11.1/com.example.codechallenge.app-debug-38:/drawable_ic_medal.xml.flat",
+        "source": "/home/rogeliovc/.gradle/daemon/8.11.1/com.example.codechallenge.app-main-40:/drawable/ic_medal.xml"
     },
     {
-        "merged": "com.example.codechallenge.app-debug-37:/layout_activity_login.xml.flat",
-        "source": "com.example.codechallenge.app-main-39:/layout/activity_login.xml"
+        "merged": "/home/rogeliovc/.gradle/daemon/8.11.1/com.example.codechallenge.app-debug-38:/drawable_bg_edittext.xml.flat",
+        "source": "/home/rogeliovc/.gradle/daemon/8.11.1/com.example.codechallenge.app-main-40:/drawable/bg_edittext.xml"
     },
     {
-        "merged": "com.example.codechallenge.app-debug-37:/mipmap-xxhdpi_ic_launcher.webp.flat",
-        "source": "com.example.codechallenge.app-main-39:/mipmap-xxhdpi/ic_launcher.webp"
+        "merged": "/home/rogeliovc/.gradle/daemon/8.11.1/com.example.codechallenge.app-debug-38:/drawable_logo_cucei.png.flat",
+        "source": "/home/rogeliovc/.gradle/daemon/8.11.1/com.example.codechallenge.app-main-40:/drawable/logo_cucei.png"
     },
     {
-        "merged": "com.example.codechallenge.app-debug-37:/drawable_ic_launcher_background.xml.flat",
-        "source": "com.example.codechallenge.app-main-39:/drawable/ic_launcher_background.xml"
+        "merged": "/home/rogeliovc/.gradle/daemon/8.11.1/com.example.codechallenge.app-debug-38:/drawable_ic_launcher_foreground.xml.flat",
+        "source": "/home/rogeliovc/.gradle/daemon/8.11.1/com.example.codechallenge.app-main-40:/drawable/ic_launcher_foreground.xml"
     },
     {
-        "merged": "com.example.codechallenge.app-debug-37:/mipmap-xxxhdpi_ic_launcher.webp.flat",
-        "source": "com.example.codechallenge.app-main-39:/mipmap-xxxhdpi/ic_launcher.webp"
+        "merged": "/home/rogeliovc/.gradle/daemon/8.11.1/com.example.codechallenge.app-debug-38:/drawable_python_logo.xml.flat",
+        "source": "/home/rogeliovc/.gradle/daemon/8.11.1/com.example.codechallenge.app-main-40:/drawable/python_logo.xml"
     },
     {
-        "merged": "com.example.codechallenge.app-debug-37:/menu_menu_bottom_nav.xml.flat",
-        "source": "com.example.codechallenge.app-main-39:/menu/menu_bottom_nav.xml"
+        "merged": "/home/rogeliovc/.gradle/daemon/8.11.1/com.example.codechallenge.app-debug-38:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "/home/rogeliovc/.gradle/daemon/8.11.1/com.example.codechallenge.app-main-40:/mipmap-xxhdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "com.example.codechallenge.app-debug-37:/mipmap-mdpi_ic_launcher.webp.flat",
-        "source": "com.example.codechallenge.app-main-39:/mipmap-mdpi/ic_launcher.webp"
+        "merged": "/home/rogeliovc/.gradle/daemon/8.11.1/com.example.codechallenge.app-debug-38:/drawable_ic_launcher_background.xml.flat",
+        "source": "/home/rogeliovc/.gradle/daemon/8.11.1/com.example.codechallenge.app-main-40:/drawable/ic_launcher_background.xml"
     },
     {
-        "merged": "com.example.codechallenge.app-debug-37:/drawable_bg_gradient_menu.xml.flat",
-        "source": "com.example.codechallenge.app-main-39:/drawable/bg_gradient_menu.xml"
+        "merged": "/home/rogeliovc/.gradle/daemon/8.11.1/com.example.codechallenge.app-debug-38:/anim_fade_in_fast.xml.flat",
+        "source": "/home/rogeliovc/.gradle/daemon/8.11.1/com.example.codechallenge.app-main-40:/anim/fade_in_fast.xml"
     },
     {
-        "merged": "com.example.codechallenge.app-debug-37:/mipmap-anydpi_ic_launcher.xml.flat",
-        "source": "com.example.codechallenge.app-main-39:/mipmap-anydpi/ic_launcher.xml"
+        "merged": "com.example.codechallenge.app-debug-38:/layout_fragment_stats.xml.flat",
+        "source": "com.example.codechallenge.app-main-40:/layout/fragment_stats.xml"
     },
     {
-        "merged": "com.example.codechallenge.app-debug-37:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
-        "source": "com.example.codechallenge.app-main-39:/mipmap-xxhdpi/ic_launcher_round.webp"
+        "merged": "/home/rogeliovc/.gradle/daemon/8.11.1/com.example.codechallenge.app-debug-38:/color_bottom_nav_selector.xml.flat",
+        "source": "/home/rogeliovc/.gradle/daemon/8.11.1/com.example.codechallenge.app-main-40:/color/bottom_nav_selector.xml"
     },
     {
-        "merged": "com.example.codechallenge.app-debug-37:/drawable_ic_launcher_foreground.xml.flat",
-        "source": "com.example.codechallenge.app-main-39:/drawable/ic_launcher_foreground.xml"
+        "merged": "/home/rogeliovc/.gradle/daemon/8.11.1/com.example.codechallenge.app-debug-38:/layout_activity_login.xml.flat",
+        "source": "/home/rogeliovc/.gradle/daemon/8.11.1/com.example.codechallenge.app-main-40:/layout/activity_login.xml"
     },
     {
-        "merged": "com.example.codechallenge.app-debug-37:/layout_item_reto.xml.flat",
-        "source": "com.example.codechallenge.app-main-39:/layout/item_reto.xml"
+        "merged": "/home/rogeliovc/.gradle/daemon/8.11.1/com.example.codechallenge.app-debug-38:/font_montserrat_medium.ttf.flat",
+        "source": "/home/rogeliovc/.gradle/daemon/8.11.1/com.example.codechallenge.app-main-40:/font/montserrat_medium.ttf"
     },
     {
-        "merged": "com.example.codechallenge.app-debug-37:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
-        "source": "com.example.codechallenge.app-main-39:/mipmap-xxxhdpi/ic_launcher_round.webp"
+        "merged": "/home/rogeliovc/.gradle/daemon/8.11.1/com.example.codechallenge.app-debug-38:/drawable_logo_launcher.jpg.flat",
+        "source": "/home/rogeliovc/.gradle/daemon/8.11.1/com.example.codechallenge.app-main-40:/drawable/logo_launcher.jpg"
     },
     {
-        "merged": "com.example.codechallenge.app-debug-37:/drawable_bg_edittext.xml.flat",
-        "source": "com.example.codechallenge.app-main-39:/drawable/bg_edittext.xml"
+        "merged": "/home/rogeliovc/.gradle/daemon/8.11.1/com.example.codechallenge.app-debug-38:/layout_item_lenguaje.xml.flat",
+        "source": "/home/rogeliovc/.gradle/daemon/8.11.1/com.example.codechallenge.app-main-40:/layout/item_lenguaje.xml"
     },
     {
-        "merged": "com.example.codechallenge.app-debug-37:/mipmap-xhdpi_ic_launcher_round.webp.flat",
-        "source": "com.example.codechallenge.app-main-39:/mipmap-xhdpi/ic_launcher_round.webp"
+        "merged": "/home/rogeliovc/.gradle/daemon/8.11.1/com.example.codechallenge.app-debug-38:/layout_fragment_stats.xml.flat",
+        "source": "/home/rogeliovc/.gradle/daemon/8.11.1/com.example.codechallenge.app-main-40:/layout/fragment_stats.xml"
     },
     {
-        "merged": "com.example.codechallenge.app-debug-37:/drawable_bg_gradient_orange.xml.flat",
-        "source": "com.example.codechallenge.app-main-39:/drawable/bg_gradient_orange.xml"
+        "merged": "/home/rogeliovc/.gradle/daemon/8.11.1/com.example.codechallenge.app-debug-38:/mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "/home/rogeliovc/.gradle/daemon/8.11.1/com.example.codechallenge.app-main-40:/mipmap-mdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "com.example.codechallenge.app-debug-37:/drawable_ic_notifications.xml.flat",
-        "source": "com.example.codechallenge.app-main-39:/drawable/ic_notifications.xml"
+        "merged": "/home/rogeliovc/.gradle/daemon/8.11.1/com.example.codechallenge.app-debug-38:/menu_menu_bottom_nav.xml.flat",
+        "source": "/home/rogeliovc/.gradle/daemon/8.11.1/com.example.codechallenge.app-main-40:/menu/menu_bottom_nav.xml"
     },
     {
-        "merged": "com.example.codechallenge.app-debug-37:/layout_activity_account.xml.flat",
-        "source": "com.example.codechallenge.app-main-39:/layout/activity_account.xml"
+        "merged": "/home/rogeliovc/.gradle/daemon/8.11.1/com.example.codechallenge.app-debug-38:/mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "/home/rogeliovc/.gradle/daemon/8.11.1/com.example.codechallenge.app-main-40:/mipmap-xhdpi/ic_launcher.png"
     },
     {
-        "merged": "com.example.codechallenge.app-debug-37:/drawable_ic_person.xml.flat",
-        "source": "com.example.codechallenge.app-main-39:/drawable/ic_person.xml"
+        "merged": "/home/rogeliovc/.gradle/daemon/8.11.1/com.example.codechallenge.app-debug-38:/drawable_ic_exercise_done.xml.flat",
+        "source": "/home/rogeliovc/.gradle/daemon/8.11.1/com.example.codechallenge.app-main-40:/drawable/ic_exercise_done.xml"
     },
     {
-        "merged": "com.example.codechallenge.app-debug-37:/mipmap-xhdpi_ic_launcher.webp.flat",
-        "source": "com.example.codechallenge.app-main-39:/mipmap-xhdpi/ic_launcher.webp"
+        "merged": "/home/rogeliovc/.gradle/daemon/8.11.1/com.example.codechallenge.app-debug-38:/drawable_bg_gradient_orange.xml.flat",
+        "source": "/home/rogeliovc/.gradle/daemon/8.11.1/com.example.codechallenge.app-main-40:/drawable/bg_gradient_orange.xml"
     },
     {
-        "merged": "com.example.codechallenge.app-debug-37:/mipmap-hdpi_ic_launcher_round.webp.flat",
-        "source": "com.example.codechallenge.app-main-39:/mipmap-hdpi/ic_launcher_round.webp"
+        "merged": "/home/rogeliovc/.gradle/daemon/8.11.1/com.example.codechallenge.app-debug-38:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "/home/rogeliovc/.gradle/daemon/8.11.1/com.example.codechallenge.app-main-40:/mipmap-xxxhdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "com.example.codechallenge.app-debug-37:/mipmap-anydpi_ic_launcher_round.xml.flat",
-        "source": "com.example.codechallenge.app-main-39:/mipmap-anydpi/ic_launcher_round.xml"
+        "merged": "/home/rogeliovc/.gradle/daemon/8.11.1/com.example.codechallenge.app-debug-38:/layout_layout_chips_filtros.xml.flat",
+        "source": "/home/rogeliovc/.gradle/daemon/8.11.1/com.example.codechallenge.app-main-40:/layout/layout_chips_filtros.xml"
     },
     {
-        "merged": "com.example.codechallenge.app-debug-37:/mipmap-hdpi_ic_launcher.webp.flat",
-        "source": "com.example.codechallenge.app-main-39:/mipmap-hdpi/ic_launcher.webp"
+        "merged": "/home/rogeliovc/.gradle/daemon/8.11.1/com.example.codechallenge.app-debug-38:/layout_item_header_dificultad.xml.flat",
+        "source": "/home/rogeliovc/.gradle/daemon/8.11.1/com.example.codechallenge.app-main-40:/layout/item_header_dificultad.xml"
     },
     {
-        "merged": "com.example.codechallenge.app-debug-37:/xml_backup_rules.xml.flat",
-        "source": "com.example.codechallenge.app-main-39:/xml/backup_rules.xml"
+        "merged": "/home/rogeliovc/.gradle/daemon/8.11.1/com.example.codechallenge.app-debug-38:/drawable_c_logo_icon.xml.flat",
+        "source": "/home/rogeliovc/.gradle/daemon/8.11.1/com.example.codechallenge.app-main-40:/drawable/c_logo_icon.xml"
     },
     {
-        "merged": "com.example.codechallenge.app-debug-37:/drawable_logo_cucei.xml.flat",
-        "source": "com.example.codechallenge.app-main-39:/drawable/logo_cucei.xml"
+        "merged": "/home/rogeliovc/.gradle/daemon/8.11.1/com.example.codechallenge.app-debug-38:/drawable_java_logo.xml.flat",
+        "source": "/home/rogeliovc/.gradle/daemon/8.11.1/com.example.codechallenge.app-main-40:/drawable/java_logo.xml"
     },
     {
-        "merged": "com.example.codechallenge.app-debug-37:/drawable_ic_favorite.xml.flat",
-        "source": "com.example.codechallenge.app-main-39:/drawable/ic_favorite.xml"
+        "merged": "/home/rogeliovc/.gradle/daemon/8.11.1/com.example.codechallenge.app-debug-38:/drawable_ic_code.xml.flat",
+        "source": "/home/rogeliovc/.gradle/daemon/8.11.1/com.example.codechallenge.app-main-40:/drawable/ic_code.xml"
     },
     {
-        "merged": "com.example.codechallenge.app-debug-37:/xml_data_extraction_rules.xml.flat",
-        "source": "com.example.codechallenge.app-main-39:/xml/data_extraction_rules.xml"
+        "merged": "/home/rogeliovc/.gradle/daemon/8.11.1/com.example.codechallenge.app-debug-38:/mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "/home/rogeliovc/.gradle/daemon/8.11.1/com.example.codechallenge.app-main-40:/mipmap-xxhdpi/ic_launcher.png"
     },
     {
-        "merged": "com.example.codechallenge.app-debug-37:/color_selector_nav_icon.xml.flat",
-        "source": "com.example.codechallenge.app-main-39:/color/selector_nav_icon.xml"
+        "merged": "/home/rogeliovc/.gradle/daemon/8.11.1/com.example.codechallenge.app-debug-38:/drawable_logo_header.png.flat",
+        "source": "/home/rogeliovc/.gradle/daemon/8.11.1/com.example.codechallenge.app-main-40:/drawable/logo_header.png"
+    },
+    {
+        "merged": "/home/rogeliovc/.gradle/daemon/8.11.1/com.example.codechallenge.app-debug-38:/drawable-night_logo_header.png.flat",
+        "source": "/home/rogeliovc/.gradle/daemon/8.11.1/com.example.codechallenge.app-main-40:/drawable-night/logo_header.png"
+    },
+    {
+        "merged": "/home/rogeliovc/.gradle/daemon/8.11.1/com.example.codechallenge.app-debug-38:/drawable_bg_gradient_menu.xml.flat",
+        "source": "/home/rogeliovc/.gradle/daemon/8.11.1/com.example.codechallenge.app-main-40:/drawable/bg_gradient_menu.xml"
+    },
+    {
+        "merged": "/home/rogeliovc/.gradle/daemon/8.11.1/com.example.codechallenge.app-debug-38:/mipmap-anydpi_ic_launcher_round.xml.flat",
+        "source": "/home/rogeliovc/.gradle/daemon/8.11.1/com.example.codechallenge.app-main-40:/mipmap-anydpi/ic_launcher_round.xml"
+    },
+    {
+        "merged": "/home/rogeliovc/.gradle/daemon/8.11.1/com.example.codechallenge.app-debug-38:/layout_fragment_main_list.xml.flat",
+        "source": "/home/rogeliovc/.gradle/daemon/8.11.1/com.example.codechallenge.app-main-40:/layout/fragment_main_list.xml"
+    },
+    {
+        "merged": "/home/rogeliovc/.gradle/daemon/8.11.1/com.example.codechallenge.app-debug-38:/drawable_ic_home.xml.flat",
+        "source": "/home/rogeliovc/.gradle/daemon/8.11.1/com.example.codechallenge.app-main-40:/drawable/ic_home.xml"
+    },
+    {
+        "merged": "/home/rogeliovc/.gradle/daemon/8.11.1/com.example.codechallenge.app-debug-38:/drawable_bg_card_header.xml.flat",
+        "source": "/home/rogeliovc/.gradle/daemon/8.11.1/com.example.codechallenge.app-main-40:/drawable/bg_card_header.xml"
+    },
+    {
+        "merged": "/home/rogeliovc/.gradle/daemon/8.11.1/com.example.codechallenge.app-debug-38:/drawable_ic_avatar_placeholder.xml.flat",
+        "source": "/home/rogeliovc/.gradle/daemon/8.11.1/com.example.codechallenge.app-main-40:/drawable/ic_avatar_placeholder.xml"
+    },
+    {
+        "merged": "/home/rogeliovc/.gradle/daemon/8.11.1/com.example.codechallenge.app-debug-38:/drawable_bg_chip_dificultad.xml.flat",
+        "source": "/home/rogeliovc/.gradle/daemon/8.11.1/com.example.codechallenge.app-main-40:/drawable/bg_chip_dificultad.xml"
+    },
+    {
+        "merged": "/home/rogeliovc/.gradle/daemon/8.11.1/com.example.codechallenge.app-debug-38:/drawable_circle_bg.xml.flat",
+        "source": "/home/rogeliovc/.gradle/daemon/8.11.1/com.example.codechallenge.app-main-40:/drawable/circle_bg.xml"
+    },
+    {
+        "merged": "/home/rogeliovc/.gradle/daemon/8.11.1/com.example.codechallenge.app-debug-38:/layout_activity_account.xml.flat",
+        "source": "/home/rogeliovc/.gradle/daemon/8.11.1/com.example.codechallenge.app-main-40:/layout/activity_account.xml"
+    },
+    {
+        "merged": "/home/rogeliovc/.gradle/daemon/8.11.1/com.example.codechallenge.app-debug-38:/drawable_bg_card_cpp.xml.flat",
+        "source": "/home/rogeliovc/.gradle/daemon/8.11.1/com.example.codechallenge.app-main-40:/drawable/bg_card_cpp.xml"
+    },
+    {
+        "merged": "/home/rogeliovc/.gradle/daemon/8.11.1/com.example.codechallenge.app-debug-38:/anim_fade_in.xml.flat",
+        "source": "/home/rogeliovc/.gradle/daemon/8.11.1/com.example.codechallenge.app-main-40:/anim/fade_in.xml"
+    },
+    {
+        "merged": "/home/rogeliovc/.gradle/daemon/8.11.1/com.example.codechallenge.app-debug-38:/drawable_ic_arrow_back_black_24dp.xml.flat",
+        "source": "/home/rogeliovc/.gradle/daemon/8.11.1/com.example.codechallenge.app-main-40:/drawable/ic_arrow_back_black_24dp.xml"
+    },
+    {
+        "merged": "/home/rogeliovc/.gradle/daemon/8.11.1/com.example.codechallenge.app-debug-38:/mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "/home/rogeliovc/.gradle/daemon/8.11.1/com.example.codechallenge.app-main-40:/mipmap-hdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "/home/rogeliovc/.gradle/daemon/8.11.1/com.example.codechallenge.app-debug-38:/drawable_ic_person.xml.flat",
+        "source": "/home/rogeliovc/.gradle/daemon/8.11.1/com.example.codechallenge.app-main-40:/drawable/ic_person.xml"
+    },
+    {
+        "merged": "/home/rogeliovc/.gradle/daemon/8.11.1/com.example.codechallenge.app-debug-38:/anim_scale_in.xml.flat",
+        "source": "/home/rogeliovc/.gradle/daemon/8.11.1/com.example.codechallenge.app-main-40:/anim/scale_in.xml"
+    },
+    {
+        "merged": "/home/rogeliovc/.gradle/daemon/8.11.1/com.example.codechallenge.app-debug-38:/mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "/home/rogeliovc/.gradle/daemon/8.11.1/com.example.codechallenge.app-main-40:/mipmap-xhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "/home/rogeliovc/.gradle/daemon/8.11.1/com.example.codechallenge.app-debug-38:/layout_activity_register.xml.flat",
+        "source": "/home/rogeliovc/.gradle/daemon/8.11.1/com.example.codechallenge.app-main-40:/layout/activity_register.xml"
+    },
+    {
+        "merged": "/home/rogeliovc/.gradle/daemon/8.11.1/com.example.codechallenge.app-debug-38:/drawable_bg_card_python.xml.flat",
+        "source": "/home/rogeliovc/.gradle/daemon/8.11.1/com.example.codechallenge.app-main-40:/drawable/bg_card_python.xml"
+    },
+    {
+        "merged": "/home/rogeliovc/.gradle/daemon/8.11.1/com.example.codechallenge.app-debug-38:/drawable_bg_card_java.xml.flat",
+        "source": "/home/rogeliovc/.gradle/daemon/8.11.1/com.example.codechallenge.app-main-40:/drawable/bg_card_java.xml"
+    },
+    {
+        "merged": "/home/rogeliovc/.gradle/daemon/8.11.1/com.example.codechallenge.app-debug-38:/color_selector_nav_icon.xml.flat",
+        "source": "/home/rogeliovc/.gradle/daemon/8.11.1/com.example.codechallenge.app-main-40:/color/selector_nav_icon.xml"
+    },
+    {
+        "merged": "/home/rogeliovc/.gradle/daemon/8.11.1/com.example.codechallenge.app-debug-38:/drawable_cplusplus_icon.xml.flat",
+        "source": "/home/rogeliovc/.gradle/daemon/8.11.1/com.example.codechallenge.app-main-40:/drawable/cplusplus_icon.xml"
+    },
+    {
+        "merged": "/home/rogeliovc/.gradle/daemon/8.11.1/com.example.codechallenge.app-debug-38:/drawable_bg_card_c.xml.flat",
+        "source": "/home/rogeliovc/.gradle/daemon/8.11.1/com.example.codechallenge.app-main-40:/drawable/bg_card_c.xml"
+    },
+    {
+        "merged": "/home/rogeliovc/.gradle/daemon/8.11.1/com.example.codechallenge.app-debug-38:/drawable_bg_card.xml.flat",
+        "source": "/home/rogeliovc/.gradle/daemon/8.11.1/com.example.codechallenge.app-main-40:/drawable/bg_card.xml"
+    },
+    {
+        "merged": "/home/rogeliovc/.gradle/daemon/8.11.1/com.example.codechallenge.app-debug-38:/mipmap-hdpi_ic_launcher.png.flat",
+        "source": "/home/rogeliovc/.gradle/daemon/8.11.1/com.example.codechallenge.app-main-40:/mipmap-hdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/home/rogeliovc/.gradle/daemon/8.11.1/com.example.codechallenge.app-debug-38:/xml_backup_rules.xml.flat",
+        "source": "/home/rogeliovc/.gradle/daemon/8.11.1/com.example.codechallenge.app-main-40:/xml/backup_rules.xml"
+    },
+    {
+        "merged": "/home/rogeliovc/.gradle/daemon/8.11.1/com.example.codechallenge.app-debug-38:/anim_fade_out.xml.flat",
+        "source": "/home/rogeliovc/.gradle/daemon/8.11.1/com.example.codechallenge.app-main-40:/anim/fade_out.xml"
+    },
+    {
+        "merged": "/home/rogeliovc/.gradle/daemon/8.11.1/com.example.codechallenge.app-debug-38:/layout_item_reto.xml.flat",
+        "source": "/home/rogeliovc/.gradle/daemon/8.11.1/com.example.codechallenge.app-main-40:/layout/item_reto.xml"
+    },
+    {
+        "merged": "/home/rogeliovc/.gradle/daemon/8.11.1/com.example.codechallenge.app-debug-38:/font_monocraft.ttf.flat",
+        "source": "/home/rogeliovc/.gradle/daemon/8.11.1/com.example.codechallenge.app-main-40:/font/monocraft.ttf"
+    },
+    {
+        "merged": "/home/rogeliovc/.gradle/daemon/8.11.1/com.example.codechallenge.app-debug-38:/mipmap-anydpi_ic_launcher.xml.flat",
+        "source": "/home/rogeliovc/.gradle/daemon/8.11.1/com.example.codechallenge.app-main-40:/mipmap-anydpi/ic_launcher.xml"
+    },
+    {
+        "merged": "/home/rogeliovc/.gradle/daemon/8.11.1/com.example.codechallenge.app-debug-38:/drawable_ic_edit.xml.flat",
+        "source": "/home/rogeliovc/.gradle/daemon/8.11.1/com.example.codechallenge.app-main-40:/drawable/ic_edit.xml"
+    },
+    {
+        "merged": "/home/rogeliovc/.gradle/daemon/8.11.1/com.example.codechallenge.app-debug-38:/layout_activity_menu_principal.xml.flat",
+        "source": "/home/rogeliovc/.gradle/daemon/8.11.1/com.example.codechallenge.app-main-40:/layout/activity_menu_principal.xml"
+    },
+    {
+        "merged": "/home/rogeliovc/.gradle/daemon/8.11.1/com.example.codechallenge.app-debug-38:/drawable_bg_chip_lenguaje.xml.flat",
+        "source": "/home/rogeliovc/.gradle/daemon/8.11.1/com.example.codechallenge.app-main-40:/drawable/bg_chip_lenguaje.xml"
+    },
+    {
+        "merged": "/home/rogeliovc/.gradle/daemon/8.11.1/com.example.codechallenge.app-debug-38:/drawable_ic_check_circle.xml.flat",
+        "source": "/home/rogeliovc/.gradle/daemon/8.11.1/com.example.codechallenge.app-main-40:/drawable/ic_check_circle.xml"
+    },
+    {
+        "merged": "/home/rogeliovc/.gradle/daemon/8.11.1/com.example.codechallenge.app-debug-38:/drawable_bg_badge.xml.flat",
+        "source": "/home/rogeliovc/.gradle/daemon/8.11.1/com.example.codechallenge.app-main-40:/drawable/bg_badge.xml"
+    },
+    {
+        "merged": "/home/rogeliovc/.gradle/daemon/8.11.1/com.example.codechallenge.app-debug-38:/layout_fragment_problem_detail.xml.flat",
+        "source": "/home/rogeliovc/.gradle/daemon/8.11.1/com.example.codechallenge.app-main-40:/layout/fragment_problem_detail.xml"
+    },
+    {
+        "merged": "/home/rogeliovc/.gradle/daemon/8.11.1/com.example.codechallenge.app-debug-38:/drawable_ic_percent.xml.flat",
+        "source": "/home/rogeliovc/.gradle/daemon/8.11.1/com.example.codechallenge.app-main-40:/drawable/ic_percent.xml"
+    },
+    {
+        "merged": "/home/rogeliovc/.gradle/daemon/8.11.1/com.example.codechallenge.app-debug-38:/layout_item_test_result.xml.flat",
+        "source": "/home/rogeliovc/.gradle/daemon/8.11.1/com.example.codechallenge.app-main-40:/layout/item_test_result.xml"
+    },
+    {
+        "merged": "/home/rogeliovc/.gradle/daemon/8.11.1/com.example.codechallenge.app-debug-38:/drawable_ic_favorite.xml.flat",
+        "source": "/home/rogeliovc/.gradle/daemon/8.11.1/com.example.codechallenge.app-main-40:/drawable/ic_favorite.xml"
+    },
+    {
+        "merged": "/home/rogeliovc/.gradle/daemon/8.11.1/com.example.codechallenge.app-debug-38:/color_bottom_nav_item_color.xml.flat",
+        "source": "/home/rogeliovc/.gradle/daemon/8.11.1/com.example.codechallenge.app-main-40:/color/bottom_nav_item_color.xml"
+    },
+    {
+        "merged": "/home/rogeliovc/.gradle/daemon/8.11.1/com.example.codechallenge.app-debug-38:/drawable_ic_notifications.xml.flat",
+        "source": "/home/rogeliovc/.gradle/daemon/8.11.1/com.example.codechallenge.app-main-40:/drawable/ic_notifications.xml"
+    },
+    {
+        "merged": "/home/rogeliovc/.gradle/daemon/8.11.1/com.example.codechallenge.app-debug-38:/mipmap-mdpi_ic_launcher.png.flat",
+        "source": "/home/rogeliovc/.gradle/daemon/8.11.1/com.example.codechallenge.app-main-40:/mipmap-mdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/home/rogeliovc/.gradle/daemon/8.11.1/com.example.codechallenge.app-debug-38:/mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "/home/rogeliovc/.gradle/daemon/8.11.1/com.example.codechallenge.app-main-40:/mipmap-xxxhdpi/ic_launcher.png"
     }
 ]
