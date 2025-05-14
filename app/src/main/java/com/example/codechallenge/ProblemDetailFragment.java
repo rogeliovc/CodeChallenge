@@ -138,7 +138,6 @@ public class ProblemDetailFragment extends Fragment {
                 });
         }
 
-        Button btnSend = v.findViewById(R.id.btnSendCode);
         EditText editCodigo = v.findViewById(R.id.editCodigo);
         editCodigo.addTextChangedListener(new android.text.TextWatcher() {
             @Override
@@ -157,61 +156,6 @@ public class ProblemDetailFragment extends Fragment {
             }
             @Override
             public void afterTextChanged(android.text.Editable s) {}
-        });
-        btnSend.setOnClickListener(view -> {
-            String codigo = editCodigo.getText().toString();
-            if (testCases == null || testCases.isEmpty()) {
-                return;
-            }
-            // Evaluar todos los test cases
-            List<String> resultados = new ArrayList<>();
-            final int[] completados = {0};
-            for (int i = 0; i < testCases.size(); i++) {
-                Challenge.TestCase tc = testCases.get(i);
-                String inputTest = tc.getInput();
-                String expected = tc.getExpectedOutput();
-                int idx = i;
-                evaluarCodigoConJudge0(codigo, languageId, inputTest, new okhttp3.Callback() {
-                    @Override
-                    public void onFailure(Call call, IOException e) {
-                        requireActivity().runOnUiThread(() -> {
-                            resultados.add("Test " + (idx+1) + ": Error en Judge0: " + e.getMessage());
-                            completados[0]++;
-                            if (completados[0] == testCases.size()) mostrarResultados(resultados);
-                        });
-                    }
-                    @Override
-                    public void onResponse(Call call, Response response) throws IOException {
-                        try {
-                            JSONObject resp = new JSONObject(response.body().string());
-                            String output = resp.optString("stdout", "");
-                            String error = resp.optString("stderr", "");
-                            // Normaliza output y expected para comparar ignorando saltos de línea y espacios al final
-                            String normOutput = output.trim().replaceAll("\\r\\n", "\\n").replaceAll("\\r", "\\n").replaceAll("\\s+$", "");
-                            String normExpected = expected.trim().replaceAll("\\r\\n", "\\n").replaceAll("\\r", "\\n").replaceAll("\\s+$", "");
-                            boolean ok = normOutput.equals(normExpected);
-                            String res = "Test " + (idx+1) + ": " + (ok ? "✔️ PASA" : "❌ FALLA") +
-                                    "\nEntrada: " + inputTest +
-                                    "\nEsperado: " + normExpected +
-                                    "\nSalida: " + normOutput +
-                                    (error.isEmpty() ? "" : ("\nError: " + error)) +
-                                    (resp.has("compile_output") && !resp.isNull("compile_output") ? ("\nCompilación: " + resp.optString("compile_output", "")) : "") +
-                                    (resp.has("message") && !resp.isNull("message") ? ("\nMensaje: " + resp.optString("message", "")) : "");
-                            requireActivity().runOnUiThread(() -> {
-                                resultados.add(res);
-                                completados[0]++;
-                                if (completados[0] == testCases.size()) mostrarResultados(resultados);
-                            });
-                        } catch (JSONException e) {
-                            requireActivity().runOnUiThread(() -> {
-                                resultados.add("Test " + (idx+1) + ": Error JSON Judge0: " + e.getMessage());
-                                completados[0]++;
-                                if (completados[0] == testCases.size()) mostrarResultados(resultados);
-                            });
-                        }
-                    }
-                });
-            }
         });
 
         Button btnSalir = v.findViewById(R.id.btnSalirDetalle);
