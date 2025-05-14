@@ -3487,6 +3487,9 @@ id linkToRegister
 id listMode
 id list_item
 id logoCucei
+id logroCincoRetos
+id logroPrimerReto
+id logroTodosFaciles
 id m3_side_sheet
 id marquee
 id masked

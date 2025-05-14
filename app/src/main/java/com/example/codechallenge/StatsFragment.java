@@ -46,6 +46,26 @@ public class StatsFragment extends Fragment {
         int solvedCount = solved.size();
         txtExercisesSolved.setText(String.valueOf(solvedCount));
 
+        // Mostrar logros solo cuando se cumplen
+        View logroPrimerReto = view.findViewById(R.id.logroPrimerReto);
+        View logroCincoRetos = view.findViewById(R.id.logroCincoRetos);
+        View logroTodosFaciles = view.findViewById(R.id.logroTodosFaciles);
+        if (logroPrimerReto != null)
+            logroPrimerReto.setVisibility(solvedCount >= 1 ? View.VISIBLE : View.GONE);
+        if (logroCincoRetos != null)
+            logroCincoRetos.setVisibility(solvedCount >= 5 ? View.VISIBLE : View.GONE);
+        if (logroTodosFaciles != null) {
+            // Aquí asumimos que los retos fáciles tienen IDs que empiezan con "easy_" (ajusta según tu lógica real)
+            int facilesTotales = 0;
+            int facilesResueltos = 0;
+            for (String id : solved) {
+                if (id.startsWith("easy_")) facilesResueltos++;
+            }
+            // Si tienes el total de retos fáciles, cámbialo aquí:
+            facilesTotales = 3; // Por ejemplo, 3 retos fáciles
+            logroTodosFaciles.setVisibility(facilesResueltos == facilesTotales && facilesTotales > 0 ? View.VISIBLE : View.GONE);
+        }
+
         return view;
     }
 

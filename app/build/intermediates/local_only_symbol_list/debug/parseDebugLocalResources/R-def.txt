@@ -84,6 +84,9 @@ id layoutLenguajeBg
 id linkToLogin
 id linkToRegister
 id logoCucei
+id logroCincoRetos
+id logroPrimerReto
+id logroTodosFaciles
 id nav_home
 id nav_notifications
 id nav_profile
