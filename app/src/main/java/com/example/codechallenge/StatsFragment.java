@@ -41,6 +41,8 @@ public class StatsFragment extends Fragment {
 
 
     public void addPoints(int points) {
+        android.util.Log.d("DBG_STATS", "addPoints llamado con: " + points);
+
         totalPoints += points;
         
         // Guardar puntos en SharedPreferences
@@ -53,5 +55,17 @@ public class StatsFragment extends Fragment {
 
     private void updatePoints() {
         txtTotalPoints.setText("Puntos Totales: " + totalPoints);
+    }
+
+    @Override
+    public void onResume() {
+        android.util.Log.d("DBG_STATS", "onResume llamado");
+        super.onResume();
+        // Cargar puntos guardados al volver al fragmento
+        if (sharedPreferences != null) {
+            totalPoints = sharedPreferences.getInt(KEY_TOTAL_POINTS, 0);
+            android.util.Log.d("DBG_STATS", "onResume: totalPoints=" + totalPoints);
+            updatePoints();
+        }
     }
 }

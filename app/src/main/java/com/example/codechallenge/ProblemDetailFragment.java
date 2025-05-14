@@ -317,10 +317,14 @@ public class ProblemDetailFragment extends Fragment {
     }
 
     private void mostrarResultados(List<String> resultados) {
+        Log.d("DBG_TEST", "Resultados recibidos: " + resultados);
+
         // Adaptar a TestResult list
         List<TestResult> testResultList = new ArrayList<>();
         boolean allPassed = true;
         for (String r : resultados) {
+            Log.d("DBG_TEST", "Resultado individual: " + r);
+
             // Parsear el string (mejorable si se pasa objeto directamente)
             // Espera: "Test 1: ✔️ PASA\nEntrada: ...\nEsperado: ...\nSalida: ...\n[Error: ...]"
             String[] lines = r.split("\n");
@@ -337,9 +341,11 @@ public class ProblemDetailFragment extends Fragment {
                 if (l.startsWith("Mensaje:")) message = l.replace("Mensaje: ", "");
             }
             boolean passed = title.contains("✔️");
+            Log.d("DBG_TEST", "Test title: " + title + " | passed: " + passed + " | error: " + error);
             allPassed = allPassed && passed;
             testResultList.add(new TestResult(title, input, expected, output, error, compileOutput, message, passed));
         }
+        Log.d("DBG_TEST", "Valor final de allPassed: " + allPassed);
         BottomSheetDialog dialog = new BottomSheetDialog(requireContext());
         View view = getLayoutInflater().inflate(R.layout.bottomsheet_test_results, null);
         RecyclerView recycler = view.findViewById(R.id.recyclerResults);
@@ -355,7 +361,7 @@ public class ProblemDetailFragment extends Fragment {
         if (vibrator != null) {
             if (allPassed) {
                 // Vibración corta y animación positiva
-                vibrator.vibrate(VibrationEffect.createOneShot(120, VibrationEffect.EFFECT_CLICK));
+                vibrator.vibrate(VibrationEffect.createOneShot(120, VibrationEffect.DEFAULT_AMPLITUDE));
                 
                 // Obtener el reto actual y otorgar puntos
                 if (challengeId != null) {
@@ -369,19 +375,20 @@ public class ProblemDetailFragment extends Fragment {
                                 int puntos = challenge.getPoints();
                                 
                                 // Obtener y actualizar el StatsFragment
-                                StatsFragment statsFragment = getStatsFragment();
-                                if (statsFragment != null) {
-                                    statsFragment.addPoints(puntos);
-                                    Toast.makeText(getContext(), 
+                                // Sumar puntos directamente en SharedPreferences
+                                android.content.SharedPreferences sharedPreferences = requireActivity().getSharedPreferences("CodeChallengePrefs", 0);
+                                int totalPoints = sharedPreferences.getInt("total_points", 0);
+                                totalPoints += puntos;
+                                sharedPreferences.edit().putInt("total_points", totalPoints).apply();
+                                Toast.makeText(getContext(), 
                                         "¡Felicidades! Has ganado " + puntos + " puntos", 
                                         Toast.LENGTH_LONG).show();
-                                }
                             }
                         });
                 }
             } else {
                 // Vibración más larga y animación negativa
-                vibrator.vibrate(VibrationEffect.createOneShot(350, VibrationEffect.EFFECT_DOUBLE_CLICK));
+                vibrator.vibrate(VibrationEffect.createOneShot(350, VibrationEffect.DEFAULT_AMPLITUDE));
             }
         }
     }

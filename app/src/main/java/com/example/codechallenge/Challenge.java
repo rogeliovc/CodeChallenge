@@ -32,8 +32,13 @@ public class Challenge {
     // Método para obtener puntos según la dificultad
     public int getPoints() {
         if (difficulty == null) return 0;
-        
-        switch (difficulty.toLowerCase()) {
+        String normalized = difficulty.trim().toLowerCase()
+            .replace("á", "a")
+            .replace("é", "e")
+            .replace("í", "i")
+            .replace("ó", "o")
+            .replace("ú", "u");
+        switch (normalized) {
             case "facil":
                 return 50;
             case "medio":

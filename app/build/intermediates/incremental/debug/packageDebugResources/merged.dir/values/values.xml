@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="colorBackground">#FFFFFF</color>
+    <color name="colorBackgroundLight">#F4F1DE</color>
+    <color name="colorBlue">#3D405B</color>
+    <color name="colorCard">#FFFFFF</color>
+    <color name="colorGreen">#81B29A</color>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryHeader">#FFFFFF</color>
+    <color name="colorRed">#E07A5F</color>
+    <color name="colorText">#222222</color>
+    <color name="colorYellow">#F2CC8F</color>
+    <color name="headerTextColor">#222222</color>
+    <color name="white">#FFFFFFFF</color>
+    <string name="app_name">Code challenge</string>
+    <string name="default_web_client_id" translatable="false">920429794833-hkm5m1dkiro1j5hfa2jakk1rjf9ssic6.apps.googleusercontent.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">920429794833</string>
+    <string name="google_api_key" translatable="false">AIzaSyBTaIFEFNUWRea-AKEV8xeLq-lMBmylH4I</string>
+    <string name="google_app_id" translatable="false">1:920429794833:android:4cb4b1bb9a810eb9b2c3b0</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyBTaIFEFNUWRea-AKEV8xeLq-lMBmylH4I</string>
+    <string name="google_storage_bucket" translatable="false">code-challenge-36105.firebasestorage.app</string>
+    <string name="project_id" translatable="false">code-challenge-36105</string>
+    <style name="Base.Theme.CodeChallenge" parent="Theme.Material3.DayNight.NoActionBar">
+        
+        <item name="android:windowBackground">@color/colorBackground</item>
+        <item name="android:colorBackground">@color/colorBackground</item>
+    </style>
+    <style name="Theme.CodeChallenge" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/colorBlue</item>
+        <item name="colorPrimaryVariant">@color/colorBlue</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorSecondary">@color/colorYellow</item>
+        <item name="colorSecondaryVariant">@color/colorYellow</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <item name="android:windowBackground">@color/colorBackground</item>
+        <item name="android:textColor">@color/colorText</item>
+        <item name="android:navigationBarColor">@color/colorCard</item>
+        <item name="android:statusBarColor">@color/colorBlue</item>
+        <item name="bottomNavigationStyle">@style/Widget.BottomNavigationView</item>
+    </style>
+    <style name="ThemeOverlay.CodeChallenge.Dark" parent="ThemeOverlay.MaterialComponents.Dark"/>
+    <style name="ThemeOverlay.CodeChallenge.Light" parent="ThemeOverlay.MaterialComponents.Light"/>
+    <style name="Widget.BottomNavigationView" parent="Widget.MaterialComponents.BottomNavigationView">
+        <item name="itemIconTint">@color/bottom_nav_selector</item>
+        <item name="itemTextColor">@color/bottom_nav_selector</item>
+        <item name="backgroundTint">@color/colorCard</item>
+        <item name="elevation">8dp</item>
+    </style>
+</resources>
