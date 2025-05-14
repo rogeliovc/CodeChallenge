@@ -3106,6 +3106,7 @@ drawable ic_code
 drawable ic_edit
 drawable ic_exercise_done
 drawable ic_favorite
+drawable ic_forum
 drawable ic_home
 drawable ic_keyboard_black_24dp
 drawable ic_launcher_background
