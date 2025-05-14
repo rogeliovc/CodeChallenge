@@ -62,7 +62,7 @@ public class LenguajesAdapter extends RecyclerView.Adapter<LenguajesAdapter.Leng
                 numRetos = "8 retos";
                 break;
             case "c++":
-                iconRes = R.drawable.ic_code;
+                iconRes = R.drawable.cplusplus_icon;
                 bgRes = R.drawable.bg_card_cpp;
                 tagline = "Potencia y flexibilidad";
                 numRetos = "9 retos";

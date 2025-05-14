@@ -3326,7 +3326,6 @@ id btnSalirDetalle
 id btnSendCode
 id btnSendComment
 id btnSignUp
-id btnTestCode
 id buttonPanel
 id cache_measures
 id callMeasure

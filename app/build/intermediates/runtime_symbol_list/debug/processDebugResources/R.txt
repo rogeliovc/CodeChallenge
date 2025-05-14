@@ -3325,7 +3325,6 @@ int id btnSalirDetalle 0x7f090073
 int id btnSendCode 0x7f090074
 int id btnSendComment 0x7f090075
 int id btnSignUp 0x7f090076
-int id btnTestCode 0x7f090077
 int id buttonPanel 0x7f090078
 int id cache_measures 0x7f090079
 int id callMeasure 0x7f09007a

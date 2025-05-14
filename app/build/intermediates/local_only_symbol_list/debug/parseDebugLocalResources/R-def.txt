@@ -70,7 +70,6 @@ id btnSalirDetalle
 id btnSendCode
 id btnSendComment
 id btnSignUp
-id btnTestCode
 id cardOptions
 id cardUserInfo
 id chipGroupFiltros

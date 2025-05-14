@@ -36,6 +36,7 @@ public class RetoAdapter extends RecyclerView.Adapter<RetoAdapter.RetoViewHolder
         holder.textDescripcion.setText(reto.getDescription());
         holder.textDificultad.setText(reto.getDifficulty());
         holder.textLenguaje.setText(reto.getLanguage());
+
         // Fondo del chip de lenguaje (color distinto por lenguaje)
         String lang = reto.getLanguage();
         int colorLang;

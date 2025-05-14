@@ -6,6 +6,7 @@ import android.view.ViewGroup;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.TextView;
+import android.widget.ImageView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 import java.util.ArrayList;
@@ -66,6 +67,7 @@ public class RetoSeccionAdapter extends RecyclerView.Adapter<RecyclerView.ViewHo
             vh.textDescripcion.setText(reto.getDescription());
             vh.textDificultad.setText(reto.getDifficulty());
             vh.textLenguaje.setText(reto.getLanguage());
+
             // Color del chip de dificultad
             String dificultad = reto.getDifficulty();
             int color;
@@ -116,6 +118,7 @@ public class RetoSeccionAdapter extends RecyclerView.Adapter<RecyclerView.ViewHo
             textDescripcion = itemView.findViewById(R.id.textDescripcionReto);
             textDificultad = itemView.findViewById(R.id.textDificultadReto);
             textLenguaje = itemView.findViewById(R.id.textLenguajeReto);
+
         }
     }
 }
