@@ -3607,6 +3607,7 @@ int id progressBar 0x7f09018f
 int id progress_circular 0x7f090190
 int id progress_horizontal 0x7f090191
 int id radio 0x7f090192
+int id rankingContainer 0x7f090247
 int id ratio 0x7f090193
 int id rectangles 0x7f090194
 int id recyclerResults 0x7f090195
@@ -3750,15 +3751,12 @@ int id transition_position 0x7f09021e
 int id transition_scene_layoutid_cache 0x7f09021f
 int id transition_transform 0x7f090220
 int id triangle 0x7f090221
-int id txtAccuracy 0x7f090222
 int id txtError 0x7f090223
-int id txtExercisesCorrect 0x7f090224
 int id txtExercisesSolved 0x7f090225
 int id txtExpected 0x7f090226
 int id txtInput 0x7f090227
 int id txtOutput 0x7f090228
 int id txtResultsTitle 0x7f090229
-int id txtStatsTitle 0x7f09022a
 int id txtTestTitle 0x7f09022b
 int id txtTotalPoints 0x7f09022c
 int id unchecked 0x7f09022d

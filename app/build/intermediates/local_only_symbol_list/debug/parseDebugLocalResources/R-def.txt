@@ -89,6 +89,7 @@ id nav_notifications
 id nav_profile
 id nav_stats
 id progressBar
+id rankingContainer
 id recyclerResults
 id recyclerRetos
 id scrollEditCodigo
@@ -112,15 +113,12 @@ id textViewLoginTitle
 id textViewName
 id textViewRegisterSubtitle
 id textViewRegisterTitle
-id txtAccuracy
 id txtError
-id txtExercisesCorrect
 id txtExercisesSolved
 id txtExpected
 id txtInput
 id txtOutput
 id txtResultsTitle
-id txtStatsTitle
 id txtTestTitle
 id txtTotalPoints
 layout activity_account
