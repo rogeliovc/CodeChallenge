@@ -24,6 +24,22 @@ public class MainListFragment extends Fragment {
         View v = inflater.inflate(R.layout.fragment_main_list, container, false);
         recyclerRetos = v.findViewById(R.id.recyclerRetos);
         recyclerRetos.setLayoutManager(new LinearLayoutManager(getContext()));
+
+        requireActivity().getOnBackPressedDispatcher().addCallback(getViewLifecycleOwner(), new androidx.activity.OnBackPressedCallback(true) {
+            @Override
+            public void handleOnBackPressed() {
+                if (!showingLanguageList) {
+                    // Volver a la lista de lenguajes
+                    cargarLenguajes();
+                    showingLanguageList = true;
+                    currentLanguage = null;
+                } else {
+                    setEnabled(false); // Permitir back normal
+                    requireActivity().onBackPressed();
+                }
+            }
+        });
+
         cargarLenguajes();
         return v;
     }
@@ -39,7 +55,10 @@ public class MainListFragment extends Fragment {
         cargarLenguajes();
     }
 
-    private void cargarLenguajes() {
+    private boolean showingLanguageList = true;
+private String currentLanguage = null;
+
+private void cargarLenguajes() {
         FirebaseFirestore db = FirebaseFirestore.getInstance();
         db.collection("challenges").get().addOnSuccessListener(queryDocumentSnapshots -> {
             List<Challenge> retos = new ArrayList<>();
@@ -86,36 +105,38 @@ public class MainListFragment extends Fragment {
             } else {
                 // Muestra lenguajes como cards
                 adapter = new LenguajesAdapter(lenguajes, lenguaje -> {
-                    // Al hacer clic en un lenguaje, muestra retos de ese lenguaje agrupados por dificultad
-                    List<Challenge> retosDeLenguaje = new ArrayList<>();
-                    for (Challenge r : retos) {
-                        if (lenguaje.equals(r.getLanguage())) {
-                            retosDeLenguaje.add(r);
-                        }
-                    }
-                    List<Challenge> faciles = new ArrayList<>();
-                    List<Challenge> medios = new ArrayList<>();
-                    List<Challenge> dificiles = new ArrayList<>();
-                    for (Challenge r : retosDeLenguaje) {
-                        if (r.getDifficulty() == null) {
-                            faciles.add(r);
-                        } else if (r.getDifficulty().equalsIgnoreCase("Fácil")) {
-                            faciles.add(r);
-                        } else if (r.getDifficulty().equalsIgnoreCase("Medio")) {
-                            medios.add(r);
-                        } else if (r.getDifficulty().equalsIgnoreCase("Difícil")) {
-                            dificiles.add(r);
-                        } else {
-                            faciles.add(r);
-                        }
-                    }
-                    List<RetoSeccionAdapter.Seccion> secciones = new ArrayList<>();
-                    if (!faciles.isEmpty()) secciones.add(new RetoSeccionAdapter.Seccion("Fácil", faciles));
-                    if (!medios.isEmpty()) secciones.add(new RetoSeccionAdapter.Seccion("Medio", medios));
-                    if (!dificiles.isEmpty()) secciones.add(new RetoSeccionAdapter.Seccion("Difícil", dificiles));
-                    recyclerRetos.setAdapter(new RetoSeccionAdapter(secciones));
-                });
-                recyclerRetos.setAdapter(adapter);
+    showingLanguageList = false;
+    currentLanguage = lenguaje;
+    // Al hacer clic en un lenguaje, muestra retos de ese lenguaje agrupados por dificultad
+    List<Challenge> retosDeLenguaje = new ArrayList<>();
+    for (Challenge r : retos) {
+        if (lenguaje.equals(r.getLanguage())) {
+            retosDeLenguaje.add(r);
+        }
+    }
+    List<Challenge> faciles = new ArrayList<>();
+    List<Challenge> medios = new ArrayList<>();
+    List<Challenge> dificiles = new ArrayList<>();
+    for (Challenge r : retosDeLenguaje) {
+        if (r.getDifficulty() == null) {
+            faciles.add(r);
+        } else if (r.getDifficulty().equalsIgnoreCase("Fácil")) {
+            faciles.add(r);
+        } else if (r.getDifficulty().equalsIgnoreCase("Medio")) {
+            medios.add(r);
+        } else if (r.getDifficulty().equalsIgnoreCase("Difícil")) {
+            dificiles.add(r);
+        } else {
+            faciles.add(r);
+        }
+    }
+    List<RetoSeccionAdapter.Seccion> secciones = new ArrayList<>();
+    if (!faciles.isEmpty()) secciones.add(new RetoSeccionAdapter.Seccion("Fácil", faciles));
+    if (!medios.isEmpty()) secciones.add(new RetoSeccionAdapter.Seccion("Medio", medios));
+    if (!dificiles.isEmpty()) secciones.add(new RetoSeccionAdapter.Seccion("Difícil", dificiles));
+    recyclerRetos.setAdapter(new RetoSeccionAdapter(secciones));
+});
+recyclerRetos.setAdapter(adapter);
             }
         });
     }
