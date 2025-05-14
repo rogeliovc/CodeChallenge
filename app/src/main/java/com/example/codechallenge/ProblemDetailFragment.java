@@ -374,12 +374,16 @@ public class ProblemDetailFragment extends Fragment {
                                 challenge.setDifficulty(snapshot.getString("difficulty"));
                                 int puntos = challenge.getPoints();
                                 
-                                // Obtener y actualizar el StatsFragment
                                 // Sumar puntos directamente en SharedPreferences
                                 android.content.SharedPreferences sharedPreferences = requireActivity().getSharedPreferences("CodeChallengePrefs", 0);
                                 int totalPoints = sharedPreferences.getInt("total_points", 0);
                                 totalPoints += puntos;
                                 sharedPreferences.edit().putInt("total_points", totalPoints).apply();
+                                // Guardar el reto como resuelto
+                                java.util.Set<String> solved = sharedPreferences.getStringSet("solved_challenges", new java.util.HashSet<>());
+                                java.util.HashSet<String> solvedCopy = new java.util.HashSet<>(solved);
+                                solvedCopy.add(challengeId);
+                                sharedPreferences.edit().putStringSet("solved_challenges", solvedCopy).apply();
                                 Toast.makeText(getContext(), 
                                         "¡Felicidades! Has ganado " + puntos + " puntos", 
                                         Toast.LENGTH_LONG).show();

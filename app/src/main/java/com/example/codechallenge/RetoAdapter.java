@@ -75,13 +75,29 @@ public class RetoAdapter extends RecyclerView.Adapter<RetoAdapter.RetoViewHolder
         holder.itemView.startAnimation(scaleIn);
         holder.itemView.startAnimation(fadeIn);
 
-        holder.itemView.setOnClickListener(v -> {
-            if (holder.getAdapterPosition() != RecyclerView.NO_POSITION) {
-                if (context instanceof MenuPrincipalActivity) {
-                    ((MenuPrincipalActivity) context).abrirDetalleProblema(reto.getId());
+        // Leer retos resueltos
+        android.content.SharedPreferences prefs = context.getSharedPreferences("CodeChallengePrefs", 0);
+        java.util.Set<String> solved = prefs.getStringSet("solved_challenges", new java.util.HashSet<>());
+        boolean isSolved = solved.contains(reto.getId());
+
+        // Cambia visualmente el reto si está resuelto
+        if (isSolved) {
+            holder.itemView.setAlpha(0.5f); // Más opaco
+            holder.itemView.setClickable(false);
+            holder.itemView.setFocusable(false);
+            holder.textTitulo.setText(holder.textTitulo.getText() + " (Contestado)");
+        } else {
+            holder.itemView.setAlpha(1f);
+            holder.itemView.setClickable(true);
+            holder.itemView.setFocusable(true);
+            holder.itemView.setOnClickListener(v -> {
+                if (holder.getAdapterPosition() != RecyclerView.NO_POSITION) {
+                    if (context instanceof MenuPrincipalActivity) {
+                        ((MenuPrincipalActivity) context).abrirDetalleProblema(reto.getId());
+                    }
                 }
-            }
-        });
+            });
+        }
     }
 
 

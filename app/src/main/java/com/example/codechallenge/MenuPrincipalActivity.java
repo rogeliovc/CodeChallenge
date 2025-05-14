@@ -67,6 +67,13 @@ public class MenuPrincipalActivity extends AppCompatActivity {
 
     // Método para navegar al detalle del problema
     public void abrirDetalleProblema(String challengeId) {
+        // Verifica si el reto ya fue resuelto
+        android.content.SharedPreferences prefs = getSharedPreferences("CodeChallengePrefs", 0);
+        java.util.Set<String> solved = prefs.getStringSet("solved_challenges", new java.util.HashSet<>());
+        if (solved.contains(challengeId)) {
+            android.widget.Toast.makeText(this, "Este reto ya fue contestado.", android.widget.Toast.LENGTH_SHORT).show();
+            return;
+        }
         // Oculta barras solo al mostrar el detalle del problema
         findViewById(R.id.headerLayout).setVisibility(android.view.View.GONE);
         findViewById(R.id.bottomNav).setVisibility(android.view.View.GONE);
