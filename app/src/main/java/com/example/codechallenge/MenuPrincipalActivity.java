@@ -35,6 +35,12 @@ public class MenuPrincipalActivity extends AppCompatActivity {
                         .commit();
                 }
                 return true;
+            } else if (itemId == R.id.nav_notifications) {
+                getSupportFragmentManager()
+                    .beginTransaction()
+                    .replace(R.id.fragment_container, new ForumFragment())
+                    .commit();
+                return true;
             } else if (itemId == R.id.nav_stats) {
                 getSupportFragmentManager()
                     .beginTransaction()
